@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Metro Transit | Superbowl LII</title>
     <!-- build:css css.main.min.css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -9,14 +12,51 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <!-- endbuild -->
 </head>
-<body>
 
-    <h1>Superbowl LII</h1>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+
+            <!-- Nav menu -->
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Logo -->
+            <h1>
+                <a href="https://www.metrotransit.org/" title="Metro Transit Home">
+                    <img class="img-responsive" src="images/mt-logo.png" alt="Metro Transit logo" />
+                </a>
+            </h1>
+        </header>
+    </div>
 
     <!-- build:js js/main.min.js -->
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/boostrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <!-- endbuild -->
 </body>
+
 </html>
