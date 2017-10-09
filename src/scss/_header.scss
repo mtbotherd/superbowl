@@ -1,10 +1,8 @@
 .logo {
-    h1 {
-        display: inline-block;
+    display: inline-block;
 
-        .img-responsive {
-            margin: 0 auto;
-            max-width: 60%;
-        }
+    .img-responsive {
+        margin: 20px auto 15px;
+        max-width: 60%;
     }
 }

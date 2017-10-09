@@ -1,8 +1,13 @@
 @media (min-width: 1200px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
     .header {
         .logo {
-            h1 .img-responsive {
-                margin: 0 auto;
+            .img-responsive {
+                margin: 30px auto 15px;
                 max-width: 33%;
             }
         }
@@ -11,7 +16,7 @@
             .navbar-nav {
                 float: none;
                 margin: auto;
-                width: 967px;
+                width: 972px;
             }
 
             .navbar-nav > .active > a {
@@ -23,6 +28,24 @@
         .navbar {
             position: relative;
             top: auto;
+        }
+    }
+
+    .hero {
+        padding: 30px;
+
+        .caption {
+            color: $white;
+            font-size: 2rem;
+            margin-top: 180px;
+            text-transform: uppercase;
+
+            h1 {
+                color: $transit-yellow;
+                font-family: Helvetica, arial, sans-serif;
+                font-size: 6rem;
+                text-transform: uppercase;
+            }
         }
     }
 }

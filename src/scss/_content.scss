@@ -1,0 +1,21 @@
+.hero {
+    background: url('../images/SB_WebImage_1140x469.png') no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    padding: 15px;
+
+    .caption {
+        color: $white;
+        font-size: 16px;
+        margin-top: 140px;
+        text-transform: uppercase;
+
+        h1 {
+            color: $transit-yellow;
+            font-family: Helvetica, arial, sans-serif;
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+    }
+}
