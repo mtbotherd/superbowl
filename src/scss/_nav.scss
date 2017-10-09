@@ -1,0 +1,43 @@
+// Bootstrap navbar overrides
+
+.header {
+    .navbar {
+        position: absolute;
+        top: 12px;
+    }
+
+    .navbar-default {
+        background-color: transparent;
+        border: none;
+
+        .navbar-toggle {
+            border: none;
+
+            &:focus,
+            &:hover {
+                background-color: transparent;
+            }
+
+            .icon-bar {
+                background-color: $black !important;
+            }
+        }
+
+        .navbar-collapse {
+            min-width: 290px;
+        }
+
+        .navbar-nav > li > a {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .navbar > .active > a {
+            color: $transit-red;
+        }
+    }
+
+    .navbar-toggle {
+        float: left;
+    }
+}

@@ -1,3 +1,4 @@
+*.ai
 dist
 node_modules
 src/images/*.zip

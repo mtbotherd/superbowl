@@ -1,0 +1,28 @@
+@media (min-width: 1200px) {
+    .header {
+        .logo {
+            h1 .img-responsive {
+                margin: 0 auto;
+                max-width: 33%;
+            }
+        }
+
+        .navbar-default {
+            .navbar-nav {
+                float: none;
+                margin: auto;
+                width: 967px;
+            }
+
+            .navbar-nav > .active > a {
+                background-color: transparent;
+                color: $transit-red;
+            }
+        }
+
+        .navbar {
+            position: relative;
+            top: auto;
+        }
+    }
+}
