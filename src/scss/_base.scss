@@ -1,9 +1,9 @@
 body {
-    font-family: 'Lato', sans-serif !important;
-    font-size: 16px;
-    line-height: 1.3em;
-    margin: 0;
     color: $font-color;
+    font-family: $font-stack-lato;
+    font-size: 1.6em;
+    line-height: 1.5rem;
+    margin: 0;
 }
 
 .container {
@@ -17,4 +17,57 @@ h4,
 h5,
 h6 {
     font-weight: 700;
+    line-height: $line-height;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: $h1-color;
+    font-family: $font-stack-lato;
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-family: $font-stack-helvetica;
+    font-size: $h2-font-size;
+    text-align: center;
+}
+
+h3 {
+    font-size: $h3-font-size;
+    line-height: 2rem;
+}
+
+h4 {
+    font-size: $h4-font-size;
+    line-height: 2rem;
+}
+
+p {
+    color: $font-color;
+    font-size: $paragraph-font-size;
+    font-weight: 300;
+    line-height: $line-height;
+    margin-bottom: 2rem;
+}
+
+ul {
+    color: $font-color;
+    font-size: $paragraph-font-size;
+    font-weight: 300;
+    line-height: $line-height;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+
+    li {
+        margin-bottom: 2rem;
+    }
+}
+
+.section {
+    padding: 1.5rem;
+
+    &:nth-child(odd) {
+        background-color: $lighter-grey;
+    }
 }

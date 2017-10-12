@@ -1,0 +1,17 @@
+/* Placeholder styles - Remove before production */
+.placeholder {
+    border: 0.01rem solid $light-grey;
+    margin-bottom: 2rem;
+    padding: 2rem;
+
+    p {
+        color: $transit-red;
+
+        i {
+            color: $font-color;
+            display: block;
+            font-size: 10rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

@@ -1,51 +1,235 @@
+/*##############################
+    Breakpoint: 768px
+##############################*/
+@media (min-width: 768px) {
+    .logo img {
+        max-width: 50%;
+    }
+    // .navbar-default {
+    //     .navbar-toggle {
+    //         margin: 2.5rem 3rem !important;
+    //     }
+    // }
+    //
+    // .navbar-default {
+    //     .navbar-toggle {
+    //         margin: 2.5rem 3rem !important;
+    //     }
+    // }
+    //
+    // .navbar-header {
+    //     float: none;
+    // }
+    //
+    // .navbar-left,
+    // .navbar-right {
+    //     float: none !important;
+    // }
+    //
+    // .navbar-toggle {
+    //     display: inline-block;
+    // }
+    //
+    // .navbar-collapse {
+    //     border-top: 1px solid transparent;
+    //     box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    //     padding: 0;
+    // }
+    //
+    // .navbar-fixed-top {
+    //     top: 0;
+    //     border-width: 0 0 1px;
+    // }
+    //
+    // .navbar-collapse.collapse {
+    //     display: none!important;
+    // }
+    //
+    // .navbar-nav {
+    //     float: none!important;
+    //     margin-top: 7.5px;
+    // }
+    //
+    // .navbar-nav > li {
+    //     float: none;
+    // }
+    //
+    // .navbar-nav > li > a {
+    //     padding-top: 10px;
+    //     padding-bottom: 10px;
+    // }
+    //
+    // .collapse.in {
+    //     display: block !important;
+    // }
+}
+/*##############################
+    Breakpoint 768px to 991px
+##############################*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-default {
+        .navbar-toggle {
+            margin: 2.5rem 3rem !important;
+        }
+    }
+
+    .navbar-default {
+        .navbar-toggle {
+            margin: 2.5rem 3rem !important;
+        }
+    }
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: inline-block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        padding: 0;
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display: block !important;
+    }
+}
+@media (min-width: 992px) {
+    .navbar {
+        position: relative !important;
+    }
+
+    .navbar-default {
+        .navbar-toggle {
+            display: none !important;
+        }
+    }
+
+    .navbar-collapse {
+        border-top: none;
+    }
+
+    .navbar-collapse.collapse {
+        display: block !important;
+
+        ul.navbar-nav {
+            margin-top: 0;
+        }
+
+        .navbar-nav > li {
+            border-bottom: none;
+            float: left !important;
+        }
+
+        .navbar-nav > li > a {
+            font-size: 0.85em;
+        }
+
+        .navbar-nav > .active > a,
+        .navbar-nav > .active > a:focus,
+        .navbar-nav > .active > a:hover {
+            background-color: transparent;
+            color: $transit-red;
+        }
+    }
+}
+/*##############################
+    Breakpoint 1200
+##############################*/
 @media (min-width: 1200px) {
-    .container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .header {
-        .logo {
-            .img-responsive {
-                margin: 30px auto 15px;
-                max-width: 33%;
-            }
-        }
-
-        .navbar-default {
-            .navbar-nav {
-                float: none;
-                margin: auto;
-                width: 972px;
-            }
-
-            .navbar-nav > .active > a {
-                background-color: transparent;
-                color: $transit-red;
-            }
-        }
-
-        .navbar {
-            position: relative;
-            top: auto;
-        }
-    }
-
     .hero {
-        padding: 30px;
+        padding: 3.0rem;
 
         .caption {
             color: $white;
-            font-size: 2rem;
-            margin-top: 180px;
+            //font-size: 2em;
+            margin-top: 18.0rem;
             text-transform: uppercase;
 
             h1 {
                 color: $transit-yellow;
-                font-family: Helvetica, arial, sans-serif;
-                font-size: 6rem;
+                font-family: $font-stack-helvetica;
                 text-transform: uppercase;
             }
         }
+
+        .visible-lg {
+            display: inline-block !important;
+            margin: 0 1em;
+        }
     }
 }
+// .header {
+//     .logo {
+//         .img-responsive {
+//             margin: 3.0em auto 1.5em;
+//             max-width: 33%;
+//         }
+//     }
+//
+//     .navbar-default {
+//         .navbar-nav {
+//             float: none;
+//             margin: auto;
+//             width: 106.8rem;
+//         }
+//
+//         .navbar-nav > .active > a {
+//             background-color: transparent;
+//             color: $transit-red;
+//         }
+//     }
+//
+//     .navbar {
+//         position: relative;
+//         top: auto;
+//     }
+// }
+//
+// .hero {
+//     padding: 3.0rem;
+//
+//     .caption {
+//         color: $white;
+//         //font-size: 2em;
+//         margin-top: 18.0rem;
+//         text-transform: uppercase;
+//
+//         h1 {
+//             color: $transit-yellow;
+//             font-family: $font-stack-helvetica;
+//             //font-size: 6em;
+//             text-transform: uppercase;
+//         }
+//     }

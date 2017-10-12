@@ -3,15 +3,17 @@
 .header {
     .navbar {
         position: absolute;
-        top: 12px;
+        top: 1.2rem;
     }
 
     .navbar-default {
         background-color: transparent;
         border: none;
+        z-index: 2000;
 
         .navbar-toggle {
             border: none;
+            margin: 0.8rem 1.5rem;
 
             &:focus,
             &:hover {
@@ -24,16 +26,33 @@
         }
 
         .navbar-collapse {
-            min-width: 290px;
+            background-color: $white;
+            min-width: 32rem;
+            opacity: 0.96;
         }
 
         .navbar-nav > li > a {
-            font-size: 14px;
+            cursor: pointer;
+            font-size: 1.25em;
             font-weight: 700;
+            text-align: center;
             text-transform: uppercase;
         }
 
         .navbar > .active > a {
+            color: $transit-red;
+        }
+
+        .navbar-nav > .active > a,
+        .navbar-nav > .active > a:focus,
+        .navbar-nav > .active > a:hover {
+            background-color: transparent;
+            color: $transit-red;
+        }
+
+        .navbar-nav > li > a:focus,
+        .navbar-nav > li > a:hover {
+            background-color: transparent;
             color: $transit-red;
         }
     }

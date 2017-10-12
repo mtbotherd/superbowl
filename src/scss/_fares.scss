@@ -1,0 +1,12 @@
+.fares {
+    h3,
+    h4 {
+        border-bottom: 0.1rem solid $light-grey;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    h4 {
+        color: $transit-blue;
+    }
+}

@@ -1,7 +1,29 @@
-// Colors
-$black: #000000;
-$white: #ffffff;
+/*##############################
+    Font
+##############################*/
+$font-stack-lato: 'Lato', sans-serif !important;
+$font-stack-helvetica: Helvetica, arial, sans-serif;
+/*##############################
+    Colors
+##############################*/
 $transit-blue: #0053a0;
 $transit-red: #ed1b2e;
 $transit-yellow: #ffd200;
-$font-color: #606060;
+$black: #000000;
+$lighter-grey: #f7f6f6;
+$light-grey: #d6d6d6;
+$medium-grey: #aaaaaa;
+$dark-grey: #606060;
+$white: #ffffff;
+$font-color: $dark-grey;
+$link-color: $transit-blue;
+$h1-color: $transit-yellow;
+/*##############################
+    Typography
+##############################*/
+$h1-font-size: 3.4rem;
+$h2-font-size: 2.3rem;
+$h3-font-size: 1.6rem;
+$h4-font-size: 1.4rem;
+$paragraph-font-size: 1.8rem;
+$line-height: 2.5rem;

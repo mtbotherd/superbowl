@@ -8,15 +8,15 @@
     <title>Metro Transit | Superbowl LII</title>
     <!-- build:css css.main.min.css -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <!-- endbuild -->
 </head>
 
 <body>
     <div class="container">
-        <a name="top"></a>
+        <a name="home"></a>
 
         <!-- Header -->
         <header class="header">
@@ -27,7 +27,6 @@
 
             <!-- Nav menu -->
             <nav class="navbar navbar-default">
-                <!-- <div class="container"> -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
@@ -40,74 +39,167 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#top" title="Top of page">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="#home" title="Top of page">Home <span class="sr-only">(current)</span></a></li>
                         <li><a href="#app" title="First Step: Download the Metro Transit App">App</a></li>
                         <li><a href="#fares" title="Multi-ride passes for Super Bowl">Fares</a></li>
                         <li><a href="#map" title="Locate your event then find your best route!">Map</a></li>
                         <li><a href="#special-service" title="Special service">Special service</a></li>
-                        <li><a href="#destinations" title="Transit takes  you everywhere you want to be!">Destinations</a></li>
-                        <li><a href="#game-day" title="Service on Game Day, Feb. 4">Game Day</a></li>
+                        <li><a href="#gameday" title="Service on gameday, Feb. 4">Gameday</a></li>
                         <li><a href="#trip-tools" title="Learn about travel options">Trip Tools</a></li>
-                        <li><a href="#detours" title="Detours ahead">Detours</a></li>
                         <li><a href="#lost-and-found" title="Missing something?">Lost &amp; Found</a></li>
+                        <li><a href="event-info" title="">Event Info</a></li>
                     </ul>
                 </div>
-                <!-- </div> -->
             </nav>
         </header>
 
-        <section>
-            <div class="hero">
-                <div class="caption text-center">
-                    <h1>Super Bowl Lii</h1>
-                    <span>Transportation options | January 26 - February 4</span>
-                </div>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="caption text-center">
+                <h1>Super Bowl Lii</h1>
+                <p>Transportation options
+                    <span class="visible-lg"> | </span>
+                    <span class="hidden-lg"><br /></span> January 26 &mdash; February 4
+                </p>
             </div>
         </section>
 
         <!-- App -->
-        <section>
+        <section class="section">
             <a name="app"></a>
+            <h2>First step: Download the Metro Transit app</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Plan your trip, get serviceupdates and buy fares right from your smartphone.</p>
+                    <p>It’s the only way to buy special Super Bowl passes to game-related events or the game itself. Download it today to have trip tools, service updates and fares right at your fingertips. Note: you must purchase tickets on the same device
+                        you’ll use when riding. Tickets cannot be transferred between devices.</p>
+                    <p>Download the free app on <a href="https://itunes.apple.com/us/app/metro-transit/id1153451926?ls=1&mt=8" title="Dowmload the Metro Transit App for Apple devices." target="_blank">App Store</a> or <a href="https://play.google.com/store/apps/details?id=org.metrotransit.mt.mobiletickets"
+                            title="Download the Metro Transit App for Android devices." target="_blank">Google play</a>.</p>
+                    <div class="row app-badge">
+                        <div class="col-md-4 col-xs-6">
+                            <a href="https://itunes.apple.com/us/app/metro-transit/id1153451926?ls=1&mt=8" title="Dowmload the Metro Transit App for Apple devices." target="_blank">
+                                <img class="img-responsive" src="images/app-store.png" alt="Apple app store button" />
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <a href="https://play.google.com/store/apps/details?id=org.metrotransit.mt.mobiletickets" title="Download the Metro Transit App for Android devices." target="_blank">
+                                <img class="img-responsive" src="./images/google-play.png" alt="Google Play button" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/C42YS6nMD6o"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Fares -->
-        <section>
+        <section class="section fares">
             <a name="fares"></a>
+            <h2>Multi-ride passes for Super Bowl</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Ultimate Fan Experience</h3>
+                    <h4>$40</h4>
+                    <p>Grab this pass for unlimited rides on all buses and light rail Jan. 26 – Feb. 5. That’s less than $4 per day! It’s valid on all buses and trains (except Northstar) including express buses. The Ultimate Fan Experience Pass is available
+                        only through the Metro Transit app.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>All-Day Pass</h3>
+                    <h4>$1-$5, varies by time of day</h4>
+                    <p>Not riding every day? For one low price, get an All-Day Pass for unlimited rides on buses and trains from time of purchase through 2 a.m. the next day. Buy an All-Day Pass from the app or at rail station ticket machines.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Gameday Pass</h3>
+                    <h4>$30</h4>
+                    <p>If you have a Super Bowl ticket, buy a special $30 Gameday Pass. Regular light-rail service WILL NOT operate on game day; only those holding a Super Bowl ticket along with a Gameday Pass will be allowed to board light rail at either
+                        Mall of America (Blue Line) or Stadium Village (Green Line) stations on Feb. 4.</p>
+                    <p>Need other ticket options? Download the Metro Transit mobile app on iTunes or Google Play and browse the options available. Details at <a href="https://www.metrotransit.org/app" title="Download the Metro Transit mobile app." target="_blank">metrotransit.org/app</a>.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Map -->
-        <section>
+        <section class="section">
             <a name="map"></a>
+            <h2>Locate your event then find your best route!</h2>
+            <div class="placeholder">
+                <p class="text-center">
+                    <i class="fa fa-map-o" aria-hidden="true"></i> Downtown map
+                </p>
+            </div>
+            <div class="placeholder">
+                <p class="text-center">
+                    <i class="fa fa-map-o" aria-hidden="true"></i> Transitways map
+                </p>
+            </div>
         </section>
 
         <!-- Special service -->
-        <section>
+        <section class="section">
             <a name="special-service"></a>
-        </section>
-
-        <!-- Destinations -->
-        <section>
-            <a name="destinations"></a>
+            <h2>Special service</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>The <a href="https://www.metrotransit.org/metro-blue-line" title="Metro Blue Line Minneapolis" target="_blank">Blue</a> (Minneapolis) &amp; <a href="https://www.metrotransit.org/metro-green-line" title="Metro Green Line St. Paul">Green</a>                        (St. Paul) lines both provide access to U.S. Bank Stadium and travel along 5th Street in downtown Minneapolis.
+                    </p>
+                    <ul>
+                        <li>Connect at Warehouse District/Hennepin Avenue Station to routes 10 and 18 for free service to NFL Live at the Minneapolis Convention Center. Look for “Free Ride” above the windshield of these buses.</li>
+                        <li>Connect at Nicollet Mall Station for access to the Super Bowl Experience along Nicollet Mall.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Added bus service</h3>
+                    <p>Metro Transit will beef up its service on local routes and some express routes to accommodate Super Bowl visitors. There will be supplemental trips on these routes:</p>
+                    <ul>
+                        <li>Express routes <a href="https://www.metrotransit.org/Route/94" title="Route 94" target="_blank">94</a>, 180</li>
+                        <li>Local routes
+                            <a href="https://www.metrotransit.org/Route/4" title="Route 4" target="_blank">4</a>,
+                            <a href="https://www.metrotransit.org/Route/10" title="Route 1-0" target="_blank">10</a>,
+                            <a href="https://www.metrotransit.org/Route/11" title="Route 11" target="_blank">11</a>,
+                            <a href="https://www.metrotransit.org/Route/17" title="Route 17" target="_blank">17</a>,
+                            <a href="https://www.metrotransit.org/Route/54" title="Route 54" target="_blank">54</a>,
+                            <a href="https://www.metrotransit.org/Route/535" title="Route 535" target="_blank">535</a> and
+                            <a href="https://www.metrotransit.org/Route/645" title="Route 645" target="_blank">645</a></li>
+                    </ul>
+                    <p>In addition, Metro Transit will operate shuttle buses from Park & Ride lots throughout the metro the week before the Super Bowl.</p>
+                </div>
+            </div>
+            <h3 class="text-center">Service approximately every 30 minutes 9 A.M. - 11 P.M. On Jan. 27, Jan. 28 and Feb. 3 only</h3>
+            <div class="placeholder">
+                <p class="text-center">
+                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of shuttle locations
+                </p>
+            </div>
         </section>
 
         <!-- Game Day -->
-        <section>
-            <a name="game-day"></a>
+        <section class="section">
+            <a name="gameday"></a>
+            <h2>Service on gameday, Feb. 4</h2>
         </section>
 
         <!-- Trip Tools -->
-        <section>
+        <section class="section">
             <a name="trip-tools"></a>
-        </section>
-
-        <!-- Detours -->
-        <section>
-            <a name="detours"></a>
+            <h2>Learn about travel options</h2>
         </section>
 
         <!-- Lost & Found -->
-        <section>
+        <section class="section">
             <a name="lost-and-found"></a>
+            <h2>Missing something?</h2>
+        </section>
+
+        <!-- Destinations -->
+        <section class="section">
+            <a name="event-info"></a>
+            <h2>Transit takes you everywhere you want to be!</h2>
+            <p>For more Super Bowl event information, visit on of these partners:</p>
+            <p>[Partner logos]</p>
         </section>
 
         <!-- Footer -->
