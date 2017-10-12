@@ -28,31 +28,22 @@ gulp.task('browserSync', function() {
 gulp.task('vendorJS', function() {
     return gulp.src([
             'node_modules/jquery/dist/jquery.js',
-            'node_modules/bootstrap/dist/js/bootstrap.js',
-            'node_modules/bootstrap/js/transition.js',
-            'node_modules/bootstrap/js/collapse.js'
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js'
         ])
         .pipe(gulp.dest('src/js'))
 });
 
-// Copy vendor css to src/css
-gulp.task('vendorCSS', function() {
-    return gulp.src([
-            'node_modules/bootstrap/dist/css/bootstrap.css',
-            'node_modules/font-awesome/css/font-awesome.css'
-        ])
-        .pipe(gulp.dest('src/css'))
-});
-
 // Copy vendor fonts to src/fonts
-gulp.task('vendorFonts', function(){
-	return gulp.src([
-		      'node_modules/font-awesome/fonts/*.{ttf,woff,woff2,eot,svg}'
-		])
-		.pipe(gulp.dest('src/fonts'))
-		.pipe(browserSync.reload({
-			stream: true
-		}))
+gulp.task('vendorFonts', function() {
+    return gulp.src([
+            'node_modules/font-awesome/fonts/*.{ttf,woff,woff2,eot,svg}'
+        ])
+        .pipe(gulp.dest('src/fonts'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
 });
 
 // Compile sass to css
@@ -126,7 +117,7 @@ gulp.task('clean:dist', function() {
 // Build Sequence
 // --------------
 gulp.task('default', function(callback) {
-    runSequence(['vendorJS', 'vendorCSS', 'vendorFonts', 'sass', 'browserSync'], 'watch',
+    runSequence(['vendorJS', 'vendorFonts', 'sass', 'browserSync'], 'watch',
         callback
     )
 });
