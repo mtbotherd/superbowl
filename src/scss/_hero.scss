@@ -1,18 +1,16 @@
-.hero {
-    background: url('../images/SB_WebImage_1140x469.png') no-repeat;
+.section.hero {
+    background: url('../images/SB-WebImage_2070x739.jpg') no-repeat;
     background-position-x: 50%;
     background-size: cover;
-    min-height: 29rem;
+    min-height: 30rem;
+    margin-top: 8.3rem;
     padding: 1.5rem;
-    z-index: 1000;
-
+    //z-index: 1000;
     .caption {
-        position: relative;
-        top: 14rem;
         color: $white;
-        //margin-top: 14rem;
+        margin: 20rem auto 0;
         text-transform: uppercase;
-
+        //width: 100%;
         h1 {
             margin-bottom: 1rem;
         }

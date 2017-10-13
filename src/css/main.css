@@ -8193,74 +8193,85 @@ ul {
   .section:nth-child(odd) {
     background-color: #f7f6f6; }
 
-.header .logo {
-  display: inline-block; }
-  .header .logo img {
-    margin: 2.0rem auto 1.5rem;
-    max-width: 60%; }
+.header-content {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2000; }
+  .header-content .header {
+    background-color: #ffffff;
+    height: 8.3rem; }
+    .header-content .header .logo {
+      display: inline-block; }
+      .header-content .header .logo img {
+        margin: 2.0rem auto;
+        max-width: 60%; }
 
-.header .navbar {
+.navbar {
   position: absolute;
-  top: 1.2rem; }
+  top: 1.2rem;
+  margin-bottom: 0; }
 
-.header .navbar-default {
+.navbar-default {
   background-color: transparent;
   border: none;
   z-index: 2000; }
-  .header .navbar-default .navbar-toggle {
+  .navbar-default .navbar-toggle {
     border: none;
     margin: 0.8rem 1.5rem; }
-    .header .navbar-default .navbar-toggle:focus, .header .navbar-default .navbar-toggle:hover {
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
       background-color: transparent; }
-    .header .navbar-default .navbar-toggle .icon-bar {
+    .navbar-default .navbar-toggle .icon-bar {
       background-color: #000000 !important; }
-  .header .navbar-default .navbar-collapse {
+  .navbar-default .navbar-collapse {
     background-color: #ffffff;
     min-width: 32rem;
     opacity: 0.96; }
-  .header .navbar-default .navbar-nav > li > a {
+  .navbar-default .navbar-nav > li > a {
     cursor: pointer;
     font-size: 1.25em;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase; }
-  .header .navbar-default .navbar > .active > a {
+  .navbar-default .navbar > .active > a {
     color: #ed1b2e; }
-  .header .navbar-default .navbar-nav > .active > a,
-  .header .navbar-default .navbar-nav > .active > a:focus,
-  .header .navbar-default .navbar-nav > .active > a:hover {
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:focus,
+  .navbar-default .navbar-nav > .active > a:hover {
     background-color: transparent;
     color: #ed1b2e; }
-  .header .navbar-default .navbar-nav > li > a:focus,
-  .header .navbar-default .navbar-nav > li > a:hover {
+  .navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-nav > li > a:hover {
     background-color: transparent;
     color: #ed1b2e; }
 
-.header .navbar-toggle {
+.navbar-toggle {
   float: left; }
 
-.hero {
-  background: url("../images/SB_WebImage_1140x469.png") no-repeat;
+.section.hero {
+  background: url("../images/SB-WebImage_2070x739.jpg") no-repeat;
   background-position-x: 50%;
   background-size: cover;
-  min-height: 29rem;
-  padding: 1.5rem;
-  z-index: 1000; }
-  .hero .caption {
-    position: relative;
-    top: 14rem;
+  min-height: 30rem;
+  margin-top: 8.3rem;
+  padding: 1.5rem; }
+  .section.hero .caption {
     color: #ffffff;
+    margin: 20rem auto 0;
     text-transform: uppercase; }
-    .hero .caption h1 {
+    .section.hero .caption h1 {
       margin-bottom: 1rem; }
-    .hero .caption p {
+    .section.hero .caption p {
       color: #ffffff;
       font-size: 0.75em;
       letter-spacing: 0.125em;
       line-height: 2rem; }
 
-.section .app-badge {
-  margin-bottom: 2em; }
+.section {
+  margin: 0 auto;
+  z-index: 1000; }
+  .section .app-badge {
+    margin-bottom: 2em; }
 
 .fares h3,
 .fares h4 {
@@ -8273,9 +8284,17 @@ ul {
 
 /* Placeholder styles - Remove before production */
 .placeholder {
+  position: relative;
   border: 0.01rem solid #d6d6d6;
   margin-bottom: 2rem;
   padding: 2rem; }
+  .placeholder .map-location-inset {
+    background-color: #0053a0;
+    color: #ffffff;
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    left: 0; }
   .placeholder p {
     color: #ed1b2e; }
     .placeholder p i {
@@ -8288,8 +8307,14 @@ ul {
     Breakpoint: 768px
 ##############################*/
 @media (min-width: 768px) {
-  .logo img {
-    max-width: 50%; } }
+  .header-content .header {
+    height: 12rem; }
+    .header-content .header .logo img {
+      max-width: 50% !important; }
+    .header-content .header .hero .caption {
+      margin-top: 22rem; }
+  .header-content .section {
+    margin: 12rem auto; } }
 
 /*##############################
     Breakpoint 768px to 991px
@@ -8328,6 +8353,25 @@ ul {
     display: block !important; } }
 
 @media (min-width: 992px) {
+  .header .logo img {
+    max-width: 40% !important; }
+  .hero {
+    min-height: 35rem; }
+    .hero .caption {
+      color: #ffffff;
+      margin-top: 24rem;
+      text-transform: uppercase; }
+      .hero .caption h1 {
+        color: #ffd200;
+        font-family: Helvetica, arial, sans-serif;
+        font-size: 6.4rem;
+        line-height: 1em;
+        text-transform: uppercase; }
+      .hero .caption p {
+        font-size: 1.73rem; }
+    .hero .visible-lg {
+      display: inline-block !important;
+      margin: 0 1em; }
   .navbar {
     position: relative !important; }
   .navbar-default .navbar-toggle {
@@ -8353,16 +8397,22 @@ ul {
     Breakpoint 1200
 ##############################*/
 @media (min-width: 1200px) {
+  .header .logo img {
+    max-width: 35% !important; }
   .hero {
-    padding: 3.0rem; }
+    min-height: 35rem; }
     .hero .caption {
       color: #ffffff;
-      margin-top: 18.0rem;
+      margin-top: 26rem;
       text-transform: uppercase; }
       .hero .caption h1 {
         color: #ffd200;
         font-family: Helvetica, arial, sans-serif;
+        font-size: 6.4rem;
+        line-height: 1em;
         text-transform: uppercase; }
+      .hero .caption p {
+        font-size: 1.73rem; }
     .hero .visible-lg {
       display: inline-block !important;
       margin: 0 1em; } }

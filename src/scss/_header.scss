@@ -1,10 +1,20 @@
-.header {
-    .logo {
-        display: inline-block;
+.header-content {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
 
-        img {
-            margin: 2.0rem auto 1.5rem;
-            max-width: 60%;
+    .header {
+        background-color: $white;
+        height: 8.3rem;
+
+        .logo {
+            display: inline-block;
+
+            img {
+                margin: 2.0rem auto;
+                max-width: 60%;
+            }
         }
     }
 }

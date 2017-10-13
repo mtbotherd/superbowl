@@ -19,47 +19,52 @@
         <a name="home"></a>
 
         <!-- Header -->
-        <header class="header">
-            <!-- Logo -->
-            <div class="logo">
-                <img class="img-responsive" src="images/mt-logo.png" alt="Metro Transit logo" />
+        <header class="header-content">
+            <div class="header">
+                <!-- Logo -->
+                <div class="logo">
+                    <img class="img-responsive" src="images/mt-logo.png" alt="Metro Transit logo" />
+                </div>
+
+                <!-- Nav menu -->
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#home" title="Top of page">Home <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#app" title="First Step: Download the Metro Transit App">App</a></li>
+                            <li><a href="#fares" title="Multi-ride passes for Super Bowl">Fares</a></li>
+                            <li><a href="#map" title="Locate your event then find your best route!">Map</a></li>
+                            <li><a href="#special-service" title="Special service">Special service</a></li>
+                            <li><a href="#gameday" title="Service on gameday, Feb. 4">Gameday</a></li>
+                            <li><a href="#trip-tools" title="Learn about travel options">Trip Tools</a></li>
+                            <li><a href="#lost-and-found" title="Missing something?">Lost &amp; Found</a></li>
+                            <li><a href="event-info" title="">Event Info</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-
-            <!-- Nav menu -->
-            <nav class="navbar navbar-default">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#home" title="Top of page">Home <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#app" title="First Step: Download the Metro Transit App">App</a></li>
-                        <li><a href="#fares" title="Multi-ride passes for Super Bowl">Fares</a></li>
-                        <li><a href="#map" title="Locate your event then find your best route!">Map</a></li>
-                        <li><a href="#special-service" title="Special service">Special service</a></li>
-                        <li><a href="#gameday" title="Service on gameday, Feb. 4">Gameday</a></li>
-                        <li><a href="#trip-tools" title="Learn about travel options">Trip Tools</a></li>
-                        <li><a href="#lost-and-found" title="Missing something?">Lost &amp; Found</a></li>
-                        <li><a href="event-info" title="">Event Info</a></li>
-                    </ul>
-                </div>
-            </nav>
         </header>
+    </div>
+
+    <div class="container">
 
         <!-- Hero -->
-        <section class="hero">
+        <section class="section hero text-center">
             <div class="caption text-center">
                 <h1>Super Bowl Lii</h1>
                 <p>Transportation options
-                    <span class="visible-lg"> | </span>
-                    <span class="hidden-lg"><br /></span> January 26 &mdash; February 4
+                    <span class="visible-md visible-lg"> | </span>
+                    <span class="hidden-md hidden-lg"><br /></span> January 26 &mdash; February 4
                 </p>
             </div>
         </section>
@@ -152,7 +157,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <h3>Added bus service</h3>
+                    <h3 style="margin: 0;">Added bus service</h3>
                     <p>Metro Transit will beef up its service on local routes and some express routes to accommodate Super Bowl visitors. There will be supplemental trips on these routes:</p>
                     <ul>
                         <li>Express routes <a href="https://www.metrotransit.org/Route/94" title="Route 94" target="_blank">94</a>, 180</li>
@@ -173,6 +178,123 @@
                 <p class="text-center">
                     <i class="fa fa-map-o" aria-hidden="true"></i> Map of shuttle locations
                 </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>1 Blaine</strong> &mdash; 95th Avenue Park &amp; Ride, 3249 95th Ave. NE</p>
+                </div>
+                <!-- <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="placeholder">
+                                <div class="map-location-inset">
+                                    <span>1</span>
+                                </div>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="placeholder">
+                                <div class="map-location-inset">
+                                    <span>2</span>
+                                </div>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="placeholder">
+                                <div class="map-location-inset">
+                                    <span>3</span>
+                                </div>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="placeholder">
+                                <div class="map-location-inset">
+                                    <span>4</span>
+                                </div>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="placeholder">
+                                <div class="map-location-inset">
+                                    <span>5</span>
+                                </div>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="placeholder">
+                                <div class="map-location-inset">
+                                    <span>6</span>
+                                </div>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="placeholder">
+                                <div class="map-location-inset">
+                                    <span>7</span>
+                                </div>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="placeholder">
+                                <div class="map-location-inset">
+                                    <span>8</span>
+                                </div>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="placeholder">
+                                <div class="map-location-inset">
+                                    <span>9</span>
+                                </div>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="placeholder">
+                                <div class="map-location-inset">
+                                    <span>10</span>
+                                </div>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </section>
 

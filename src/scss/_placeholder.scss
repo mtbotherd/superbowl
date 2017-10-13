@@ -1,8 +1,19 @@
 /* Placeholder styles - Remove before production */
 .placeholder {
+    position: relative;
     border: 0.01rem solid $light-grey;
     margin-bottom: 2rem;
+    //min-height: 20.5rem;
     padding: 2rem;
+
+    .map-location-inset {
+        background-color: $transit-blue;
+        color: $white;
+        padding: 1em;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
     p {
         color: $transit-red;
