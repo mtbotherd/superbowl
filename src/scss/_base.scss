@@ -6,12 +6,6 @@ body {
     margin: 0;
     padding-top: 8.3rem;
 }
-// :target:before {
-//     content: "";
-//     display: block;
-//     height: 8.3rem;
-//     margin: -8.3rem 0 0;
-// }
 
 .container {
     padding: 0;
@@ -74,7 +68,7 @@ ul {
 .section {
     padding: 1.5rem;
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
         background-color: $lighter-grey;
     }
 }

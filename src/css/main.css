@@ -8191,7 +8191,7 @@ ul {
 
 .section {
   padding: 1.5rem; }
-  .section:nth-child(odd) {
+  .section:nth-child(even) {
     background-color: #f7f6f6; }
 
 .btn {
@@ -8259,23 +8259,29 @@ ul {
 .navbar-toggle {
   float: left; }
 
-.section.hero {
+.hero {
   background: url("../images/SB-WebImage_2070x739.jpg") no-repeat;
   background-position-x: 50%;
   background-size: cover;
   min-height: 30rem;
   padding: 1.5rem; }
-  .section.hero .caption {
+  .hero .caption {
     color: #ffffff;
     margin: 20rem auto 0;
     text-transform: uppercase; }
-    .section.hero .caption h1 {
+    .hero .caption h1 {
       margin-bottom: 1rem; }
-    .section.hero .caption p {
+    .hero .caption p {
       color: #ffffff;
       font-size: 0.75em;
       letter-spacing: 0.125em;
       line-height: 2rem; }
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -8.3rem;
+  visibility: hidden; }
 
 .section {
   margin: 0 auto;
@@ -8326,6 +8332,8 @@ ul {
 @media (min-width: 768px) {
   body {
     padding-top: 12rem; }
+  .anchor {
+    top: -12rem; }
   .header-content {
     width: 750px; }
     .header-content .header {
@@ -8374,27 +8382,13 @@ ul {
 @media (min-width: 992px) {
   .header-content {
     width: 970px; }
-    .header-content .header .logo img {
-      max-width: 40% !important; }
-    .header-content .hero {
-      min-height: 35rem; }
-      .header-content .hero .caption {
-        color: #ffffff;
-        margin-top: 24rem;
-        text-transform: uppercase; }
-        .header-content .hero .caption h1 {
-          color: #ffd200;
-          font-family: Helvetica, arial, sans-serif;
-          font-size: 6.4rem;
-          line-height: 1em;
-          text-transform: uppercase; }
-        .header-content .hero .caption p {
-          font-size: 1.73rem; }
-      .header-content .hero .visible-lg {
-        display: inline-block !important;
-        margin: 0 1em; }
+    .header-content .header {
+      height: 17rem; }
+      .header-content .header .logo img {
+        max-width: 40% !important; }
   .navbar {
-    position: relative !important; }
+    position: relative !important;
+    top: 1.25rem; }
   .navbar-default .navbar-toggle {
     display: none !important; }
   .navbar-collapse {
@@ -8405,39 +8399,63 @@ ul {
       margin-top: 0; }
     .navbar-collapse.collapse .navbar-nav > li {
       border-bottom: none;
-      float: left !important; }
+      float: left !important;
+      margin-bottom: 0; }
     .navbar-collapse.collapse .navbar-nav > li > a {
       font-size: 0.85em; }
     .navbar-collapse.collapse .navbar-nav > .active > a,
     .navbar-collapse.collapse .navbar-nav > .active > a:focus,
     .navbar-collapse.collapse .navbar-nav > .active > a:hover {
       background-color: transparent;
-      color: #ed1b2e; } }
+      color: #ed1b2e; }
+  .anchor {
+    top: -17rem; }
+  .hero {
+    min-height: 35rem;
+    margin-top: 5rem; }
+    .hero .caption {
+      color: #ffffff;
+      margin-top: 24rem;
+      text-transform: uppercase; }
+      .hero .caption h1 {
+        color: #ffd200;
+        font-family: Helvetica, arial, sans-serif;
+        font-size: 6.4rem;
+        line-height: 1em;
+        text-transform: uppercase; }
+      .hero .caption p {
+        font-size: 1.73rem; }
+    .hero .visible-lg {
+      display: inline-block !important;
+      margin: 0 1em; } }
 
 /*##############################
     Breakpoint 1200
 ##############################*/
 @media (min-width: 1200px) {
   .header-content {
-    width: 1174px; }
-    .header-content .header .logo img {
-      max-width: 35% !important; }
-    .header-content .hero {
-      min-height: 35rem; }
-      .header-content .hero .caption {
-        color: #ffffff;
-        margin-top: 26rem;
+    width: 1170px; }
+    .header-content .header {
+      height: 17.4rem; }
+      .header-content .header .logo img {
+        max-width: 35% !important; }
+  .hero {
+    min-height: 35rem;
+    margin-top: 5.4rem; }
+    .hero .caption {
+      color: #ffffff;
+      margin-top: 26rem;
+      text-transform: uppercase; }
+      .hero .caption h1 {
+        color: #ffd200;
+        font-family: Helvetica, arial, sans-serif;
+        font-size: 6.4rem;
+        line-height: 1em;
         text-transform: uppercase; }
-        .header-content .hero .caption h1 {
-          color: #ffd200;
-          font-family: Helvetica, arial, sans-serif;
-          font-size: 6.4rem;
-          line-height: 1em;
-          text-transform: uppercase; }
-        .header-content .hero .caption p {
-          font-size: 1.73rem; }
-      .header-content .hero .visible-lg {
-        display: inline-block !important;
-        margin: 0 1em; } }
+      .hero .caption p {
+        font-size: 1.73rem; }
+    .hero .visible-lg {
+      display: inline-block !important;
+      margin: 0 1em; } }
 
 /*# sourceMappingURL=../maps/main.css.map */
