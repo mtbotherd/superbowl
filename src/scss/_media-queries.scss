@@ -2,23 +2,27 @@
     Breakpoint: 768px
 ##############################*/
 @media (min-width: 768px) {
+    body {
+        padding-top: 12rem;
+    }
+
     .header-content {
+        width: 750px;
+
         .header {
             height: 12rem;
 
             .logo img {
                 max-width: 50% !important;
             }
-
-            .hero {
-                .caption {
-                    margin-top: 22rem;
-                }
-            }
         }
+    }
 
-        .section {
-            margin: 12rem auto;
+    .section {
+        .hero {
+            .caption {
+                margin-top: 22rem;
+            }
         }
     }
 }
@@ -85,34 +89,38 @@
     }
 }
 @media (min-width: 992px) {
-    .header .logo img {
-        max-width: 40% !important;
-    }
+    .header-content {
+        width: 970px;
 
-    .hero {
-        min-height: 35rem;
-
-        .caption {
-            color: $white;
-            margin-top: 24rem;
-            text-transform: uppercase;
-
-            h1 {
-                color: $transit-yellow;
-                font-family: $font-stack-helvetica;
-                font-size: 6.4rem;
-                line-height: 1em;
-                text-transform: uppercase;
-            }
-
-            p {
-                font-size: 1.73rem;
-            }
+        .header .logo img {
+            max-width: 40% !important;
         }
 
-        .visible-lg {
-            display: inline-block !important;
-            margin: 0 1em;
+        .hero {
+            min-height: 35rem;
+
+            .caption {
+                color: $white;
+                margin-top: 24rem;
+                text-transform: uppercase;
+
+                h1 {
+                    color: $transit-yellow;
+                    font-family: $font-stack-helvetica;
+                    font-size: 6.4rem;
+                    line-height: 1em;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 1.73rem;
+                }
+            }
+
+            .visible-lg {
+                display: inline-block !important;
+                margin: 0 1em;
+            }
         }
     }
 
@@ -158,34 +166,38 @@
     Breakpoint 1200
 ##############################*/
 @media (min-width: 1200px) {
-    .header .logo img {
-        max-width: 35% !important;
-    }
+    .header-content {
+        width: 1174px;
 
-    .hero {
-        min-height: 35rem;
-
-        .caption {
-            color: $white;
-            margin-top: 26rem;
-            text-transform: uppercase;
-
-            h1 {
-                color: $transit-yellow;
-                font-family: $font-stack-helvetica;
-                font-size: 6.4rem;
-                line-height: 1em;
-                text-transform: uppercase;
-            }
-
-            p {
-                font-size: 1.73rem;
-            }
+        .header .logo img {
+            max-width: 35% !important;
         }
 
-        .visible-lg {
-            display: inline-block !important;
-            margin: 0 1em;
+        .hero {
+            min-height: 35rem;
+
+            .caption {
+                color: $white;
+                margin-top: 26rem;
+                text-transform: uppercase;
+
+                h1 {
+                    color: $transit-yellow;
+                    font-family: $font-stack-helvetica;
+                    font-size: 6.4rem;
+                    line-height: 1em;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 1.73rem;
+                }
+            }
+
+            .visible-lg {
+                display: inline-block !important;
+                margin: 0 1em;
+            }
         }
     }
 }
