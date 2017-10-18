@@ -8240,9 +8240,6 @@ small {
     margin-top: 2.3rem; }
   .navbar-default ul.nav li {
     margin-bottom: 0; }
-  .navbar-default .collapse.in ul.nav {
-    -webkit-box-shadow: 0.5rem 0.5rem 1rem #aaaaaa;
-            box-shadow: 0.5rem 0.5rem 1rem #aaaaaa; }
   .navbar-default .navbar-nav {
     margin-top: 0; }
   .navbar-default .navbar-nav > li > a {
