@@ -20,6 +20,10 @@
                 max-width: 50% !important;
             }
         }
+
+        .navbar-collapse {
+            margin-top: 2.6rem;
+        }
     }
 
     .section {
@@ -28,6 +32,10 @@
                 margin-top: 22rem;
             }
         }
+    }
+
+    .footer .img-responsive {
+        padding-top: 0;
     }
 }
 /*##############################

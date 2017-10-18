@@ -81,20 +81,12 @@ gulp.task('useref', function() {
 });
 
 // Optimize Media Images
-gulp.task('mediaimages', function() {
-    return gulp.src('src/Data/sites/1/media/**/*.+(png|jpg|gif|svg)')
+gulp.task('images', function() {
+    return gulp.src('src/images/**/*.+(png|jpg|gif|svg)')
         .pipe(imagemin({
             interlaced: true
         })) // refer to https://github.com/sindresorhus/gulp-imagemin for optimization options available based on file type.
-        .pipe(gulp.dest('dist/Data/sites/1/media'))
-});
-// Optimize Skin Images
-gulp.task('skinsimages', function() {
-    return gulp.src('src/Data/sites/1/skins/**/*.+(png|jpg|gif|svg)')
-        .pipe(imagemin({
-            interlaced: true
-        })) // refer to https://github.com/sindresorhus/gulp-imagemin for optimization options available based on file type.
-        .pipe(gulp.dest('dist/Data/sites/1/skins'))
+        .pipe(gulp.dest('dist/images'))
 });
 
 // Copy Fonts to dist
@@ -125,7 +117,7 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
     runSequence(
         'clean:dist',
-        'sass', ['useref', 'mediaimages', 'skinsimages', 'fonts'],
+        'sass', ['useref', 'images', 'fonts'],
         callback
     )
 });

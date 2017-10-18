@@ -8136,13 +8136,15 @@ button.close {
 body {
   color: #606060;
   font-family: "Lato", sans-serif !important;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   line-height: 1.5rem;
   margin: 0;
   padding-top: 8.3rem; }
 
 .container {
   padding: 0; }
+  .container .section {
+    padding: 1.5rem; }
 
 h1,
 h2,
@@ -8189,10 +8191,8 @@ ul {
   ul li {
     margin-bottom: 2rem; }
 
-.section {
-  padding: 1.5rem; }
-  .section:nth-child(even) {
-    background-color: #f7f6f6; }
+small {
+  font-size: 1.2rem; }
 
 .btn {
   padding: 1.2rem; }
@@ -8208,7 +8208,7 @@ ul {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 2000; }
+  z-index: 30; }
   .header-content .header {
     background-color: #ffffff;
     height: 8.3rem; }
@@ -8225,8 +8225,7 @@ ul {
 
 .navbar-default {
   background-color: transparent;
-  border: none;
-  z-index: 2000; }
+  border: none; }
   .navbar-default .navbar-toggle {
     border: none;
     margin: 0.8rem 1.5rem; }
@@ -8237,11 +8236,21 @@ ul {
   .navbar-default .navbar-collapse {
     background-color: #ffffff;
     min-width: 32rem;
-    opacity: 0.96; }
+    opacity: 0.96;
+    margin-top: 2.3rem; }
+  .navbar-default ul.nav li {
+    margin-bottom: 0; }
+  .navbar-default .collapse.in ul.nav {
+    -webkit-box-shadow: 0.5rem 0.5rem 1rem #aaaaaa;
+            box-shadow: 0.5rem 0.5rem 1rem #aaaaaa; }
+  .navbar-default .navbar-nav {
+    margin-top: 0; }
   .navbar-default .navbar-nav > li > a {
     cursor: pointer;
     font-size: 1.25em;
     font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     text-align: center;
     text-transform: uppercase; }
   .navbar-default .navbar > .active > a {
@@ -8284,8 +8293,7 @@ ul {
   visibility: hidden; }
 
 .section {
-  margin: 0 auto;
-  z-index: 1000; }
+  margin: 0 auto; }
   .section .app-badge {
     margin-bottom: 2em; }
 
@@ -8304,6 +8312,9 @@ ul {
 .trip-tools h4 {
   color: #0053a0;
   font-size: 2.3rem; }
+
+.lost-found h3 {
+  text-align: center; }
 
 /* Placeholder styles - Remove before production */
 .placeholder {
@@ -8326,6 +8337,13 @@ ul {
       font-size: 10rem;
       margin-bottom: 2rem; }
 
+.footer {
+  padding: 3rem 1.5rem; }
+  .footer .img-responsive {
+    max-width: 20rem;
+    margin: 0 auto;
+    padding-top: 1em; }
+
 /*##############################
     Breakpoint: 768px
 ##############################*/
@@ -8340,8 +8358,12 @@ ul {
       height: 12rem; }
       .header-content .header .logo img {
         max-width: 50% !important; }
+    .header-content .navbar-collapse {
+      margin-top: 2.6rem; }
   .section .hero .caption {
-    margin-top: 22rem; } }
+    margin-top: 22rem; }
+  .footer .img-responsive {
+    padding-top: 0; } }
 
 /*##############################
     Breakpoint 768px to 991px

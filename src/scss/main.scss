@@ -1,11 +1,12 @@
 @import './bootstrap-custom.scss';
 @import '../../node_modules/font-awesome/scss/font-awesome.scss';
 @import './variables.scss';
+@import './mixins.scss';
 @import './base.scss';
-@import './header.scss';
-@import './nav.scss';
+@import './header.scss'; //@import './nav.scss';
 @import './hero.scss';
 @import './content.scss';
 @import './section.scss';
 @import './placeholder.scss'; // Remove from production build.
+@import './footer.scss';
 @import './media-queries.scss';

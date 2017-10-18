@@ -2,7 +2,7 @@
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 2000;
+    z-index: 30;
 
     .header {
         background-color: $white;
@@ -18,3 +18,4 @@
         }
     }
 }
+@import './nav.scss';

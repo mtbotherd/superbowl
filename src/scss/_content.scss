@@ -7,9 +7,14 @@
 
 .section {
     margin: 0 auto;
-    z-index: 1000;
-
+    // &:nth-child(odd) {
+    //     background-color: $lighter-grey;
+    // }
     .app-badge {
         margin-bottom: 2em;
+    }
+
+    .popover {
+        //z-index: 4000;
     }
 }
