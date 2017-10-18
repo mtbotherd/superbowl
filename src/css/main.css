@@ -8291,6 +8291,8 @@ small {
 
 .section {
   margin: 0 auto; }
+  .section:nth-child(even) {
+    background-color: #f7f6f6; }
   .section .app-badge {
     margin-bottom: 2em; }
 
@@ -8436,7 +8438,7 @@ small {
     top: -19.6rem; }
   .hero {
     min-height: 35rem;
-    margin-top: 5rem; }
+    margin-top: 7.6rem; }
     .hero .caption {
       color: #ffffff;
       margin-top: 24rem;
@@ -8469,7 +8471,7 @@ small {
     top: -20rem; }
   .hero {
     min-height: 35rem;
-    margin-top: 5.4rem; }
+    margin-top: 8rem; }
     .hero .caption {
       color: #ffffff;
       margin-top: 26rem;
