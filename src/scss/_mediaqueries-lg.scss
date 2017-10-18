@@ -1,0 +1,52 @@
+/*###############################################
+    Breakpoint 1200 - Large devices, desktops
+###############################################*/
+@media (min-width: 1200px) {
+    .header-content {
+        width: 1170px;
+
+        .header {
+            height: 20rem;
+
+            .logo img {
+                max-width: 35% !important;
+            }
+        }
+    }
+
+    .nav > li > a {
+        padding: 1rem 2.7rem;
+    }
+
+    .anchor {
+        top: -20rem;
+    }
+
+    .hero {
+        min-height: 35rem;
+        margin-top: 5.4rem;
+
+        .caption {
+            color: $white;
+            margin-top: 26rem;
+            text-transform: uppercase;
+
+            h1 {
+                color: $transit-yellow;
+                font-family: $font-stack-helvetica;
+                font-size: 6.4rem;
+                line-height: 1em;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 1.73rem;
+            }
+        }
+
+        .visible-lg {
+            display: inline-block !important;
+            margin: 0 1em;
+        }
+    }
+}

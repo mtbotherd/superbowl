@@ -1,0 +1,102 @@
+/*################################################
+    Breakpoint: 768px - Small devices, tablets
+################################################*/
+@media (min-width: 768px) {
+    body {
+        padding-top: 12rem;
+    }
+
+    .anchor {
+        top: -12rem;
+    }
+
+    .header-content {
+        width: 750px;
+
+        .header {
+            height: 12rem;
+
+            .logo img {
+                max-width: 50% !important;
+            }
+        }
+
+        .navbar-collapse {
+            margin-top: 2.6rem;
+        }
+    }
+
+    .section {
+        .hero {
+            .caption {
+                margin-top: 22rem;
+            }
+        }
+    }
+
+    .footer .img-responsive {
+        padding-top: 0;
+    }
+}
+/*##############################
+    Breakpoint 768px to 991px
+##############################*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-default {
+        .navbar-toggle {
+            margin: 2.5rem 3rem !important;
+        }
+    }
+
+    .navbar-default {
+        .navbar-toggle {
+            margin: 2.5rem 3rem !important;
+        }
+    }
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: inline-block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        padding: 0;
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display: block !important;
+    }
+}

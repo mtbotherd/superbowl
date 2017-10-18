@@ -8341,9 +8341,9 @@ small {
     margin: 0 auto;
     padding-top: 1em; }
 
-/*##############################
-    Breakpoint: 768px
-##############################*/
+/*################################################
+    Breakpoint: 768px - Small devices, tablets
+################################################*/
 @media (min-width: 768px) {
   body {
     padding-top: 12rem; }
@@ -8398,11 +8398,14 @@ small {
   .collapse.in {
     display: block !important; } }
 
+/*#################################################
+    Breakpoint 992px - Medium devices, desktops
+#################################################*/
 @media (min-width: 992px) {
   .header-content {
     width: 970px; }
     .header-content .header {
-      height: 17rem; }
+      height: 19.6rem; }
       .header-content .header .logo img {
         max-width: 40% !important; }
   .navbar {
@@ -8427,8 +8430,10 @@ small {
     .navbar-collapse.collapse .navbar-nav > .active > a:hover {
       background-color: transparent;
       color: #ed1b2e; }
+  .nav > li > a {
+    padding: 1rem 1.6rem; }
   .anchor {
-    top: -17rem; }
+    top: -19.6rem; }
   .hero {
     min-height: 35rem;
     margin-top: 5rem; }
@@ -8448,16 +8453,20 @@ small {
       display: inline-block !important;
       margin: 0 1em; } }
 
-/*##############################
-    Breakpoint 1200
-##############################*/
+/*###############################################
+    Breakpoint 1200 - Large devices, desktops
+###############################################*/
 @media (min-width: 1200px) {
   .header-content {
     width: 1170px; }
     .header-content .header {
-      height: 17.4rem; }
+      height: 20rem; }
       .header-content .header .logo img {
         max-width: 35% !important; }
+  .nav > li > a {
+    padding: 1rem 2.7rem; }
+  .anchor {
+    top: -20rem; }
   .hero {
     min-height: 35rem;
     margin-top: 5.4rem; }
