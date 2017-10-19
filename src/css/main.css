@@ -8287,6 +8287,14 @@ small {
         margin: 2.0rem auto;
         max-width: 60%; }
 
+@media (min-width: 426px) and (max-width: 767px) {
+  .header-content .header {
+    height: 9.2rem; }
+    .header-content .header .logo img {
+      max-width: 40%; }
+  .hero {
+    margin-top: 0.9rem; } }
+
 .navbar {
   position: absolute;
   top: 1.2rem;
