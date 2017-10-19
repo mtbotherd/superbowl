@@ -8133,6 +8133,73 @@ button.close {
 /*##############################
     Typography
 ##############################*/
+.park-n-ride .st0 {
+  fill: #58595B; }
+
+.park-n-ride .st1 {
+  fill: #FFFFFF;
+  stroke: #58595B;
+  stroke-width: 0.3; }
+
+.park-n-ride .st2 {
+  fill: #FFF9E5; }
+
+.park-n-ride .st3 {
+  fill: #FFFFFF; }
+
+.park-n-ride .st4 {
+  fill: none;
+  stroke: #FFD200;
+  stroke-width: 3.903;
+  stroke-linecap: round; }
+
+.park-n-ride .st5 {
+  fill: none;
+  stroke: #FFD200;
+  stroke-width: 1.1381;
+  stroke-linecap: round; }
+
+.park-n-ride .st6 {
+  display: none;
+  fill: none;
+  stroke: #FFD200;
+  stroke-width: 1.1381;
+  stroke-linecap: round; }
+
+.park-n-ride .st7 {
+  display: none;
+  fill: none;
+  stroke: #BFBFBF;
+  stroke-width: 1.1381;
+  stroke-linecap: round; }
+
+.park-n-ride .st8 {
+  fill: #41AD49; }
+
+.park-n-ride .st9 {
+  font-family: 'AvenirLTStd-Heavy'; }
+
+.park-n-ride .st10 {
+  font-size: 9.2065px; }
+
+.park-n-ride .st11 {
+  fill: #CA422C; }
+
+.park-n-ride .st12 {
+  fill: #25408F; }
+
+.park-n-ride .st13 {
+  fill: #846DAB; }
+
+.park-n-ride .st14 {
+  letter-spacing: -1; }
+
+.park-n-ride .st15 {
+  fill: #00A1E4; }
+
+.park-n-ride .st16 {
+  fill: #5C4B79; }
+
 body {
   color: #606060;
   font-family: "Lato", sans-serif !important;
@@ -8145,6 +8212,8 @@ body {
   padding: 0; }
   .container .section {
     padding: 1.5rem; }
+  .container .section:nth-child(odd) {
+    background-color: #f7f6f6; }
 
 h1,
 h2,
@@ -8291,8 +8360,6 @@ small {
 
 .section {
   margin: 0 auto; }
-  .section:nth-child(even) {
-    background-color: #f7f6f6; }
   .section .app-badge {
     margin-bottom: 2em; }
 
@@ -8304,6 +8371,9 @@ small {
 
 .fares h4 {
   color: #0053a0; }
+
+.special-service .park-n-ride {
+  margin-bottom: 2rem; }
 
 .trip-tools h3 {
   text-transform: uppercase; }
@@ -8318,6 +8388,7 @@ small {
 /* Placeholder styles - Remove before production */
 .placeholder {
   position: relative;
+  background-color: #ffffff;
   border: 0.01rem solid #d6d6d6;
   margin-bottom: 2rem;
   padding: 2rem; }
@@ -8328,13 +8399,11 @@ small {
     position: absolute;
     top: 0;
     left: 0; }
-  .placeholder p {
-    color: #ed1b2e; }
-    .placeholder p i {
-      color: #606060;
-      display: block;
-      font-size: 10rem;
-      margin-bottom: 2rem; }
+  .placeholder p i {
+    color: #606060;
+    display: block;
+    font-size: 10rem;
+    margin-bottom: 2rem; }
 
 .footer {
   padding: 3rem 1.5rem; }

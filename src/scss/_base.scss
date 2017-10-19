@@ -13,6 +13,10 @@ body {
     .section {
         padding: 1.5rem;
     }
+
+    .section:nth-child(odd) {
+        background-color: $lighter-grey;
+    }
 }
 
 h1,

@@ -1,5 +1,4 @@
 dist
 node_modules
 src/images/*.zip
-src/images/ai
 *.DS_Store

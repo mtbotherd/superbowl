@@ -8,10 +8,6 @@
 .section {
     margin: 0 auto;
 
-    &:nth-child(even) {
-        background-color: $lighter-grey;
-    }
-
     .app-badge {
         margin-bottom: 2em;
     }

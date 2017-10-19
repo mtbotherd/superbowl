@@ -15,5 +15,4 @@ $(document).ready(function() {
     });
 
     // Park n Ride popovers
-    $('[data-toggle="popover"]').popover();
 });

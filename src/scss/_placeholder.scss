@@ -1,6 +1,7 @@
 /* Placeholder styles - Remove before production */
 .placeholder {
     position: relative;
+    background-color: $white;
     border: 0.01rem solid $light-grey;
     margin-bottom: 2rem;
     //min-height: 20.5rem;
@@ -16,8 +17,7 @@
     }
 
     p {
-        color: $transit-red;
-
+        //color: $transit-red;
         i {
             color: $font-color;
             display: block;
