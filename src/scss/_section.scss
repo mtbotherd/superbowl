@@ -19,6 +19,28 @@
     .park-n-ride {
         margin-bottom: 2rem;
     }
+
+    .panel-group .panel {
+        border-radius: 0;
+    }
+
+    .panel-heading {
+        color: $body-color;
+
+        .accordion-toggle:after {
+            font-family: 'FontAwesome';
+            float: right;
+            content: "\f077";
+        }
+
+        .accordion-toggle.collapsed:after {
+            content: "\f078";
+        }
+
+        h4 {
+            display: inline-block;
+        }
+    }
 }
 
 .gameday {}

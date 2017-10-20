@@ -9,7 +9,7 @@
 .navbar-default {
     background-color: transparent;
     border: none;
-    //z-index: 20;
+
     .navbar-toggle {
         border: none;
         margin: 0.8rem 1.5rem;
@@ -27,6 +27,8 @@
     .navbar-collapse {
         background-color: $white;
         min-width: 32rem;
+        max-height: 28rem;
+        overflow-y: auto;
         opacity: 0.96;
         margin-top: 2.3rem;
     }
