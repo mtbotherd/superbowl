@@ -26,6 +26,8 @@
 
     .panel-heading {
         color: $body-color;
+        padding: 1rem 1.5rem;
+        position: relative;
 
         .accordion-toggle:after {
             font-family: 'FontAwesome';
@@ -39,6 +41,30 @@
 
         h4 {
             display: inline-block;
+            margin-left: 4.3rem;
+        }
+    }
+
+    .map-location-inset {
+        background-color: $transit-blue;
+        color: $white;
+        padding: 1.23rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4.3rem;
+        max-height: 4rem;
+        text-align: center;
+    }
+
+    .panel-body {
+        p {
+            i {
+                color: $font-color;
+                display: block;
+                font-size: 10rem;
+                margin-bottom: 2rem;
+            }
         }
     }
 }

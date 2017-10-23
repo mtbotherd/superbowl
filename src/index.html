@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Metro Transit | Superbowl LII</title>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic" />
-    <!-- build:css css/main.min.css -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <!-- endbuild -->
@@ -132,14 +132,14 @@
                 <h2>Locate your event then find your best route!</h2>
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="placeholder">
+                        <div class="service-location">
                             <p class="text-center">
                                 <i class="fa fa-map-o" aria-hidden="true"></i> Downtown map
                             </p>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="placeholder">
+                        <div class="service-location">
                             <p class="text-center">
                                 <i class="fa fa-map-o" aria-hidden="true"></i> Transitways map
                             </p>
@@ -186,7 +186,7 @@
                     <!-- <img src="images/ai/parkNridemap.svg" /> -->
                     <img class="img-responsive" src="images/park-n-ride.png" alt="Map of Park and Ride locations." title="Park n Ride Locations" />
                 </div>
-                <!-- <div class="placeholder">
+                <!-- <div class="service-location">
                     <p class="text-center">
                         <i class="fa fa-map-o" aria-hidden="true"></i> Map of shuttle locations
                     </p>
@@ -197,312 +197,453 @@
                         Park and Ride locations
                     ###############################
                 -->
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel-group visible-xs" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#blaine" aria-expanded="false" title="Blaine">
+                                <div class="map-location-inset">
+                                    <span>1</span>
+                                </div>
                                 <h4 class="panel-title">Blaine</h4>
                             </div>
                         </div>
                         <div id="blaine" class="panel-collapse collapse" aria-expanded="false">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                <p class="text-center">95th Avenue Park &amp; Ride, 3249 95th Ave. NE</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#minnetonka" aria-expanded="false" title="Minnetonka">
+                                <div class="map-location-inset">
+                                    <span>2</span>
+                                </div>
                                 <h4 class="panel-title">Minnetonka</h4>
                             </div>
                         </div>
                         <div id="minnetonka" class="panel-collapse collapse" aria-expanded="false">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                <p class="text-center">I-394 &amp; Country Road 73 Park &amp; Ride, 1100 Hopkins Crossroad</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
                             </div>
                         </div>
-                        <!-- <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item #3</a>
-                            </h4>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#maplewood" aria-expanded="false" title="Maplewood">
+                                <div class="map-location-inset">
+                                    <span>3</span>
+                                </div>
+                                <h4 class="panel-title">Maplewood</h4>
+                            </div>
                         </div>
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div id="maplewood" class="panel-collapse collapse" aria-expanded="false">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                <p class="text-center">Maplewood Mall Park &amp; Ride, 1793 Beam Ave.</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#maplegrove" aria-expanded="false" title="">
+                                <div class="map-location-inset">
+                                    <span>4</span>
+                                </div>
+                                <h4 class="panel-title"></h4>
+                            </div>
+                        </div>
+                        <div id="maplegrove" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
+                                <p class="text-center"> Transit Station, 12350 Main St. N.</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#woodbury" aria-expanded="false" title="Woodbury">
+                                <div class="map-location-inset">
+                                    <span>5</span>
+                                </div>
+                                <h4 class="panel-title">Woodbury*</h4>
+                            </div>
+                        </div>
+                        <div id="woodbury" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
+                                <p class="text-center"><span style="color:#ed1b2e; font-size: 1.6rem;">*Service to downtown St. Paul only</span><br />Woodbury Theatre Park &amp; Ride, 1470 Queens Drive</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#roseville" aria-expanded="false" title="Roseville">
+                                <div class="map-location-inset">
+                                    <span>6</span>
+                                </div>
+                                <h4 class="panel-title">Roseville</h4>
+                            </div>
+                        </div>
+                        <div id="roseville" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
+                                <p class="text-center">I-35W &amp; County Road C Park &amp; Ride, 2000 Iona Lane</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#richfield" aria-expanded="false" title="Richfield">
+                                <div class="map-location-inset">
+                                    <span>7</span>
+                                </div>
+                                <h4 class="panel-title">Richfield</h4>
+                            </div>
+                        </div>
+                        <div id="richfield" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
+                                <p class="text-center">Knox Avenue Park &amp; Ride, 7601 Knox Ave.</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#stlouispark" aria-expanded="false" title="St. Louis Park">
+                                <div class="map-location-inset">
+                                    <span>8</span>
+                                </div>
+                                <h4 class="panel-title">St. Louis Park</h4>
+                            </div>
+                        </div>
+                        <div id="stlouispark" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
+                                <p class="text-center">Louisiana Avenue Transit Center, 1300 Louisiana Ave.</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#cottagegrove" aria-expanded="false" title="Cottage Grove">
+                                <div class="map-location-inset">
+                                    <span>9</span>
+                                </div>
+                                <h4 class="panel-title">Cottage Grove</h4>
+                            </div>
+                        </div>
+                        <div id="cottagegrove" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
+                                <p class="text-center">Cottage Grove Park &amp; Ride, 7500 W. Point Douglas Rd. S.</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#brooklynpark" aria-expanded="false" title="Brooklyn Park">
+                                <div class="map-location-inset">
+                                    <span>10</span>
+                                </div>
+                                <h4 class="panel-title">Brooklyn Park</h4>
+                            </div>
+                        </div>
+                        <div id="brooklynpark" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
+                                <p class="text-center">Hwy. 610 &amp; Noble Parkway Park &amp; Ride, 4401 95th Ave.</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <!-- <div class="row">
-                    <div class="col-md-6">
-                        <div class="placeholder">
-                            <div class="map-location-inset">
-                                <span>1</span>
+                <div class="hidden-xs">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="service-location">
+                                <div class="map-location-inset">
+                                    <span>1</span>
+                                </div>
+                                <p class="text-center"><strong>Blaine</strong><br />95th Avenue Park &amp; Ride, 3249 95th Ave. NE</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
                             </div>
-                            <p class="text-center"><strong>Blaine</strong><br />95th Avenue Park &amp; Ride, 3249 95th Ave. NE</p>
-                            <p class="text-center">
-                                <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
-                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="service-location">
+                                <div class="map-location-inset">
+                                    <span>2</span>
+                                </div>
+                                <p class="text-center"><strong>Minnetonka</strong><br />I-394 &amp; Country Road 73 Park &amp; Ride, 1100 Hopkins Crossroad</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="placeholder">
-                            <div class="map-location-inset">
-                                <span>2</span>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="service-location">
+                                <div class="map-location-inset">
+                                    <span>3</span>
+                                </div>
+                                <p class="text-center"><strong>Maplewood</strong><br />Maplewood Mall Park &amp; Ride, 1793 Beam Ave.</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
                             </div>
-                            <p class="text-center"><strong>Minnetonka</strong><br />I-394 &amp; Country Road 73 Park &amp; Ride, 1100 Hopkins Crossroad</p>
-                            <p class="text-center">
-                                <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
-                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="service-location">
+                                <div class="map-location-inset">
+                                    <span>4</span>
+                                </div>
+                                <p class="text-center"><strong></strong><br /> Transit Station, 12350 Main St. N.</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="service-location">
+                                <div class="map-location-inset">
+                                    <span>5</span>
+                                </div>
+                                <p class="text-center"><strong>Woodbury</strong><br /><em><span style="color:#ed1b2e;">(service to downtown St. Paul only)</span></em><br />Woodbury Theatre Park &amp; Ride, 1470 Queens Drive</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="service-location">
+                                <div class="map-location-inset">
+                                    <span>6</span>
+                                </div>
+                                <p class="text-center"><strong>Roseville</strong><br />I-35W &amp; County Road C Park &amp; Ride, 2000 Iona Lane</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="service-location">
+                                <div class="map-location-inset">
+                                    <span>7</span>
+                                </div>
+                                <p class="text-center"><strong>Richfield</strong><br />Knox Avenue Park &amp; Ride, 7601 Knox Ave.</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="service-location">
+                                <div class="map-location-inset">
+                                    <span>8</span>
+                                </div>
+                                <p class="text-center"><strong>St. Louis Park</strong><br />Louisiana Avenue Transit Center, 1300 Louisiana Ave.</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="service-location">
+                                <div class="map-location-inset">
+                                    <span>9</span>
+                                </div>
+                                <p class="text-center"><strong>Cottage Grove</strong><br />Cottage Park &amp; Ride, 7500 W. Point Douglas Rd. S.</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="service-location">
+                                <div class="map-location-inset">
+                                    <span>10</span>
+                                </div>
+                                <p class="text-center"><strong>Brooklyn Park</strong><br />Hwy. 610 &amp; Noble Parkway Park &amp; Ride, 4401 95th Ave.</p>
+                                <p class="text-center">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="placeholder">
-                            <div class="map-location-inset">
-                                <span>3</span>
-                            </div>
-                            <p class="text-center"><strong>Maplewood</strong><br />Maplewood Mall Park &amp; Ride, 1793 Beam Ave.</p>
-                            <p class="text-center">
-                                <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="placeholder">
-                            <div class="map-location-inset">
-                                <span>4</span>
-                            </div>
-                            <p class="text-center"><strong>Maple Grove</strong><br />Maple Grove Transit Station, 12350 Main St. N.</p>
-                            <p class="text-center">
-                                <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="placeholder">
-                            <div class="map-location-inset">
-                                <span>5</span>
-                            </div>
-                            <p class="text-center"><strong>Woodbury</strong> <em>(service to downtown St. Paul only)</em><br />Woodbury Theatre Park &amp; Ride, 1470 Queens Drive</p>
-                            <p class="text-center">
-                                <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="placeholder">
-                            <div class="map-location-inset">
-                                <span>6</span>
-                            </div>
-                            <p class="text-center"><strong>Roseville</strong><br />I-35W &amp; County Road C Park &amp; Ride, 2000 Iona Lane</p>
-                            <p class="text-center">
-                                <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="placeholder">
-                            <div class="map-location-inset">
-                                <span>7</span>
-                            </div>
-                            <p class="text-center"><strong>Richfield</strong><br />Knox Avenue Park &amp; Ride, 7601 Knox Ave.</p>
-                            <p class="text-center">
-                                <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="placeholder">
-                            <div class="map-location-inset">
-                                <span>8</span>
-                            </div>
-                            <p class="text-center"><strong>St. Louis Park</strong><br />Louisiana Avenue Transit Center, 1300 Louisiana Ave.</p>
-                            <p class="text-center">
-                                <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="placeholder">
-                            <div class="map-location-inset">
-                                <span>9</span>
-                            </div>
-                            <p class="text-center"><strong>Cottage Grove</strong><br />Cottage Park &amp; Ride, 7500 W. Point Douglas Rd. S.</p>
-                            <p class="text-center">
-                                <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="placeholder">
-                            <div class="map-location-inset">
-                                <span>10</span>
-                            </div>
-                            <p class="text-center"><strong>Brooklyn Park</strong><br />Hwy. 610 &amp; Noble Parkway Park &amp; Ride, 4401 95th Ave.</p>
-                            <p class="text-center">
-                                <i class="fa fa-map-o" aria-hidden="true"></i> Map of locations insets
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
             </section>
-            </div>
+        </div>
 
-            <!-- Gameday -->
-            <div class="section gameday">
-                <a name="gameday" class="anchor"></a>
-                <section>
-                    <h2>Service on gameday, Feb. 4</h2>
-                    <p>If you have a Super Bowl ticket, buy a special $30 Gameday Pass. Regular light-rail service WILL NOT operate on gameday; only those holding a Super Bowl ticket along with a Gameday Pass will be allowed to board light rail at either
-                        Mall of America (Blue Line) or Stadium Village (Green Line) stations on Feb. 4. You will buy a ticket for a specific timeslot and must board at the correct light-rail station during the time on the ticket you are purchasing.</p>
-                </section>
-            </div>
+        <!-- Gameday -->
+        <div class="section gameday">
+            <a name="gameday" class="anchor"></a>
+            <section>
+                <h2>Service on gameday, Feb. 4</h2>
+                <p>If you have a Super Bowl ticket, buy a special $30 Gameday Pass. Regular light-rail service WILL NOT operate on gameday; only those holding a Super Bowl ticket along with a Gameday Pass will be allowed to board light rail at either Mall
+                    of America (Blue Line) or Stadium Village (Green Line) stations on Feb. 4. You will buy a ticket for a specific timeslot and must board at the correct light-rail station during the time on the ticket you are purchasing.</p>
+            </section>
+        </div>
 
-            <!-- Trip Tools -->
-            <div class="section trip-tools">
-                <a name="trip-tools" class="anchor"></a>
-                <section>
-                    <h2>Learn about travel options</h2>
-                    <h3 class="text-center">Getting there is easy with our trip tool.</h3>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a class="btn btn-primary btn-block" href="https://www.metrotransit.org/tripplanner" target="_blank" title="Plan your trip with Metro Transit's Trip Planner tool."><span>Trip planner</span></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a class="btn btn-primary btn-block" href="" target="_blank" title="Interactive map"><span>Interactive Map</span></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a class="btn btn-primary btn-block" href="https://www.metrotransit.org/nextrip" target="_blank" title="Get real-time departure times for your routes with Metro Transit's NexTrip tool."><span>Nextrip Real-time departures info</span></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-md-offset-4 col-xs-12">
-                            <h4 class="text-center">Call 612-373-3333</h4>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!-- Lost & Found -->
-            <div class="section lost-found">
-                <a name="lost-and-found" class="anchor"></a>
-                <section>
-                    <h2>Missing something?</h2>
-                    <h3>ITEMS FOUND ON BUSES AND TRAINS WILL BE HELD FOR TWO WEEKS. CONTACT <a href="https://www.metrotransit.org/lost-found" tartget="_blank" title="Metro Transit Lost and found">LOST &amp; FOUND</a> TO CHECK ON A LOST ITEM.</h3>
-                </section>
-
-                <!-- Destinations -->
-                <a name="event-info" class="anchor"></a>
-                <section class="section event-info">
-                    <h2>Transit takes you everywhere you want to be!</h2>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="placeholder">
-                                U.S. Bank Stadium
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="placeholder">
-                                Nicollet Mall (Super Bowl Expirience Driven by Genesis)
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="placeholder">
-                                Convention Center (NFL Live)
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="placeholder">
-                                Commons Park
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="placeholder">
-                                St. Paul Cathedral (Crashed Ice)
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="placeholder">
-                                Rice Park (St. Paul Winter Carnival)
-                            </div>
-                        </div>
-                    </div>
-                    <p>For more Super Bowl event information, visit one of these partners:</p>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="placeholder">
-                                <p>Minnesota Super Bowl Host Committee</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="placeholder">
-                                <p>Move Minneapolis</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="placeholder">
-                                <p>Meet Minneapolis</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="placeholder">
-                                <p>St. Paul Convention/<br />Visitors Bureau</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!-- Footer -->
-            <footer class="footer">
+        <!-- Trip Tools -->
+        <div class="section trip-tools">
+            <a name="trip-tools" class="anchor"></a>
+            <section>
+                <h2>Learn about travel options</h2>
+                <h3 class="text-center">Getting there is easy with our trip tool.</h3>
                 <div class="row">
-                    <div class="col-sm-4 text-center">
-                        <div id="google_translate_element"></div>
-                        <script type="text/javascript">
-                            function googleTranslateElementInit() {
-                                new google.translate.TranslateElement({
-                                    pageLanguage: 'en',
-                                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                                    gaTrack: true,
-                                    gaId: 'UA-63539533-1'
-                                }, 'google_translate_element');
-                            }
-                        </script>
-                        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    <div class="col-md-4">
+                        <a class="btn btn-primary btn-block" href="https://www.metrotransit.org/tripplanner" target="_blank" title="Plan your trip with Metro Transit's Trip Planner tool."><span>Trip planner</span></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-primary btn-block" href="" target="_blank" title="Interactive map"><span>Interactive Map</span></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-primary btn-block" href="https://www.metrotransit.org/nextrip" target="_blank" title="Get real-time departure times for your routes with Metro Transit's NexTrip tool."><span>Nextrip Real-time departures info</span></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 col-xs-12">
+                        <h4 class="text-center">Call 612-373-3333</h4>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Lost & Found -->
+        <div class="section lost-found">
+            <a name="lost-and-found" class="anchor"></a>
+            <section>
+                <h2>Missing something?</h2>
+                <h3>ITEMS FOUND ON BUSES AND TRAINS WILL BE HELD FOR TWO WEEKS. CONTACT <a href="https://www.metrotransit.org/lost-found" tartget="_blank" title="Metro Transit Lost and found">LOST &amp; FOUND</a> TO CHECK ON A LOST ITEM.</h3>
+            </section>
+
+            <!-- Destinations -->
+            <a name="event-info" class="anchor"></a>
+            <section class="section event-info">
+                <h2>Transit takes you everywhere you want to be!</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="service-location">
+                            U.S. Bank Stadium
+                        </div>
                     </div>
                     <div class="col-sm-4">
-                        <img class="img-responsive" src="images/mt-logo.png" />
+                        <div class="service-location">
+                            Nicollet Mall (Super Bowl Expirience Driven by Genesis)
+                        </div>
                     </div>
-                    <div class="col-sm-4 text-center">
-                        <p><small>&copy; 2017 METRO TRANSIT</small></p>
+                    <div class="col-sm-4">
+                        <div class="service-location">
+                            Convention Center (NFL Live)
+                        </div>
                     </div>
                 </div>
-            </footer>
-            </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="service-location">
+                            Commons Park
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service-location">
+                            St. Paul Cathedral (Crashed Ice)
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service-location">
+                            Rice Park (St. Paul Winter Carnival)
+                        </div>
+                    </div>
+                </div>
+                <p>For more Super Bowl event information, visit one of these partners:</p>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="service-location">
+                            <p>Minnesota Super Bowl Host Committee</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="service-location">
+                            <p>Move Minneapolis</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="service-location">
+                            <p>Meet Minneapolis</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="service-location">
+                            <p>St. Paul Convention/<br />Visitors Bureau</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-            <!-- build:js js/main.min.js -->
-            <script type="text/javascript" src="js/jquery.js"></script>
-            <script type="text/javascript" src="js/bootstrap.js"></script>
-            <script type="text/javascript" src="js/main.js"></script>
-            <!-- endbuild -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <div id="google_translate_element"></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({
+                                pageLanguage: 'en',
+                                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                                gaTrack: true,
+                                gaId: 'UA-63539533-1'
+                            }, 'google_translate_element');
+                        }
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-responsive" src="images/mt-logo.png" />
+                </div>
+                <div class="col-sm-4 text-center">
+                    <p><small>&copy; 2017 METRO TRANSIT</small></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- build:js js/main.js -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
