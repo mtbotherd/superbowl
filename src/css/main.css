@@ -8398,17 +8398,26 @@ small {
   .special-service .panel-heading h4 {
     display: inline-block;
     margin-left: 4.3rem; }
-
-.special-service .map-location-inset {
-  background-color: #0053a0;
-  color: #ffffff;
-  padding: 1.23rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4.3rem;
-  max-height: 4rem;
-  text-align: center; }
+  .special-service .panel-heading a {
+    display: block;
+    text-decoration: none;
+    width: 27rem; }
+    .special-service .panel-heading a .map-location-inset {
+      background-color: #0053a0;
+      color: #ffffff;
+      padding: 1.23rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4.3rem;
+      max-height: 4rem;
+      text-align: center; }
+  .special-service .panel-heading .accordion-toggle:after {
+    font-family: 'FontAwesome';
+    float: right;
+    content: "\f077"; }
+  .special-service .panel-heading .accordion-toggle.collapsed:after {
+    content: "\f078"; }
 
 .special-service .panel-body p i {
   color: #606060;
