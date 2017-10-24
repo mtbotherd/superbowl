@@ -8393,25 +8393,23 @@ small {
 
 .special-service .panel-heading {
   color: #606060;
-  padding: 1rem 1.5rem;
+  padding: 0;
   position: relative; }
-  .special-service .panel-heading h4 {
-    display: inline-block;
-    margin-left: 4.3rem; }
+  .special-service .panel-heading .map-location-inset {
+    background-color: #0053a0;
+    color: #ffffff;
+    padding: 1.23rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.3rem;
+    max-height: 4rem;
+    text-align: center; }
   .special-service .panel-heading a {
     display: block;
-    text-decoration: none;
-    width: 27rem; }
-    .special-service .panel-heading a .map-location-inset {
-      background-color: #0053a0;
-      color: #ffffff;
-      padding: 1.23rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 4.3rem;
-      max-height: 4rem;
-      text-align: center; }
+    padding: 1rem 1.5rem;
+    margin-left: 4.3rem;
+    text-decoration: none; }
   .special-service .panel-heading .accordion-toggle:after {
     font-family: 'FontAwesome';
     float: right;
