@@ -1,4 +1,3 @@
-dist
 node_modules
 src/images/*.zip
 *.DS_Store

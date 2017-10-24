@@ -29,6 +29,29 @@
         padding: 1rem 1.5rem;
         position: relative;
 
+        h4 {
+            display: inline-block;
+            margin-left: 4.3rem;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            width: 27rem;
+
+            .map-location-inset {
+                background-color: $transit-blue;
+                color: $white;
+                padding: 1.23rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 4.3rem;
+                max-height: 4rem;
+                text-align: center;
+            }
+        }
+
         .accordion-toggle:after {
             font-family: 'FontAwesome';
             float: right;
@@ -38,23 +61,6 @@
         .accordion-toggle.collapsed:after {
             content: "\f078";
         }
-
-        h4 {
-            display: inline-block;
-            margin-left: 4.3rem;
-        }
-    }
-
-    .map-location-inset {
-        background-color: $transit-blue;
-        color: $white;
-        padding: 1.23rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 4.3rem;
-        max-height: 4rem;
-        text-align: center;
     }
 
     .panel-body {
