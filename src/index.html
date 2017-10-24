@@ -199,15 +199,15 @@
                 -->
                 <div class="panel-group visible-xs" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#blaine" aria-expanded="false" title="Blaine">
-                                <div class="map-location-inset">
-                                    <span>1</span>
-                                </div>
-                                <h4 class="panel-title">Blaine</h4>
+                        <div class="panel-heading" role="tab" id="blaine">
+                            <div class="map-location-inset">
+                                <span>1</span>
                             </div>
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#blaine-location" aria-expanded="false" aria-controls="blaine-location">Blaine</a>
+                            </h4>
                         </div>
-                        <div id="blaine" class="panel-collapse collapse" aria-expanded="false">
+                        <div id="blaine-location" class="panel-collapse collapse" aria-labelledby="blaine">
                             <div class="panel-body">
                                 <p class="text-center">95th Avenue Park &amp; Ride, 3249 95th Ave. NE</p>
                                 <p class="text-center">
@@ -216,7 +216,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
+                    <!-- <div class="panel panel-default">
                         <div class="panel-heading">
                             <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#minnetonka" aria-expanded="false" title="Minnetonka">
                                 <div class="map-location-inset">
@@ -377,7 +377,7 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="hidden-xs">

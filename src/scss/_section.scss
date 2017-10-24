@@ -28,17 +28,15 @@
         color: $body-color;
         padding: 1rem 1.5rem;
         position: relative;
-
-        .accordion-toggle:after {
-            font-family: 'FontAwesome';
-            float: right;
-            content: "\f077";
-        }
-
-        .accordion-toggle.collapsed:after {
-            content: "\f078";
-        }
-
+        // .accordion-toggle:after {
+        //     font-family: 'FontAwesome';
+        //     float: right;
+        //     content: "\f077";
+        // }
+        //
+        // .accordion-toggle.collapsed:after {
+        //     content: "\f078";
+        // }
         h4 {
             display: inline-block;
             margin-left: 4.3rem;

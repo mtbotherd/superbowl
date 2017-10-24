@@ -8395,12 +8395,6 @@ small {
   color: #606060;
   padding: 1rem 1.5rem;
   position: relative; }
-  .special-service .panel-heading .accordion-toggle:after {
-    font-family: 'FontAwesome';
-    float: right;
-    content: "\f077"; }
-  .special-service .panel-heading .accordion-toggle.collapsed:after {
-    content: "\f078"; }
   .special-service .panel-heading h4 {
     display: inline-block;
     margin-left: 4.3rem; }
