@@ -1,93 +1,12 @@
-.app {}
-
-.fares {
-    h3,
-    h4 {
-        border-bottom: 0.1rem solid $light-grey;
-        margin-bottom: 1.5rem;
-        padding-bottom: 1rem;
-    }
-
-    h4 {
-        color: $transit-blue;
-    }
-}
+// Import section-specific styles.
+@import './app.scss';
+@import './fares.scss';
+@import './special-services.scss';
+@import './trip-tools.scss';
+@import './lost_found.scss';
 
 .map {}
 
-.special-service {
-    .park-n-ride {
-        margin-bottom: 2rem;
-    }
-
-    .panel-group .panel {
-        border-radius: 0;
-    }
-
-    .panel-heading {
-        color: $body-color;
-        padding: 0;
-        position: relative;
-
-        .map-location-inset {
-            background-color: $transit-blue;
-            color: $white;
-            padding: 1.23rem;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4.3rem;
-            max-height: 4rem;
-            text-align: center;
-        }
-
-        a {
-            display: block;
-            padding: 1rem 1.5rem;
-            margin-left: 4.3rem;
-            text-decoration: none;
-        }
-
-        .accordion-toggle:after {
-            font-family: 'FontAwesome';
-            float: right;
-            content: "\f077";
-        }
-
-        .accordion-toggle.collapsed:after {
-            content: "\f078";
-        }
-    }
-
-    .panel-body {
-        p {
-            i {
-                color: $font-color;
-                display: block;
-                font-size: 10rem;
-                margin-bottom: 2rem;
-            }
-        }
-    }
-}
-
 .gameday {}
-
-.trip-tools {
-    h3 {
-        text-transform: uppercase;
-    }
-
-    h4 {
-        color: $transit-blue;
-        font-size: 2.3rem;
-    }
-}
-
-.lost-found {
-    h3 {
-        text-align: center;
-    }
-}
 
 .event-info {}

@@ -8373,8 +8373,9 @@ small {
 
 .section {
   margin: 0 auto; }
-  .section .app-badge {
-    margin-bottom: 2em; }
+
+.app .app-badge {
+  margin-bottom: 2em; }
 
 .fares h3,
 .fares h4 {
