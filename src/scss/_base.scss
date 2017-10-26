@@ -1,16 +1,19 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
     color: $font-color;
     font-family: $font-stack-lato;
-    font-size: 1.6rem;
-    line-height: 1.5rem;
+    @include font-size(16, 10);
+    line-height: $line-height;
     margin: 0;
     padding-top: 8.3rem;
+
+    @include screen ('tablet') {
+        padding-top: 12rem;
+    }
 }
-// .no-scroll {
-//     margin: 0;
-//     height: 100%;
-//     overflow: hidden;
-// }
 
 .container {
     padding: 0;
@@ -31,50 +34,51 @@ h4,
 h5,
 h6 {
     font-weight: 700;
-    line-height: $line-height;
+    line-height: 2.5rem;
     margin-bottom: 2rem;
 }
 
 h1 {
     color: $h1-color;
     font-family: $font-stack-lato;
-    font-size: $h1-font-size;
+    @include font-size(34, 10);
 }
 
 h2 {
     font-family: $font-stack-helvetica;
-    font-size: $h2-font-size;
+    @include font-size(22, 10);
     text-align: center;
+
+    @include screen ('desktop') {
+        @include font-size(41, 10);
+        line-height: 5rem;
+        margin-bottom: 3.5rem;
+    }
 }
 
 h3 {
-    font-size: $h3-font-size;
+    @include font-size(16, 10);
     line-height: 2rem;
 }
 
 h4 {
-    font-size: $h4-font-size;
+    @include font-size(14, 10);
     line-height: 2rem;
 }
 
 p {
-    color: $font-color;
-    font-size: $paragraph-font-size;
     font-weight: 300;
-    line-height: $line-height;
     margin-bottom: 2rem;
 }
 
 ul {
     color: $font-color;
-    font-size: $paragraph-font-size;
     font-weight: 300;
-    line-height: $line-height;
     margin-bottom: 2rem;
     padding-left: 2rem;
 
     li {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 }
 

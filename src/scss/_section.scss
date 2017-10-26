@@ -1,12 +1,21 @@
 // Import section-specific styles.
 @import './app.scss';
 @import './fares.scss';
+@import './map.scss';
 @import './special-services.scss';
 @import './trip-tools.scss';
 @import './lost_found.scss';
-
-.map {}
+@import './event-info.scss';
 
 .gameday {}
 
-.event-info {}
+.service-location {
+    border: 0.1rem solid $dark-grey;
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+
+    i.fa {
+        display: block;
+        @include font-size(100, 10);
+    }
+}

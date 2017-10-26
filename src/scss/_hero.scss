@@ -5,20 +5,58 @@
     min-height: 30rem;
     padding: 1.5rem;
 
+    @include screen ('desktop') {
+        min-height: 39.5rem;
+        margin-top: 4.5rem;
+    }
+
+    @include screen ('lg-desktop') {
+        min-height: 40.5rem;
+        margin-top: 4.5rem;
+    }
+
     .caption {
         color: $white;
         margin: 20rem auto 0;
         text-transform: uppercase;
-        //width: 100%;
+
+        @include screen ('tablet') {
+            margin-top: 22rem;
+        }
+
+        @include screen ('desktop') {
+            margin-top: 24rem;
+        }
+
+        @include screen ('lg-desktop') {
+            margin-top: 25rem;
+        }
+
         h1 {
             margin-bottom: 1rem;
+
+            @include screen ('desktop') {
+                @include font-size(60, 10);
+                line-height: 7.5rem;
+            }
         }
 
         p {
             color: $white;
-            font-size: 0.75em;
+            @include font-size(12, 10);
             letter-spacing: 0.125em;
             line-height: 2rem;
+
+            @include screen ('desktop') {
+                @include font-size(16, 10)
+            }
+        }
+    }
+
+    .visible-lg {
+        @include screen ('desktop') {
+            display: inline-block !important;
+            margin: 0 1.5rem;
         }
     }
 }

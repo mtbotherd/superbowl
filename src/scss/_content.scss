@@ -3,6 +3,18 @@
     position: relative;
     top: -8.3rem;
     visibility: hidden;
+
+    @include screen ('tablet') {
+        top: -12rem;
+    }
+
+    @include screen ('desktop') {
+        top: -16rem;
+    }
+
+    @include screen ('lg-desktop') {
+        top: -18rem;
+    }
 }
 
 .section {

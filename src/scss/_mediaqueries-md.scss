@@ -3,90 +3,85 @@
 #################################################*/
 @media (min-width: 992px) {
     .header-content {
-        width: 970px;
-
+        //width: 970px;
         .header {
-            height: 19.6rem;
-
+            //height: 19.6rem;
             .logo img {
-                max-width: 40% !important;
+                //max-width: 40% !important;
             }
         }
     }
 
     .navbar {
-        position: relative !important;
-        top: 1.25rem;
+        // position: relative !important;
+        // top: 1.25rem;
     }
 
     .navbar-default {
         .navbar-toggle {
-            display: none !important;
+            //display: none !important;
         }
     }
 
     .navbar-collapse {
-        border-top: none;
+        //border-top: none;
     }
 
     .navbar-collapse.collapse {
-        display: block !important;
-
+        //display: block !important;
         ul.navbar-nav {
-            margin-top: 0;
+            //margin-top: 0;
         }
 
         .navbar-nav > li {
-            border-bottom: none;
-            float: left !important;
-            margin-bottom: 0;
+            // border-bottom: none;
+            // float: left !important;
+            // margin-bottom: 0;
         }
 
         .navbar-nav > li > a {
-            font-size: 0.85em;
+            //font-size: 0.85em;
         }
 
         .navbar-nav > .active > a,
         .navbar-nav > .active > a:focus,
         .navbar-nav > .active > a:hover {
-            background-color: transparent;
-            color: $transit-red;
+            // background-color: transparent;
+            // color: $transit-red;
         }
     }
 
     .nav > li > a {
-        padding: 1rem 1.6rem;
+        //padding: 1rem 1.6rem;
     }
 
     .anchor {
-        top: -19.6rem;
+        //top: -19.6rem;
     }
 
     .hero {
-        min-height: 35rem;
-        margin-top: 7.6rem;
-
+        //min-height: 35rem;
+        //margin-top: 7.6rem;
         .caption {
-            color: $white;
-            margin-top: 24rem;
-            text-transform: uppercase;
-
+            //color: $white;
+            //margin-top: 24rem;
+            //text-transform: uppercase;
             h1 {
-                color: $transit-yellow;
-                font-family: $font-stack-helvetica;
-                font-size: 6.4rem;
-                line-height: 1em;
-                text-transform: uppercase;
+                //color: $transit-yellow;
+                //font-family: $font-stack-helvetica;
+                //font-size: 6.4rem;
+                //line-height: 1em;
+                //text-transform: uppercase;
             }
 
             p {
-                font-size: 1.73rem;
+                //font-size: 1.73rem;
             }
         }
 
         .visible-lg {
-            display: inline-block !important;
-            margin: 0 1em;
+            // display: inline-block !important;
+            // margin: 0 1em;
         }
     }
 }

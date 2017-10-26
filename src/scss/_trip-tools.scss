@@ -1,10 +1,11 @@
 .trip-tools {
     h3 {
+        @include font-size(14, 10);
         text-transform: uppercase;
     }
 
-    h4 {
+    .phone {
         color: $transit-blue;
-        font-size: 2.3rem;
+        @include font-size(18, 10);
     }
 }

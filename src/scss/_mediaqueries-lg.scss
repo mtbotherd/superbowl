@@ -3,50 +3,105 @@
 ###############################################*/
 @media (min-width: 1200px) {
     .header-content {
-        width: 1170px;
-
+        //width: 1170px;
         .header {
-            height: 20rem;
-
+            //height: 20rem;
             .logo img {
-                max-width: 35% !important;
+                //max-width: 35% !important;
             }
         }
     }
 
     .nav > li > a {
-        padding: 1rem 2.7rem;
+        //padding: 1rem 2.7rem;
     }
 
     .anchor {
-        top: -20rem;
+        //top: -20rem;
     }
 
     .hero {
-        min-height: 35rem;
-        margin-top: 8rem;
-
+        //min-height: 35rem;
+        //margin-top: 8rem;
         .caption {
-            color: $white;
-            margin-top: 26rem;
-            text-transform: uppercase;
-
+            // color: $white;
+            // margin-top: 26rem;
+            // text-transform: uppercase;
             h1 {
-                color: $transit-yellow;
-                font-family: $font-stack-helvetica;
-                font-size: 6.4rem;
-                line-height: 1em;
-                text-transform: uppercase;
+                //color: $transit-yellow;
+                //font-family: $font-stack-helvetica;
+                //font-size: 6.4rem;
+                //line-height: 1em;
+                //text-transform: uppercase;
             }
 
             p {
-                font-size: 1.73rem;
+                //font-size: 1.73rem;
             }
         }
 
         .visible-lg {
-            display: inline-block !important;
-            margin: 0 1em;
+            // display: inline-block !important;
+            // margin: 0 1em;
         }
+    }
+    // Event Info
+    .event-info {
+        // Landmark tiles
+        .tile {
+            //background-repeat: no-repeat;
+            //background-size: cover;
+            //width: 350px;
+            //height: 221px;
+            //margin-bottom: 3rem;
+            //text-align: center;
+            .overlay {
+                //background: rgba(0, 83, 160, .69);
+                &:hover {
+                    //background: none;
+                }
+
+                a {
+                    //color: $white;
+                    //display: block;
+                    //font-family: 'Roboto', sans-serif;
+                    //font-weight: 700;
+                    //@include font-size(16);
+                    //line-height: 2rem;
+                    //@include opacity(1);
+                    // see mixins.scss
+                    //padding: 10.05rem 1.5rem;
+                    //text-decoration: none;
+                    //text-transform: uppercase;
+                }
+            }
+        }
+        // .usbank {
+        //     background-image: url('../images/sb_usbank.jpg');
+        // }
+        //
+        // .nicollet-mall {
+        //     background-image: url('../images/sb_nicollet.jpg');
+        //
+        //     a {
+        //         padding: 9.02rem 1.5rems !important;
+        //     }
+        // }
+        //
+        // .convention-center {
+        //     background-image: url('../images/sb_convention.jpg');
+        // }
+        //
+        // .commons-park {
+        //     background-image: url('../images/sb_commons.jpg');
+        // }
+        //
+        // .st-paul-catherdral {
+        //     background-image: url('../images/sb_cathedral.jpg');
+        // }
+        //
+        // .rice-park {
+        //     background-image: url('../images/sb_ricepark.jpg');
+        // }
     }
 }

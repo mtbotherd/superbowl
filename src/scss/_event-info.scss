@@ -1,0 +1,136 @@
+.event-info {
+    // Landmark tiles
+    .tile {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 26rem;
+        height: 16.4rem;
+        margin: 0 auto 2rem;
+        text-align: center;
+
+        @include screen ('lg-tablet') {
+            width: 21rem;
+            height: 15.2rem;
+        }
+
+        @include screen ('lg-desktop') {
+            width: 35rem;
+            height: 22.1rem;
+            margin-bottom: 3rem;
+        }
+
+        .overlay {
+            background: rgba(0, 83, 160, .69);
+
+            &:hover {
+                background: none; // Will work on desktop only.
+            }
+
+            a {
+                color: $white;
+                display: block;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                @include font-size(16, 10);
+                line-height: 2rem;
+                @include opacity(1);
+                // see mixins.scss
+                padding: 7.2rem 1.5rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .usbank {
+        background-image: url('../images/sb_usbank.jpg');
+
+        a {
+            @include screen ('lg-tablet') {
+                padding: 6.6rem 1.5rem !important;
+            }
+
+            @include screen ('lg-desktop') {
+                padding: 10.05rem 1.5rem !important;
+            }
+        }
+    }
+
+    .nicollet-mall {
+        background-image: url('../images/sb_nicollet.jpg');
+
+        a {
+            padding: 5.2rem 1.5rem !important;
+
+            @include screen ('lg-tablet') {
+                padding: 4.6rem 1.5rem !important;
+            }
+
+            @include screen ('lg-desktop') {
+                padding: 9.05rem 1.5rem !important;
+            }
+        }
+    }
+
+    .convention-center {
+        background-image: url('../images/sb_convention.jpg');
+
+        a {
+            padding: 6.2rem 1.5rem !important;
+
+            @include screen ('lg-tablet') {
+                padding: 5.6rem 1.5rem !important;
+            }
+
+            @include screen ('lg-desktop') {
+                padding: 10.05rem 1.5rem !important;
+            }
+        }
+    }
+
+    .commons-park {
+        background-image: url('../images/sb_commons.jpg');
+
+        a {
+            @include screen ('lg-tablet') {
+                padding: 6.6rem 1.5rem !important;
+            }
+
+            @include screen ('lg-desktop') {
+                padding: 10.05rem 1.5rem !important;
+            }
+        }
+    }
+
+    .st-paul-cathedral {
+        background-image: url('../images/sb_cathedral.jpg');
+
+        a {
+            padding: 6.2rem 1.5rem !important;
+
+            @include screen ('lg-tablet') {
+                padding: 5.6rem 1.5rem !important;
+            }
+
+            @include screen ('lg-desktop') {
+                padding: 10.05rem 1.5rem !important;
+            }
+        }
+    }
+
+    .rice-park {
+        background-image: url('../images/sb_ricepark.jpg');
+
+        a {
+            padding: 6.2rem 1.5rem !important;
+
+            @include screen ('lg-tablet') {
+                padding: 5.6rem 1.5rem !important;
+            }
+
+            @include screen ('lg-desktop') {
+                padding: 10.05rem 1.5rem !important;
+            }
+        }
+    }
+}

@@ -2,13 +2,9 @@
 @import '../../node_modules/font-awesome/scss/font-awesome.scss';
 @import './variables.scss';
 @import './mixins.scss';
-@import './svg.scss';
 @import './base.scss';
-@import './header.scss'; // @import './nav.scss';
+@import './header.scss'; //@import './nav.scss';
 @import './hero.scss';
 @import './content.scss';
 @import './section.scss';
 @import './footer.scss';
-@import './mediaqueries-sm.scss'; // Small devices, tablets.
-@import './mediaqueries-md.scss'; // Medium devices, desktops.
-@import './mediaqueries-lg.scss'; // Large devices, desktops.

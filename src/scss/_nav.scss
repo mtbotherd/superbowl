@@ -4,15 +4,42 @@
     position: absolute;
     top: 1.2rem;
     margin-bottom: 0;
+
+    @include screen ('desktop') {
+        position: relative;
+        top: 0;
+    }
 }
 
 .navbar-default {
     background-color: transparent;
     border: none;
 
+    .navbar-header {
+        @include screen ('lg-tablet') {
+            float: none;
+        }
+    }
+
+    .navbar-left,
+    .navbar-right {
+        @include screen ('lg-tablet') {
+            float: none !important;
+        }
+    }
+
     .navbar-toggle {
         border: none;
         margin: 0.8rem 1.5rem;
+
+        @include screen ('lg-tablet') {
+            display: inline-block;
+            margin: 2.5rem 3rem !important;
+        }
+
+        @include screen ('desktop') {
+            display: none;
+        }
 
         &:focus,
         &:hover {
@@ -25,12 +52,38 @@
     }
 
     .navbar-collapse {
-        background-color: $white;
+        background-color: $lighter-grey;
+        border-top: none;
         min-width: 32rem;
         max-height: 46rem;
         overflow-y: auto;
         opacity: 0.96;
-        margin-top: 2.3rem;
+        margin-top: 2.4rem;
+
+        @include screen ('tablet') {
+            margin-top: 2.7rem;
+        }
+
+        @include screen ('desktop') {
+            background-color: $white;
+            margin-top: 0;
+        }
+    }
+
+    .navbar-collapse.collapse {
+        @include screen ('lg-tablet') {
+            display: none!important;
+        }
+
+        @include screen ('desktop') {
+            display: block !important;
+        }
+    }
+
+    .collapse.in {
+        @include screen ('lg-tablet') {
+            display: block !important;
+        }
     }
 
     ul.nav {
@@ -41,16 +94,35 @@
 
     .navbar-nav {
         margin-top: 0;
+
+        @include screen ('lg-tablet') {
+            float: none !important;
+        }
+    }
+
+    .navbar-nav > li {
+        @include screen ('lg-tablet') {
+            float: none;
+        }
     }
 
     .navbar-nav > li > a {
         cursor: pointer;
-        font-size: 1.25em;
+        @include font-size(18, 10);
         font-weight: 700;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         text-align: center;
         text-transform: uppercase;
+
+        @include screen ('desktop') {
+            @include font-size(12, 10);
+            padding: 1rem 2.4rem;
+        }
+
+        @include screen ('lg-desktop') {
+            padding: 1rem 3.54rem;
+        }
     }
 
     .navbar > .active > a {

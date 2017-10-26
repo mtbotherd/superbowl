@@ -1,12 +1,37 @@
 .header-content {
+    border-bottom: 0.1rem solid $light-grey;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 30;
 
+    @include screen ('tablet') {
+        width: 75rem;
+    }
+
+    @include screen ('desktop') {
+        width: 97rem;
+    }
+
+    @include screen ('lg-desktop') {
+        width: 117rem;
+    }
+
     .header {
         background-color: $white;
         height: 8.3rem;
+
+        @include screen ('tablet') {
+            height: 12rem;
+        }
+
+        @include screen ('desktop') {
+            height: 16.4rem;
+        }
+
+        @include screen ('lg-desktop') {
+            height: 16.6rem;
+        }
 
         .logo {
             display: inline-block;
@@ -14,6 +39,18 @@
             img {
                 margin: 2.0rem auto;
                 max-width: 60%;
+
+                @include screen ('tablet') {
+                    max-width: 50%;
+                }
+
+                @include screen ('desktop') {
+                    max-width: 40%;
+                }
+
+                @include screen ('lg-desktop') {
+                    max-width: 35%;
+                }
             }
         }
     }
