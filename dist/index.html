@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Metro Transit | Superbowl LII</title>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Roboto:700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -46,8 +46,6 @@
         </header>
         <!-- </div>
 
-    <div class="container"> -->
-
         <!-- Hero -->
         <a name="home" class="anchor"></a>
         <div class="hero text-center">
@@ -73,12 +71,12 @@
                         <p>Download the free app on <a href="https://itunes.apple.com/us/app/metro-transit/id1153451926?ls=1&mt=8" title="Dowmload the Metro Transit App for Apple devices." target="_blank">App Store</a> or <a href="https://play.google.com/store/apps/details?id=org.metrotransit.mt.mobiletickets"
                                 title="Download the Metro Transit App for Android devices." target="_blank">Google play</a>.</p>
                         <div class="row app-badge">
-                            <div class="col-md-4 col-xs-6">
+                            <div class="col-md-4 col-sm-4 col-xs-6 col-sm-offset-2">
                                 <a href="https://itunes.apple.com/us/app/metro-transit/id1153451926?ls=1&mt=8" title="Dowmload the Metro Transit App for Apple devices." target="_blank">
                                     <img class="img-responsive" src="images/app-store.png" alt="Apple app store button" />
                                 </a>
                             </div>
-                            <div class="col-md-4 col-xs-6">
+                            <div class="col-md-4 col-sm-4 col-xs-6">
                                 <a href="https://play.google.com/store/apps/details?id=org.metrotransit.mt.mobiletickets" title="Download the Metro Transit App for Android devices." target="_blank">
                                     <img class="img-responsive" src="./images/google-play.png" alt="Google Play button" />
                                 </a>
@@ -116,7 +114,8 @@
                         <h4>$30</h4>
                         <p>If you have a Super Bowl ticket, buy a special $30 Gameday Pass. Regular light-rail service WILL NOT operate on gameday; only those holding a Super Bowl ticket along with a Gameday Pass will be allowed to board light rail at either
                             Mall of America (Blue Line) or Stadium Village (Green Line) stations on Feb. 4.</p>
-                        <p>Need other ticket options? Download the Metro Transit mobile app on iTunes or Google Play and browse the options available. Details at <a href="https://www.metrotransit.org/app" title="Download the Metro Transit mobile app." target="_blank">metrotransit.org/app</a>.</p>
+                        <p>Need other ticket options? Download the Metro Transit mobile app on the <a href="https://itunes.apple.com/us/app/metro-transit/id1153451926?ls=1&mt=8" title="Dowmload the Metro Transit App for Apple devices." target="_blank">App Store</a>                            or <a href="https://play.google.com/store/apps/details?id=org.metrotransit.mt.mobiletickets" title="Download the Metro Transit App for Android devices." target="_blank">Google play</a> and browse the options available. Details
+                            at <a href="https://www.metrotransit.org/app" title="Download the Metro Transit mobile app." target="_blank">metrotransit.org/app</a>.</p>
                     </div>
                 </div>
             </section>
@@ -180,20 +179,16 @@
                 </div>
                 <h3 class="text-center">Service approximately every 30 minutes 9 A.M. - 11 P.M. On Jan. 27, Jan. 28 and Feb. 3 only</h3>
                 <div class="park-n-ride">
-                    <!-- <img src="images/ai/parkNridemap.svg" /> -->
                     <img class="img-responsive" src="images/park-n-ride.png" alt="Map of Park and Ride locations." title="Park n Ride Locations" />
                 </div>
-                <!-- <div class="service-location">
-                    <p class="text-center">
-                        <i class="fa fa-map-o" aria-hidden="true"></i> Map of shuttle locations
-                    </p>
-                </div> -->
 
                 <!--
                     ###############################
                         Park and Ride locations
                     ###############################
                 -->
+
+                <!-- Visible on phones onlyç -->
                 <div class="panel-group visible-xs" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="blaine">
@@ -213,16 +208,16 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="panel panel-default">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#minnetonka" aria-expanded="false" title="Minnetonka">
+                            <h4 class="panel-title">
                                 <div class="map-location-inset">
                                     <span>2</span>
                                 </div>
-                                <h4 class="panel-title">Minnetonka</h4>
-                            </div>
+                                <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#minnetonka-location" aria-expanded="false" aria-controls="minnetonka-location">Minnetonka</a>
+                            </h4>
                         </div>
-                        <div id="minnetonka" class="panel-collapse collapse" aria-expanded="false">
+                        <div id="minnetonka-location" class="panel-collapse collapse" aria-labelledby="minnetonka">
                             <div class="panel-body">
                                 <p class="text-center">I-394 &amp; Country Road 73 Park &amp; Ride, 1100 Hopkins Crossroad</p>
                                 <p class="text-center">
@@ -233,14 +228,14 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#maplewood" aria-expanded="false" title="Maplewood">
+                            <h4 class="panel-title">
                                 <div class="map-location-inset">
                                     <span>3</span>
                                 </div>
-                                <h4 class="panel-title">Maplewood</h4>
-                            </div>
+                                <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#maplewood-location" aria-expanded="false" aria-controls="#maplewood-location">Maplewood</a>
+                            </h4>
                         </div>
-                        <div id="maplewood" class="panel-collapse collapse" aria-expanded="false">
+                        <div id="maplewood-location" class="panel-collapse collapse" aria-labelledby="maplewood">
                             <div class="panel-body">
                                 <p class="text-center">Maplewood Mall Park &amp; Ride, 1793 Beam Ave.</p>
                                 <p class="text-center">
@@ -251,14 +246,14 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#maplegrove" aria-expanded="false" title="Maple Grove">
+                            <h4 class="panel-title">
                                 <div class="map-location-inset">
                                     <span>4</span>
                                 </div>
-                                <h4 class="panel-title">Maple Grove</h4>
-                            </div>
+                                <a  class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#maplegrove-location" aria-expanded="false" aria-controls="#maplegrove-locaiton">Maple Grove</a>
+                            </h4>
                         </div>
-                        <div id="maplegrove" class="panel-collapse collapse" aria-expanded="false">
+                        <div id="maplegrove-location" class="panel-collapse collapse" aria-labelledby="maplegrove">
                             <div class="panel-body">
                                 <p class="text-center"> Transit Station, 12350 Main St. N.</p>
                                 <p class="text-center">
@@ -269,14 +264,14 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#woodbury" aria-expanded="false" title="Woodbury">
+                            <h4 class="panel-title">
                                 <div class="map-location-inset">
                                     <span>5</span>
                                 </div>
-                                <h4 class="panel-title">Woodbury*</h4>
-                            </div>
+                                <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#woodbury-location" aria-expanded="false" aria-controls="#woodbury-location">Woodbury*</a>
+                            </h4>
                         </div>
-                        <div id="woodbury" class="panel-collapse collapse" aria-expanded="false">
+                        <div id="woodbury-location" class="panel-collapse collapse" aria-labelledby="woodbury">
                             <div class="panel-body">
                                 <p class="text-center"><span style="color:#ed1b2e; font-size: 1.6rem;">*Service to downtown St. Paul only</span><br />Woodbury Theatre Park &amp; Ride, 1470 Queens Drive</p>
                                 <p class="text-center">
@@ -287,14 +282,14 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#roseville" aria-expanded="false" title="Roseville">
+                            <h4 class="panel-title">
                                 <div class="map-location-inset">
                                     <span>6</span>
                                 </div>
-                                <h4 class="panel-title">Roseville</h4>
-                            </div>
+                                <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#roseville-location" aria-expanded="false" aria-controls="#rosevile-location">Roseville</a>
+                            </h4>
                         </div>
-                        <div id="roseville" class="panel-collapse collapse" aria-expanded="false">
+                        <div id="roseville-location" class="panel-collapse collapse" aria-labelledby="roseville">
                             <div class="panel-body">
                                 <p class="text-center">I-35W &amp; County Road C Park &amp; Ride, 2000 Iona Lane</p>
                                 <p class="text-center">
@@ -305,14 +300,14 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#richfield" aria-expanded="false" title="Richfield">
+                            <h4 class="panel-title">
                                 <div class="map-location-inset">
                                     <span>7</span>
                                 </div>
-                                <h4 class="panel-title">Richfield</h4>
-                            </div>
+                                <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#richfield-location" aria-expanded="false" aria-controls="#richfield-location">Richfield</a>
+                            </h4>
                         </div>
-                        <div id="richfield" class="panel-collapse collapse" aria-expanded="false">
+                        <div id="richfield-location" class="panel-collapse collapse" aria-labelledby="richfield">
                             <div class="panel-body">
                                 <p class="text-center">Knox Avenue Park &amp; Ride, 7601 Knox Ave.</p>
                                 <p class="text-center">
@@ -323,14 +318,14 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#stlouispark" aria-expanded="false" title="St. Louis Park">
+                            <h4 class="panel-title">
                                 <div class="map-location-inset">
                                     <span>8</span>
                                 </div>
-                                <h4 class="panel-title">St. Louis Park</h4>
-                            </div>
+                                <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#stlouispark-location" aria-expanded="false" aria-controls="#stlouispark-location">St. Louis Park</a>
+                            </h4>
                         </div>
-                        <div id="stlouispark" class="panel-collapse collapse" aria-expanded="false">
+                        <div id="stlouispark-location" class="panel-collapse collapse" aria-labelledby="stlouispark">
                             <div class="panel-body">
                                 <p class="text-center">Louisiana Avenue Transit Center, 1300 Louisiana Ave.</p>
                                 <p class="text-center">
@@ -341,14 +336,14 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#cottagegrove" aria-expanded="false" title="Cottage Grove">
+                            <h4 class="panel-title">
                                 <div class="map-location-inset">
                                     <span>9</span>
                                 </div>
-                                <h4 class="panel-title">Cottage Grove</h4>
-                            </div>
+                                <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#cottagegrove-location" aria-expanded="false" aria-controls="#cottagegrove-location">Cottage Grove</a>
+                            </h4>
                         </div>
-                        <div id="cottagegrove" class="panel-collapse collapse" aria-expanded="false">
+                        <div id="cottagegrove-location" class="panel-collapse collapse" aria-labelledby="cottagegrove">
                             <div class="panel-body">
                                 <p class="text-center">Cottage Grove Park &amp; Ride, 7500 W. Point Douglas Rd. S.</p>
                                 <p class="text-center">
@@ -359,14 +354,14 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#brooklynpark" aria-expanded="false" title="Brooklyn Park">
+                            <h4 class="panel-title">
                                 <div class="map-location-inset">
                                     <span>10</span>
                                 </div>
-                                <h4 class="panel-title">Brooklyn Park</h4>
-                            </div>
+                                <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#brooklynpark-location" aria-expanded="false" aria-controls="#brooklynpark-location">Brooklyn Park</a>
+                            </h4>
                         </div>
-                        <div id="brooklynpark" class="panel-collapse collapse" aria-expanded="false">
+                        <div id="brooklynpark-location" class="panel-collapse collapse" aria-labelledby="brooklynpark">
                             <div class="panel-body">
                                 <p class="text-center">Hwy. 610 &amp; Noble Parkway Park &amp; Ride, 4401 95th Ave.</p>
                                 <p class="text-center">
@@ -374,9 +369,10 @@
                                 </p>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
 
+                <!-- Hidden on phones only - UPDATE BOTH VIEWS!!! -->
                 <div class="hidden-xs">
                     <div class="row">
                         <div class="col-sm-6">
@@ -518,20 +514,39 @@
             <section>
                 <h2>Learn about travel options</h2>
                 <h3 class="text-center">Getting there is easy with our trip tool.</h3>
-                <div class="row">
-                    <div class="col-md-4">
-                        <a class="btn btn-primary btn-block" href="https://www.metrotransit.org/tripplanner" target="_blank" title="Plan your trip with Metro Transit's Trip Planner tool."><span>Trip planner</span></a>
+
+                <!-- Hidden large desktops only - UPDATE BOTH VIEWS!!! -->
+                <div class="hidden-lg">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <a class="btn btn-primary btn-block" href="https://www.metrotransit.org/tripplanner" target="_blank" title="Plan your trip with Metro Transit's Trip Planner tool."><span>Trip planner</span></a>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <a class="btn btn-primary btn-block" href="" target="_blank" title="Interactive map"><span>Interactive Map</span></a>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <a class="btn btn-primary btn-block" href="https://www.metrotransit.org/nextrip" target="_blank" title="Get real-time departure times for your routes with Metro Transit's NexTrip tool."><span>Nextrip Real-time departures info</span></a>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <a class="btn btn-primary btn-block" href="" target="_blank" title="Interactive map"><span>Interactive Map</span></a>
-                    </div>
-                    <div class="col-md-4">
-                        <a class="btn btn-primary btn-block" href="https://www.metrotransit.org/nextrip" target="_blank" title="Get real-time departure times for your routes with Metro Transit's NexTrip tool."><span>Nextrip Real-time departures info</span></a>
+                </div>
+
+                <!-- Visibile on large desktops only - UPDATE BOTH VIEWS!!! -->
+                <div class="visible-lg">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a class="btn btn-primary btn-block" href="https://www.metrotransit.org/tripplanner" target="_blank" title="Plan your trip with Metro Transit's Trip Planner tool."><span>Trip planner</span></a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a class="btn btn-primary btn-block" href="" target="_blank" title="Interactive map"><span>Interactive Map</span></a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a class="btn btn-primary btn-block" href="https://www.metrotransit.org/nextrip" target="_blank" title="Get real-time departure times for your routes with Metro Transit's NexTrip tool."><span>Nextrip Real-time departures info</span></a>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-md-offset-4 col-xs-12">
-                        <h4 class="text-center">Call 612-373-3333</h4>
+                        <div class="phone text-center">Call 612-373-3333</div>
                     </div>
                 </div>
             </section>
@@ -544,42 +559,68 @@
                 <h2>Missing something?</h2>
                 <h3>ITEMS FOUND ON BUSES AND TRAINS WILL BE HELD FOR TWO WEEKS. CONTACT <a href="https://www.metrotransit.org/lost-found" tartget="_blank" title="Metro Transit Lost and found">LOST &amp; FOUND</a> TO CHECK ON A LOST ITEM.</h3>
             </section>
+        </div>
 
-            <!-- Destinations -->
+        <!-- Event Info -->
+        <div class="section event-info">
             <a name="event-info" class="anchor"></a>
-            <section class="section event-info">
+            <section>
                 <h2>Transit takes you everywhere you want to be!</h2>
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="service-location">
-                            U.S. Bank Stadium
+                        <div class="tile usbank">
+                            <div class="overlay">
+                                <a href="" title="U.S. Bank Staium" target="_blank">
+                                            U.S. Bank Stadium
+                                        </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="service-location">
-                            Nicollet Mall (Super Bowl Expirience Driven by Genesis)
+                        <div class="tile nicollet-mall">
+                            <div class="overlay">
+                                <a href="" title="Nicollet Mall (Super Bowl Expirience Driven by Genesis)" target="_blank">
+                                            Nicollet Mall (Super Bowl Expirience Driven by Genesis)
+                                        </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="service-location">
-                            Convention Center (NFL Live)
+                        <div class="tile convention-center">
+                            <div class="overlay">
+                                <a href="" title="Convention Center (NFL Live)" target="_blank">
+                                            Convention Center (NFL Live)
+                                        </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="service-location">
-                            Commons Park
+                        <div class="tile commons-park">
+                            <div class="overlay">
+                                <a href="" title="Commons Park" target="_blank">
+                                            Commons Park
+                                        </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="service-location">
-                            St. Paul Cathedral (Crashed Ice)
+                        <div class="tile st-paul-cathedral">
+                            <div class="overlay">
+                                <a href="" title="St. Paul Cathedral (Crashed Ice)" target="_blank">
+                                            St. Paul Cathedral (Crashed Ice)
+                                        </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="service-location">
-                            Rice Park (St. Paul Winter Carnival)
+                        <div class="tile rice-park">
+                            <div class="overlay">
+                                <a href="" title="Rice Park (St. Paul Winter Carnival)" target="_blank">
+                                            Rice Park (St. Paul Winter Carnival)
+                                        </a>
+                            </div>
                         </div>
                     </div>
                 </div>
