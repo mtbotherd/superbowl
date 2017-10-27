@@ -1,22 +1,22 @@
-.anchor {
-    display: block;
-    position: relative;
-    top: -8.3rem;
-    visibility: hidden;
+// Import section-specific styles.
+@import './app.scss';
+@import './fares.scss';
+@import './map.scss';
+@import './special-services.scss';
+@import './trip-tools.scss';
+@import './lost_found.scss';
+@import './event-info.scss';
 
-    @include screen ('tablet') {
-        top: -12rem;
+.gameday {}
+
+.service-location {
+    border: 0.1rem solid $dark-grey;
+    float: left;
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+
+    i.fa {
+        display: block;
+        @include font-size(100, 10);
     }
-
-    @include screen ('desktop') {
-        top: -16rem;
-    }
-
-    @include screen ('lg-desktop') {
-        top: -18rem;
-    }
-}
-
-.section {
-    margin: 0 auto;
 }

@@ -1,1 +1,61 @@
-.map {}
+.map {
+    .sb-events-legend {
+        //float: left;
+        @include font-size(10, 10);
+        line-height: 1.3rem;
+
+        img {
+            width: 65%;
+            max-width: 100%;
+            height: auto;
+
+            @include screen ('tablet') {
+                width: 100%;
+            }
+
+            @include screen ('desktop') {
+                width: 75%;
+            }
+        }
+
+        span.icon-label {
+            font-weight: 700;
+        }
+
+        img.mt-circle-icon {
+            margin-top: -.7rem;
+            width: 55%;
+            position: relative;
+            left: -.3rem;
+
+            @include screen ('tablet') {
+                width: 75%;
+                left: -.6rem;
+            }
+
+            @include screen ('desktop') {
+                width: 55%;
+            }
+        }
+
+        img.circle-icon {
+            width: 30%;
+            position: relative;
+            left: -1rem;
+
+            @include screen ('tablet') {
+                width: 40%;
+                left: -1.5rem;
+            }
+
+            @include screen ('desktop') {
+                width: 25%;
+                left: -1.7rem;
+            }
+        }
+
+        @include screen ('desktop') {
+            @include font-size(12, 10);
+        }
+    }
+}

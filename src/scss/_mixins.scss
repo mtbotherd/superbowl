@@ -18,6 +18,13 @@
         #{$property}: #{$value};
     }
 }
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
 // Center vertically
 @mixin center-v {
     position: absolute;

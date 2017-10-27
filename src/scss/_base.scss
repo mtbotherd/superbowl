@@ -19,11 +19,32 @@ body {
     padding: 0;
 
     .section {
+        margin: 0 auto;
         padding: 1.5rem;
+        @include clearfix;
     }
 
     .section:nth-child(odd) {
         background-color: $lighter-grey;
+    }
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -8.3rem;
+    visibility: hidden;
+
+    @include screen ('tablet') {
+        top: -12rem;
+    }
+
+    @include screen ('desktop') {
+        top: -16rem;
+    }
+
+    @include screen ('lg-desktop') {
+        top: -18rem;
     }
 }
 
