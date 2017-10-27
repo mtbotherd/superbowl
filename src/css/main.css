@@ -8544,7 +8544,8 @@ small {
     position: relative;
     background-color: #ffffff;
     min-height: 32rem;
-    padding: 2rem; }
+    padding: 2rem;
+    width: 100%; }
     .special-service .service-location .map-location-inset {
       background-color: #0053a0;
       color: #ffffff;
