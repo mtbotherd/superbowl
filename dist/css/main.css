@@ -10496,9 +10496,29 @@ body {
 .container {
   padding: 0; }
   .container .section {
+    margin: 0 auto;
     padding: 1.5rem; }
+    .container .section:after {
+      content: "";
+      display: table;
+      clear: both; }
   .container .section:nth-child(odd) {
     background-color: #f7f6f6; }
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -8.3rem;
+  visibility: hidden; }
+  @media only screen and (min-width: 768px) {
+    .anchor {
+      top: -12rem; } }
+  @media only screen and (min-width: 992px) {
+    .anchor {
+      top: -16rem; } }
+  @media only screen and (min-width: 1200px) {
+    .anchor {
+      top: -18rem; } }
 
 h1,
 h2,
@@ -10761,24 +10781,6 @@ small {
       display: inline-block !important;
       margin: 0 1.5rem; } }
 
-.anchor {
-  display: block;
-  position: relative;
-  top: -8.3rem;
-  visibility: hidden; }
-  @media only screen and (min-width: 768px) {
-    .anchor {
-      top: -12rem; } }
-  @media only screen and (min-width: 992px) {
-    .anchor {
-      top: -16rem; } }
-  @media only screen and (min-width: 1200px) {
-    .anchor {
-      top: -18rem; } }
-
-.section {
-  margin: 0 auto; }
-
 .app .app-badge {
   margin-bottom: 2em; }
 
@@ -10790,6 +10792,51 @@ small {
 
 .fares h4 {
   color: #0053a0; }
+
+.map .sb-events-legend {
+  font-size: 10;
+  font-size: 1rem;
+  line-height: 1.3rem; }
+  .map .sb-events-legend img {
+    width: 65%;
+    max-width: 100%;
+    height: auto; }
+    @media only screen and (min-width: 768px) {
+      .map .sb-events-legend img {
+        width: 100%; } }
+    @media only screen and (min-width: 992px) {
+      .map .sb-events-legend img {
+        width: 75%; } }
+  .map .sb-events-legend span.icon-label {
+    font-weight: 700; }
+  .map .sb-events-legend img.mt-circle-icon {
+    margin-top: -.7rem;
+    width: 55%;
+    position: relative;
+    left: -.3rem; }
+    @media only screen and (min-width: 768px) {
+      .map .sb-events-legend img.mt-circle-icon {
+        width: 75%;
+        left: -.6rem; } }
+    @media only screen and (min-width: 992px) {
+      .map .sb-events-legend img.mt-circle-icon {
+        width: 55%; } }
+  .map .sb-events-legend img.circle-icon {
+    width: 30%;
+    position: relative;
+    left: -1rem; }
+    @media only screen and (min-width: 768px) {
+      .map .sb-events-legend img.circle-icon {
+        width: 40%;
+        left: -1.5rem; } }
+    @media only screen and (min-width: 992px) {
+      .map .sb-events-legend img.circle-icon {
+        width: 25%;
+        left: -1.7rem; } }
+  @media only screen and (min-width: 992px) {
+    .map .sb-events-legend {
+      font-size: 12;
+      font-size: 1.2rem; } }
 
 .special-service .park-n-ride {
   margin-bottom: 2rem; }
@@ -10961,6 +11008,7 @@ small {
 
 .service-location {
   border: 0.1rem solid #606060;
+  float: left;
   padding: 1.5rem 1rem;
   margin-bottom: 2rem; }
   .service-location i.fa {
