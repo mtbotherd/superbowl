@@ -40,7 +40,7 @@
 }
 // Media queries
 @mixin screen($size) {
-    $lg-desktop: "(min-width: 1200px)";
+    $lg-desktop: "(min-width: 1400px)";
     $desktop: "(min-width: 992px)";
     $lg-tablet: "(min-width: 768px) and (max-width: 991px)";
     $tablet: "(min-width: 768px)";
