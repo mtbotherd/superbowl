@@ -9,7 +9,7 @@
 }
 // Vendor prefixing
 @mixin prefix($property, $value, $vendors: webkit moz ms o, $default: true) {
-     @if $vendors{
+    @if $vendors {
         @each $vendor in $vendors {
             #{"-" + $vendor + "-" + $property}: #{$value};
         }
@@ -45,27 +45,26 @@
     $lg-tablet: "(min-width: 768px) and (max-width: 991px)";
     $tablet: "(min-width: 768px)";
     @if $size == tablet {
-         @media only screen and #{$tablet}{
+        @media only screen and #{$tablet} {
             @content;
         }
-    }
-    @else if $size == lg-tablet {
-         @media only screen and #{$lg-tablet}{
+    } @else
+    if $size == lg-tablet {
+        @media only screen and #{$lg-tablet} {
             @content;
         }
-    }
-    @else if $size == desktop {
-         @media only screen and #{$desktop}{
+    } @else
+    if $size == desktop {
+        @media only screen and #{$desktop} {
             @content;
         }
-    }
-    @else if $size == lg-desktop {
-         @media only screen and #{$lg-desktop}{
+    } @else
+    if $size == lg-desktop {
+        @media only screen and #{$lg-desktop} {
             @content;
         }
-    }
-    @else {
-         @media only screen and #{$size}{
+    } @else {
+        @media only screen and #{$size} {
             @content;
         }
     }

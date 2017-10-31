@@ -7,12 +7,10 @@
         height: 16.4rem;
         margin: 0 auto 2rem;
         text-align: center;
-
         @include screen ('lg-tablet') {
             width: 21rem;
             height: 15.2rem;
         }
-
         @include screen ('lg-desktop') {
             width: 35rem;
             height: 22.1rem;
@@ -43,13 +41,12 @@
     }
 
     .usbank {
-        background-image: url('../images/sb_usbank.jpg');
+        background-image: url("../images/sb_usbank.jpg");
 
         a {
             @include screen ('lg-tablet') {
                 padding: 6.6rem 1.5rem !important;
             }
-
             @include screen ('lg-desktop') {
                 padding: 10.05rem 1.5rem !important;
             }
@@ -57,15 +54,13 @@
     }
 
     .nicollet-mall {
-        background-image: url('../images/sb_nicollet.jpg');
+        background-image: url("../images/sb_nicollet.jpg");
 
         a {
             padding: 5.2rem 1.5rem !important;
-
             @include screen ('lg-tablet') {
                 padding: 4.6rem 1.5rem !important;
             }
-
             @include screen ('lg-desktop') {
                 padding: 9.05rem 1.5rem !important;
             }
@@ -73,15 +68,13 @@
     }
 
     .convention-center {
-        background-image: url('../images/sb_convention.jpg');
+        background-image: url("../images/sb_convention.jpg");
 
         a {
             padding: 6.2rem 1.5rem !important;
-
             @include screen ('lg-tablet') {
                 padding: 5.6rem 1.5rem !important;
             }
-
             @include screen ('lg-desktop') {
                 padding: 10.05rem 1.5rem !important;
             }
@@ -89,13 +82,12 @@
     }
 
     .commons-park {
-        background-image: url('../images/sb_commons.jpg');
+        background-image: url("../images/sb_commons.jpg");
 
         a {
             @include screen ('lg-tablet') {
                 padding: 6.6rem 1.5rem !important;
             }
-
             @include screen ('lg-desktop') {
                 padding: 10.05rem 1.5rem !important;
             }
@@ -103,15 +95,13 @@
     }
 
     .st-paul-cathedral {
-        background-image: url('../images/sb_cathedral.jpg');
+        background-image: url("../images/sb_cathedral.jpg");
 
         a {
             padding: 6.2rem 1.5rem !important;
-
             @include screen ('lg-tablet') {
                 padding: 5.6rem 1.5rem !important;
             }
-
             @include screen ('lg-desktop') {
                 padding: 10.05rem 1.5rem !important;
             }
@@ -119,17 +109,41 @@
     }
 
     .rice-park {
-        background-image: url('../images/sb_ricepark.jpg');
+        background-image: url("../images/sb_ricepark.jpg");
 
         a {
             padding: 6.2rem 1.5rem !important;
-
             @include screen ('lg-tablet') {
                 padding: 5.6rem 1.5rem !important;
             }
-
             @include screen ('lg-desktop') {
                 padding: 10.05rem 1.5rem !important;
+            }
+        }
+    }
+
+    .partners {
+        margin-bottom: 2rem;
+        position: relative;
+        @include screen ('tablet') {
+            height: 8rem;
+            margin-bottom: 0;
+        }
+        @include screen ('desktop') {
+            height: 11rem;
+        }
+        @include screen ('lg-desktop') {
+            height: 14rem;
+        }
+
+        img {
+            width: 45%;
+            @include screen ('tablet') {
+                @include center-v;
+                width: 85%;
+            }
+            @include screen ('desktop') {
+                width: 90%;
             }
         }
     }
