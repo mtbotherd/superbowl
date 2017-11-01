@@ -8176,10 +8176,10 @@ body {
       top: -12rem; } }
   @media only screen and (min-width: 992px) {
     .anchor {
-      top: -16rem; } }
+      top: -19.9rem; } }
   @media only screen and (min-width: 1200px) {
     .anchor {
-      top: -18rem; } }
+      top: -20.9rem; } }
 
 h1,
 h2,
@@ -8257,35 +8257,18 @@ small {
     padding: 0; }
   .header-content .header {
     background-color: #ffffff;
-    height: 7.4rem; }
+    height: 6.7rem; }
     @media only screen and (min-width: 768px) {
       .header-content .header {
-        height: 12rem; } }
+        height: 10.4rem; } }
     @media only screen and (min-width: 992px) {
       .header-content .header {
-        height: 16.5rem; } }
+        height: 19.4rem; } }
     .header-content .header .logo {
       display: inline-block; }
       .header-content .header .logo img {
-        margin: 2.0rem auto;
-        max-width: 60%; }
-        @media only screen and (min-width: 768px) {
-          .header-content .header .logo img {
-            max-width: 50%; } }
-        @media only screen and (min-width: 992px) {
-          .header-content .header .logo img {
-            max-width: 40%; } }
-        @media only screen and (min-width: 1200px) {
-          .header-content .header .logo img {
-            max-width: 35%; } }
-
-@media (min-width: 426px) and (max-width: 767px) {
-  .header-content .header {
-    height: 9.2rem; }
-    .header-content .header .logo img {
-      max-width: 40%; }
-  .hero {
-    margin-top: 0.9rem; } }
+        margin: 2rem auto;
+        max-width: 50%; }
 
 .navbar {
   position: absolute;
@@ -8327,7 +8310,7 @@ small {
     max-height: 46rem;
     overflow-y: auto;
     opacity: 0.96;
-    margin-top: 1.5rem; }
+    margin-top: 0.8rem; }
     @media only screen and (min-width: 768px) {
       .navbar-default .navbar-collapse {
         margin-top: 2.7rem; } }
@@ -8388,32 +8371,27 @@ small {
   float: left; }
 
 .hero {
-  background: url("../images/SB-WebImage_2070x739.jpg") no-repeat;
+  background: url("../images/hero-bg.jpg") no-repeat;
   background-position-x: 50%;
   background-size: cover;
   min-height: 30rem;
-  margin: 0; }
+  margin: -1.5rem 0 0; }
   @media only screen and (min-width: 992px) {
     .hero {
-      min-height: 39.5rem;
-      margin-top: 4.5rem; } }
+      margin-top: 5rem; } }
   @media only screen and (min-width: 1200px) {
     .hero {
-      min-height: 45rem;
-      margin-top: 4.5rem; } }
+      margin-top: 7.5rem; } }
   .hero .caption {
     color: #ffffff;
-    margin: 20rem auto 0;
+    margin: 21rem auto 0;
     text-transform: uppercase; }
-    @media only screen and (min-width: 768px) {
-      .hero .caption {
-        margin-top: 22rem; } }
     @media only screen and (min-width: 992px) {
       .hero .caption {
-        margin-top: 24rem; } }
+        margin: 26.5rem auto 0; } }
     @media only screen and (min-width: 1200px) {
       .hero .caption {
-        margin-top: 32rem; } }
+        margin: 34rem auto 0; } }
     .hero .caption h1 {
       margin-bottom: 1rem; }
       @media only screen and (min-width: 992px) {

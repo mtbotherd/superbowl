@@ -7,61 +7,44 @@
     position: fixed;
     top: 0;
     z-index: 30;
-    // @include screen ('tablet') {
-    //     width: 75rem;
-    // }
-    // @include screen ('desktop') {
-    //     width: 97rem;
-    // }
-    // @include screen ('lg-desktop') {
-    //     width: 117rem;
-    // }
+
     .container {
         padding: 0;
     }
 
     .header {
         background-color: $white;
-        height: 7.4rem;
+        height: 6.7rem;
         @include screen ('tablet') {
-            height: 12rem;
+            height: 10.4rem;
         }
         @include screen ('desktop') {
-            height: 16.5rem;
+            height: 19.4rem;
         }
 
         .logo {
             display: inline-block;
 
             img {
-                margin: 2.0rem auto;
-                max-width: 60%;
-                @include screen ('tablet') {
-                    max-width: 50%;
-                }
-                @include screen ('desktop') {
-                    max-width: 40%;
-                }
-                @include screen ('lg-desktop') {
-                    max-width: 35%;
-                }
+                margin: 2rem auto;
+                max-width: 50%;
             }
         }
     }
 }
-@media (min-width: 426px) and (max-width: 767px) {
-    .header-content {
-        .header {
-            height: 9.2rem;
-
-            .logo img {
-                max-width: 40%;
-            }
-        }
-    }
-
-    .hero {
-        margin-top: 0.9rem;
-    }
-}
+// @media (min-width: 426px) and (max-width: 767px) {
+//     .header-content {
+//         .header {
+//             height: 9.2rem;
+//
+//             .logo img {
+//                 max-width: 40%;
+//             }
+//         }
+//     }
+//
+//     .hero {
+//         margin-top: 0.9rem;
+//     }
+// }
 @import './nav.scss';

@@ -37,11 +37,12 @@ body {
         top: -12rem;
     }
     @include screen ('desktop') {
-        top: -16rem;
+        top: -19.9rem;
     }
     @include screen ('lg-desktop') {
-        top: -18rem;
+        top: -20.9rem;
     }
+    @include screen ('xlg-desktop') {}
 }
 
 h1,

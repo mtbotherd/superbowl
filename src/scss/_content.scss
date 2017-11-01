@@ -9,6 +9,10 @@
 
 .gameday {}
 
+.section {
+    @include screen ('lg-desktop') {}
+}
+
 .service-location {
     border: 0.1rem solid $dark-grey;
     float: left;
