@@ -14,18 +14,18 @@ body {
     }
 }
 
+.section {
+    margin: 0 auto;
+    padding: 1.5rem;
+    @include clearfix;
+}
+
+.section:nth-child(odd) {
+    background-color: $lighter-grey;
+}
+
 .container {
-    padding: 0;
-
-    .section {
-        margin: 0 auto;
-        padding: 1.5rem;
-        @include clearfix;
-    }
-
-    .section:nth-child(odd) {
-        background-color: $lighter-grey;
-    }
+    //padding: 0;
 }
 
 .anchor {

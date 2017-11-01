@@ -1,27 +1,33 @@
 .header-content {
+    background-color: $white;
     border-bottom: 0.1rem solid $light-grey;
+    margin: 0;
+    padding: 0;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 30;
-    @include screen ('tablet') {
-        width: 75rem;
-    }
-    @include screen ('desktop') {
-        width: 97rem;
-    }
-    @include screen ('lg-desktop') {
-        width: 117rem;
+    // @include screen ('tablet') {
+    //     width: 75rem;
+    // }
+    // @include screen ('desktop') {
+    //     width: 97rem;
+    // }
+    // @include screen ('lg-desktop') {
+    //     width: 117rem;
+    // }
+    .container {
+        padding: 0;
     }
 
     .header {
         background-color: $white;
-        height: 8.3rem;
+        height: 7.4rem;
         @include screen ('tablet') {
             height: 12rem;
         }
         @include screen ('desktop') {
-            height: 16.4rem;
+            height: 16.5rem;
         }
 
         .logo {
