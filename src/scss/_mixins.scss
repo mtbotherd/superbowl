@@ -40,7 +40,7 @@
 }
 // Media queries
 @mixin screen($size) {
-    $lg-desktop: "(min-width: 1400px)";
+    $lg-desktop: "(min-width: 1200px)";
     $desktop: "(min-width: 992px)";
     $lg-tablet: "(min-width: 768px) and (max-width: 991px)";
     $tablet: "(min-width: 768px)";
@@ -56,6 +56,11 @@
     } @else
     if $size == desktop {
         @media only screen and #{$desktop} {
+            @content;
+        }
+    } @else
+    if $size == md-desktop {
+        @media only screen and #{$md-desktop} {
             @content;
         }
     } @else
