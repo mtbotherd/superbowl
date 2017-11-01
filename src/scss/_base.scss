@@ -9,7 +9,6 @@ body {
     line-height: $line-height;
     margin: 0;
     padding-top: 8.3rem;
-
     @include screen ('tablet') {
         padding-top: 12rem;
     }
@@ -34,15 +33,12 @@ body {
     position: relative;
     top: -8.3rem;
     visibility: hidden;
-
     @include screen ('tablet') {
         top: -12rem;
     }
-
     @include screen ('desktop') {
         top: -16rem;
     }
-
     @include screen ('lg-desktop') {
         top: -18rem;
     }
@@ -66,10 +62,9 @@ h1 {
 }
 
 h2 {
-    font-family: $font-stack-helvetica;
+    font-family: $font-stack-lato;
     @include font-size(22, 10);
     text-align: center;
-
     @include screen ('desktop') {
         @include font-size(41, 10);
         line-height: 5rem;
