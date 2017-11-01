@@ -82,7 +82,10 @@ gulp.task('useref', function() {
 
 // Optimize Media Images
 gulp.task('images', function() {
-    return gulp.src('src/images/**/*.+(png|jpg|gif|svg)')
+    return gulp.src([
+            'src/images/**/*.+(png|jpg|gif|svg)',
+            '!src/images/ai/**/*.+(png|jpg|gif|svg)'
+        ])
         .pipe(imagemin({
             interlaced: true
         })) // refer to https://github.com/sindresorhus/gulp-imagemin for optimization options available based on file type.
