@@ -11017,31 +11017,19 @@ small {
         padding: 9.05rem 1.5rem !important; } }
 
 .event-info .partners {
+  height: 11rem;
   margin-bottom: 2rem;
   position: relative; }
   @media only screen and (min-width: 768px) {
     .event-info .partners {
-      height: 8rem;
       margin-bottom: 0; } }
-  @media only screen and (min-width: 992px) {
-    .event-info .partners {
-      height: 11rem; } }
-  @media only screen and (min-width: 1400px) {
-    .event-info .partners {
-      height: 14rem; } }
   .event-info .partners img {
-    width: 45%; }
-    @media only screen and (min-width: 768px) {
-      .event-info .partners img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: 85%; } }
-    @media only screen and (min-width: 992px) {
-      .event-info .partners img {
-        width: 90%; } }
+    width: 17.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
 
 .service-location {
   border: 0.1rem solid #606060;

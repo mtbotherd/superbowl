@@ -129,28 +129,16 @@
     }
 
     .partners {
+        height: 11rem;
         margin-bottom: 2rem;
         position: relative;
         @include screen ('tablet') {
-            height: 8rem;
             margin-bottom: 0;
-        }
-        @include screen ('desktop') {
-            height: 11rem;
-        }
-        @include screen ('lg-desktop') {
-            height: 14rem;
         }
 
         img {
-            width: 45%;
-            @include screen ('tablet') {
-                @include center-v;
-                width: 85%;
-            }
-            @include screen ('desktop') {
-                width: 90%;
-            }
+            width: 17.5rem;
+            @include center-v;
         }
     }
 }
