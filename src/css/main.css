@@ -8634,9 +8634,12 @@ small {
   background-image: url("../images/sb_convention.jpg"); }
   .event-info .convention-center a {
     padding: 6.2rem 1.5rem !important; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (min-width: 768px) {
       .event-info .convention-center a {
-        padding: 5.6rem 1.5rem !important; } }
+        padding: 4.6rem 1.5rem !important; } }
+    @media only screen and (min-width: 992px) {
+      .event-info .convention-center a {
+        padding: 6.2rem 1.5rem !important; } }
     @media only screen and (min-width: 1400px) {
       .event-info .convention-center a {
         padding: 10.05rem 1.5rem !important; } }
@@ -8665,9 +8668,12 @@ small {
   background-image: url("../images/sb_ricepark.jpg"); }
   .event-info .rice-park a {
     padding: 6.2rem 1.5rem !important; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (min-width: 768px) {
       .event-info .rice-park a {
-        padding: 5.6rem 1.5rem !important; } }
+        padding: 4.6rem 1.5rem !important; } }
+    @media only screen and (min-width: 992px) {
+      .event-info .rice-park a {
+        padding: 6.2rem 1.5rem !important; } }
     @media only screen and (min-width: 1400px) {
       .event-info .rice-park a {
         padding: 10.05rem 1.5rem !important; } }
