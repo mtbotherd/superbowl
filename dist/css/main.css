@@ -10516,7 +10516,7 @@ body {
   @media only screen and (min-width: 992px) {
     .anchor {
       top: -16rem; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1400px) {
     .anchor {
       top: -18rem; } }
 
@@ -10595,7 +10595,7 @@ small {
   @media only screen and (min-width: 992px) {
     .header-content {
       width: 97rem; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1400px) {
     .header-content {
       width: 117rem; } }
   .header-content .header {
@@ -10607,7 +10607,7 @@ small {
     @media only screen and (min-width: 992px) {
       .header-content .header {
         height: 16.4rem; } }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1400px) {
       .header-content .header {
         height: 16.6rem; } }
     .header-content .header .logo {
@@ -10621,7 +10621,7 @@ small {
         @media only screen and (min-width: 992px) {
           .header-content .header .logo img {
             max-width: 40%; } }
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: 1400px) {
           .header-content .header .logo img {
             max-width: 35%; } }
 
@@ -10714,7 +10714,7 @@ small {
         font-size: 12;
         font-size: 1.2rem;
         padding: 1rem 2.4rem; } }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1400px) {
       .navbar-default .navbar-nav > li > a {
         padding: 1rem 3.54rem; } }
   .navbar-default .navbar > .active > a {
@@ -10742,7 +10742,7 @@ small {
     .hero {
       min-height: 39.5rem;
       margin-top: 4.5rem; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1400px) {
     .hero {
       min-height: 40.5rem;
       margin-top: 4.5rem; } }
@@ -10756,7 +10756,7 @@ small {
     @media only screen and (min-width: 992px) {
       .hero .caption {
         margin-top: 24rem; } }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1400px) {
       .hero .caption {
         margin-top: 25rem; } }
     .hero .caption h1 {
@@ -10833,6 +10833,9 @@ small {
       .map .sb-events-legend img.circle-icon {
         width: 25%;
         left: -1.7rem; } }
+    @media only screen and (min-width: 1400px) {
+      .map .sb-events-legend img.circle-icon {
+        left: -2rem; } }
   @media only screen and (min-width: 992px) {
     .map .sb-events-legend {
       font-size: 12;
@@ -10922,7 +10925,7 @@ small {
     .event-info .tile {
       width: 21rem;
       height: 15.2rem; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1400px) {
     .event-info .tile {
       width: 35rem;
       height: 22.1rem;
@@ -10950,7 +10953,7 @@ small {
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .event-info .usbank a {
       padding: 6.6rem 1.5rem !important; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1400px) {
     .event-info .usbank a {
       padding: 10.05rem 1.5rem !important; } }
 
@@ -10961,7 +10964,7 @@ small {
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .event-info .nicollet-mall a {
         padding: 4.6rem 1.5rem !important; } }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1400px) {
       .event-info .nicollet-mall a {
         padding: 9.05rem 1.5rem !important; } }
 
@@ -10972,7 +10975,7 @@ small {
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .event-info .convention-center a {
         padding: 5.6rem 1.5rem !important; } }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1400px) {
       .event-info .convention-center a {
         padding: 10.05rem 1.5rem !important; } }
 
@@ -10981,7 +10984,7 @@ small {
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .event-info .commons-park a {
       padding: 6.6rem 1.5rem !important; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1400px) {
     .event-info .commons-park a {
       padding: 10.05rem 1.5rem !important; } }
 
@@ -10992,7 +10995,7 @@ small {
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .event-info .st-paul-cathedral a {
         padding: 5.6rem 1.5rem !important; } }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1400px) {
       .event-info .st-paul-cathedral a {
         padding: 10.05rem 1.5rem !important; } }
 
@@ -11003,9 +11006,36 @@ small {
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .event-info .rice-park a {
         padding: 5.6rem 1.5rem !important; } }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1400px) {
       .event-info .rice-park a {
         padding: 10.05rem 1.5rem !important; } }
+
+.event-info .partners {
+  margin-bottom: 2rem;
+  position: relative; }
+  @media only screen and (min-width: 768px) {
+    .event-info .partners {
+      height: 8rem;
+      margin-bottom: 0; } }
+  @media only screen and (min-width: 992px) {
+    .event-info .partners {
+      height: 11rem; } }
+  @media only screen and (min-width: 1400px) {
+    .event-info .partners {
+      height: 14rem; } }
+  .event-info .partners img {
+    width: 45%; }
+    @media only screen and (min-width: 768px) {
+      .event-info .partners img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 85%; } }
+    @media only screen and (min-width: 992px) {
+      .event-info .partners img {
+        width: 90%; } }
 
 .service-location {
   border: 0.1rem solid #606060;
