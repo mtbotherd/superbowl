@@ -10493,17 +10493,16 @@ body {
     body {
       padding-top: 12rem; } }
 
-.container {
-  padding: 0; }
-  .container .section {
-    margin: 0 auto;
-    padding: 1.5rem; }
-    .container .section:after {
-      content: "";
-      display: table;
-      clear: both; }
-  .container .section:nth-child(odd) {
-    background-color: #f7f6f6; }
+.section {
+  margin: 0 auto;
+  padding: 1.5rem; }
+  .section:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.section:nth-child(odd) {
+  background-color: #f7f6f6; }
 
 .anchor {
   display: block;
@@ -10515,10 +10514,10 @@ body {
       top: -12rem; } }
   @media only screen and (min-width: 992px) {
     .anchor {
-      top: -16rem; } }
-  @media only screen and (min-width: 1400px) {
+      top: -19.9rem; } }
+  @media only screen and (min-width: 1200px) {
     .anchor {
-      top: -18rem; } }
+      top: -20.9rem; } }
 
 h1,
 h2,
@@ -10584,54 +10583,30 @@ small {
   text-transform: uppercase; }
 
 .header-content {
+  background-color: #ffffff;
   border-bottom: 0.1rem solid #d6d6d6;
+  margin: 0;
+  padding: 0;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 30; }
-  @media only screen and (min-width: 768px) {
-    .header-content {
-      width: 75rem; } }
-  @media only screen and (min-width: 992px) {
-    .header-content {
-      width: 97rem; } }
-  @media only screen and (min-width: 1400px) {
-    .header-content {
-      width: 117rem; } }
+  .header-content .container {
+    padding: 0; }
   .header-content .header {
     background-color: #ffffff;
-    height: 8.3rem; }
+    height: 6.7rem; }
     @media only screen and (min-width: 768px) {
       .header-content .header {
-        height: 12rem; } }
+        height: 10.4rem; } }
     @media only screen and (min-width: 992px) {
       .header-content .header {
-        height: 16.4rem; } }
-    @media only screen and (min-width: 1400px) {
-      .header-content .header {
-        height: 16.6rem; } }
+        height: 19.4rem; } }
     .header-content .header .logo {
       display: inline-block; }
       .header-content .header .logo img {
-        margin: 2.0rem auto;
-        max-width: 60%; }
-        @media only screen and (min-width: 768px) {
-          .header-content .header .logo img {
-            max-width: 50%; } }
-        @media only screen and (min-width: 992px) {
-          .header-content .header .logo img {
-            max-width: 40%; } }
-        @media only screen and (min-width: 1400px) {
-          .header-content .header .logo img {
-            max-width: 35%; } }
-
-@media (min-width: 426px) and (max-width: 767px) {
-  .header-content .header {
-    height: 9.2rem; }
-    .header-content .header .logo img {
-      max-width: 40%; }
-  .hero {
-    margin-top: 0.9rem; } }
+        margin: 2rem auto;
+        max-width: 50%; }
 
 .navbar {
   position: absolute;
@@ -10673,7 +10648,7 @@ small {
     max-height: 46rem;
     overflow-y: auto;
     opacity: 0.96;
-    margin-top: 2.4rem; }
+    margin-top: 0.8rem; }
     @media only screen and (min-width: 768px) {
       .navbar-default .navbar-collapse {
         margin-top: 2.7rem; } }
@@ -10705,6 +10680,7 @@ small {
     font-size: 18;
     font-size: 1.8rem;
     font-weight: 700;
+    letter-spacing: 0.1rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     text-align: center;
@@ -10713,10 +10689,10 @@ small {
       .navbar-default .navbar-nav > li > a {
         font-size: 12;
         font-size: 1.2rem;
-        padding: 1rem 2.4rem; } }
-    @media only screen and (min-width: 1400px) {
+        padding: 1rem 2rem; } }
+    @media only screen and (min-width: 1200px) {
       .navbar-default .navbar-nav > li > a {
-        padding: 1rem 3.54rem; } }
+        padding: 1rem 3.15rem; } }
   .navbar-default .navbar > .active > a {
     color: #ed1b2e; }
   .navbar-default .navbar-nav > .active > a,
@@ -10733,32 +10709,27 @@ small {
   float: left; }
 
 .hero {
-  background: url("../images/SB-WebImage_2070x739.jpg") no-repeat;
+  background: url("../images/hero-bg.jpg") no-repeat;
   background-position-x: 50%;
   background-size: cover;
   min-height: 30rem;
-  padding: 1.5rem; }
+  margin: -1.5rem 0 0; }
   @media only screen and (min-width: 992px) {
     .hero {
-      min-height: 39.5rem;
-      margin-top: 4.5rem; } }
-  @media only screen and (min-width: 1400px) {
+      margin-top: 5rem; } }
+  @media only screen and (min-width: 1200px) {
     .hero {
-      min-height: 40.5rem;
-      margin-top: 4.5rem; } }
+      margin-top: 7.5rem; } }
   .hero .caption {
     color: #ffffff;
-    margin: 20rem auto 0;
+    margin: 21rem auto 0;
     text-transform: uppercase; }
-    @media only screen and (min-width: 768px) {
-      .hero .caption {
-        margin-top: 22rem; } }
     @media only screen and (min-width: 992px) {
       .hero .caption {
-        margin-top: 24rem; } }
-    @media only screen and (min-width: 1400px) {
+        margin: 26.5rem auto 0; } }
+    @media only screen and (min-width: 1200px) {
       .hero .caption {
-        margin-top: 25rem; } }
+        margin: 34rem auto 0; } }
     .hero .caption h1 {
       margin-bottom: 1rem; }
       @media only screen and (min-width: 992px) {
@@ -10833,7 +10804,7 @@ small {
       .map .sb-events-legend img.circle-icon {
         width: 25%;
         left: -1.7rem; } }
-    @media only screen and (min-width: 1400px) {
+    @media only screen and (min-width: 1200px) {
       .map .sb-events-legend img.circle-icon {
         left: -2rem; } }
   @media only screen and (min-width: 992px) {
@@ -10925,7 +10896,7 @@ small {
     .event-info .tile {
       width: 21rem;
       height: 15.2rem; } }
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 1200px) {
     .event-info .tile {
       width: 35rem;
       height: 22.1rem;
@@ -10953,18 +10924,21 @@ small {
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .event-info .usbank a {
       padding: 6.6rem 1.5rem !important; } }
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 1200px) {
     .event-info .usbank a {
       padding: 10.05rem 1.5rem !important; } }
 
 .event-info .nicollet-mall {
   background-image: url("../images/sb_nicollet.jpg"); }
   .event-info .nicollet-mall a {
-    padding: 5.2rem 1.5rem !important; }
+    padding: 6.2rem 1.5rem !important; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .event-info .nicollet-mall a {
-        padding: 4.6rem 1.5rem !important; } }
-    @media only screen and (min-width: 1400px) {
+        padding: 5.6rem 1.5rem !important; } }
+    @media only screen and (min-width: 992px) {
+      .event-info .nicollet-mall a {
+        padding: 6.2rem 1.5rem !important; } }
+    @media only screen and (min-width: 1200px) {
       .event-info .nicollet-mall a {
         padding: 9.05rem 1.5rem !important; } }
 
@@ -10978,7 +10952,7 @@ small {
     @media only screen and (min-width: 992px) {
       .event-info .convention-center a {
         padding: 6.2rem 1.5rem !important; } }
-    @media only screen and (min-width: 1400px) {
+    @media only screen and (min-width: 1200px) {
       .event-info .convention-center a {
         padding: 9.05rem 1.5rem !important; } }
 
@@ -10987,7 +10961,7 @@ small {
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .event-info .commons-park a {
       padding: 6.6rem 1.5rem !important; } }
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 1200px) {
     .event-info .commons-park a {
       padding: 10.05rem 1.5rem !important; } }
 
@@ -10998,7 +10972,7 @@ small {
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .event-info .st-paul-cathedral a {
         padding: 5.6rem 1.5rem !important; } }
-    @media only screen and (min-width: 1400px) {
+    @media only screen and (min-width: 1200px) {
       .event-info .st-paul-cathedral a {
         padding: 9.05rem 1.5rem !important; } }
 
@@ -11012,7 +10986,7 @@ small {
     @media only screen and (min-width: 992px) {
       .event-info .rice-park a {
         padding: 6.2rem 1.5rem !important; } }
-    @media only screen and (min-width: 1400px) {
+    @media only screen and (min-width: 1200px) {
       .event-info .rice-park a {
         padding: 9.05rem 1.5rem !important; } }
 
