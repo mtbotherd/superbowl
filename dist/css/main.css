@@ -10495,7 +10495,7 @@ body {
 
 .section {
   margin: 0 auto;
-  padding: 1.56rem; }
+  padding: 2rem 0; }
   .section:after {
     content: "";
     display: table;
