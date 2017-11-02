@@ -23,7 +23,7 @@
         }
 
         @include screen ('lg-desktop') {
-            height: 21rem;
+            height: 14.4rem;
         }
 
         .logo {
@@ -32,6 +32,10 @@
             img {
                 margin: 2rem auto;
                 max-width: 50%;
+
+                @include screen ('lg-desktop') {
+                    max-width: 25%;
+                }
             }
         }
     }
