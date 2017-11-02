@@ -22,6 +22,10 @@
             height: 19.4rem;
         }
 
+        @include screen ('lg-desktop') {
+            height: 21rem;
+        }
+
         .logo {
             display: inline-block;
 
@@ -32,19 +36,4 @@
         }
     }
 }
-// @media (min-width: 426px) and (max-width: 767px) {
-//     .header-content {
-//         .header {
-//             height: 9.2rem;
-//
-//             .logo img {
-//                 max-width: 40%;
-//             }
-//         }
-//     }
-//
-//     .hero {
-//         margin-top: 0.9rem;
-//     }
-// }
 @import './nav.scss';

@@ -8264,6 +8264,9 @@ small {
     @media only screen and (min-width: 992px) {
       .header-content .header {
         height: 19.4rem; } }
+    @media only screen and (min-width: 1200px) {
+      .header-content .header {
+        height: 21rem; } }
     .header-content .header .logo {
       display: inline-block; }
       .header-content .header .logo img {
@@ -8354,7 +8357,7 @@ small {
         padding: 1rem 2rem; } }
     @media only screen and (min-width: 1200px) {
       .navbar-default .navbar-nav > li > a {
-        padding: 1rem 3.15rem; } }
+        padding: 1rem 3.11rem; } }
   .navbar-default .navbar > .active > a {
     color: #ed1b2e; }
   .navbar-default .navbar-nav > .active > a,
@@ -8426,51 +8429,51 @@ small {
 .fares h4 {
   color: #0053a0; }
 
-.map .sb-events-legend {
+.maps .sb-events-legend {
   font-size: 10;
   font-size: 1rem;
   line-height: 1.3rem; }
-  .map .sb-events-legend img {
+  .maps .sb-events-legend img {
     width: 65%;
     max-width: 100%;
     height: auto; }
     @media only screen and (min-width: 768px) {
-      .map .sb-events-legend img {
+      .maps .sb-events-legend img {
         width: 100%; } }
     @media only screen and (min-width: 992px) {
-      .map .sb-events-legend img {
+      .maps .sb-events-legend img {
         width: 75%; } }
-  .map .sb-events-legend span.icon-label {
+  .maps .sb-events-legend span.icon-label {
     font-weight: 700; }
-  .map .sb-events-legend img.mt-circle-icon {
+  .maps .sb-events-legend img.mt-circle-icon {
     margin-top: -.7rem;
     width: 55%;
     position: relative;
     left: -.3rem; }
     @media only screen and (min-width: 768px) {
-      .map .sb-events-legend img.mt-circle-icon {
+      .maps .sb-events-legend img.mt-circle-icon {
         width: 75%;
         left: -.6rem; } }
     @media only screen and (min-width: 992px) {
-      .map .sb-events-legend img.mt-circle-icon {
+      .maps .sb-events-legend img.mt-circle-icon {
         width: 55%; } }
-  .map .sb-events-legend img.circle-icon {
+  .maps .sb-events-legend img.circle-icon {
     width: 30%;
     position: relative;
     left: -1rem; }
     @media only screen and (min-width: 768px) {
-      .map .sb-events-legend img.circle-icon {
+      .maps .sb-events-legend img.circle-icon {
         width: 40%;
         left: -1.5rem; } }
     @media only screen and (min-width: 992px) {
-      .map .sb-events-legend img.circle-icon {
+      .maps .sb-events-legend img.circle-icon {
         width: 25%;
         left: -1.7rem; } }
     @media only screen and (min-width: 1200px) {
-      .map .sb-events-legend img.circle-icon {
+      .maps .sb-events-legend img.circle-icon {
         left: -2rem; } }
   @media only screen and (min-width: 992px) {
-    .map .sb-events-legend {
+    .maps .sb-events-legend {
       font-size: 12;
       font-size: 1.2rem; } }
 
