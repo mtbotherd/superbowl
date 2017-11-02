@@ -54,7 +54,7 @@
         border-top: none;
         min-width: 32rem;
         max-height: 46rem;
-        overflow-y: auto;
+        overflow-y: scroll;
         opacity: 0.96;
         margin-top: 1.1rem;
         @include screen ('tablet') {
@@ -76,6 +76,10 @@
     }
 
     .collapse.in {
+        @include screen ('landscape') {
+            max-height: 25rem !important;
+            overflow-y: scroll !important;
+        }
         @include screen ('lg-tablet') {
             display: block !important;
         }

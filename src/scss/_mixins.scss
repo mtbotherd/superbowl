@@ -40,17 +40,20 @@
 }
 // Media queries
 @mixin screen($size) {
-    // $xlg-desktop: "(min-width: 1440px)";
+    // Assumes portrait mode unless otherwise noted.
     $lg-desktop: "(min-width: 1440px)";
-    // $lg-desktop: "(min-width: 1200px)";
     $desktop: "(min-width: 1200px)";
-    //$md-desktop: "(min-width: 1024px)";
     $lg-laptop: "(min-width: 1024px)";
-    //$desktop: "(min-width: 992px)";
     $laptop: "(min-width: 992px)";
     $lg-tablet: "(min-width: 768px) and (max-width: 991px)";
     $tablet: "(min-width: 768px)";
-    @if $size == tablet {
+    $landscape: "(min-height: 320px) and (max-height: 414px)";
+    @if $size == landscape {
+        @media only screen and #{$landscape} {
+            @content;
+        }
+    } @else
+    if $size == tablet {
         @media only screen and #{$tablet} {
             @content;
         }
