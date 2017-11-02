@@ -14,27 +14,26 @@
 
     .header {
         background-color: $white;
-        height: 6.7rem;
+        height: 7.2rem;
         @include screen ('tablet') {
-            height: 10.4rem;
+            height: 7.2rem;
+        }
+        @include screen ('laptop') {
+            height: 13.5rem;
         }
         @include screen ('desktop') {
-            height: 19.4rem;
-        }
-
-        @include screen ('lg-desktop') {
             height: 14.4rem;
         }
 
         .logo {
             display: inline-block;
+            width: 100%;
 
             img {
                 margin: 2rem auto;
-                max-width: 50%;
-
-                @include screen ('lg-desktop') {
-                    max-width: 25%;
+                max-width: 192px;
+                @include screen ('tablet') {
+                    max-width: 25.5%;
                 }
             }
         }

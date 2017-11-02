@@ -8,12 +8,12 @@
         margin: 0 auto 2rem;
         text-align: center;
         @include screen ('lg-tablet') {
-            width: 21rem;
-            height: 15.2rem;
+            width: 100%;
+            height: auto;
         }
-        @include screen ('lg-desktop') {
-            width: 35rem;
-            height: 22.1rem;
+        @include screen ('desktop') {
+            width: 100%;
+            height: auto;
             margin-bottom: 3rem;
         }
 
@@ -47,7 +47,7 @@
             @include screen ('lg-tablet') {
                 padding: 6.6rem 1.5rem !important;
             }
-            @include screen ('lg-desktop') {
+            @include screen ('desktop') {
                 padding: 10.05rem 1.5rem !important;
             }
         }
@@ -61,10 +61,10 @@
             @include screen ('lg-tablet') {
                 padding: 5.6rem 1.5rem !important;
             }
-            @include screen ('desktop') {
+            @include screen ('laptop') {
                 padding: 6.2rem 1.5rem !important;
             }
-            @include screen ('lg-desktop') {
+            @include screen ('desktop') {
                 padding: 9.05rem 1.5rem !important;
             }
         }
@@ -78,10 +78,10 @@
             @include screen ('tablet') {
                 padding: 4.6rem 1.5rem !important;
             }
-            @include screen ('desktop') {
+            @include screen ('laptop') {
                 padding: 6.2rem 1.5rem !important;
             }
-            @include screen ('lg-desktop') {
+            @include screen ('desktop') {
                 padding: 9.05rem 1.5rem !important;
             }
         }
@@ -94,7 +94,7 @@
             @include screen ('lg-tablet') {
                 padding: 6.6rem 1.5rem !important;
             }
-            @include screen ('lg-desktop') {
+            @include screen ('desktop') {
                 padding: 10.05rem 1.5rem !important;
             }
         }
@@ -108,7 +108,7 @@
             @include screen ('lg-tablet') {
                 padding: 5.6rem 1.5rem !important;
             }
-            @include screen ('lg-desktop') {
+            @include screen ('desktop') {
                 padding: 9.05rem 1.5rem !important;
             }
         }
@@ -122,10 +122,10 @@
             @include screen ('tablet') {
                 padding: 4.6rem 1.5rem !important;
             }
-            @include screen ('desktop') {
+            @include screen ('laptop') {
                 padding: 6.2rem 1.5rem !important;
             }
-            @include screen ('lg-desktop') {
+            @include screen ('desktop') {
                 padding: 9.05rem 1.5rem !important;
             }
         }

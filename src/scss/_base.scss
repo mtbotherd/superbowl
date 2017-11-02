@@ -16,7 +16,7 @@ body {
 
 .section {
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 1.56rem;
     @include clearfix;
 }
 
@@ -31,18 +31,17 @@ body {
 .anchor {
     display: block;
     position: relative;
-    top: -8.3rem;
+    top: -8.8rem;
     visibility: hidden;
     @include screen ('tablet') {
-        top: -12rem;
+        top: -8.8rem;
+    }
+    @include screen ('laptop') {
+        top: -15.1rem;
     }
     @include screen ('desktop') {
-        top: -19.9rem;
-    }
-    @include screen ('lg-desktop') {
         top: -15.9rem;
     }
-    @include screen ('xlg-desktop') {}
 }
 
 h1,
@@ -66,7 +65,7 @@ h2 {
     font-family: $font-stack-lato;
     @include font-size(22, 10);
     text-align: center;
-    @include screen ('desktop') {
+    @include screen ('laptop') {
         @include font-size(41, 10);
         line-height: 5rem;
         margin-bottom: 3.5rem;

@@ -10,7 +10,7 @@
 .gameday {}
 
 .section {
-    @include screen ('lg-desktop') {}
+    @include screen ('desktop') {}
 }
 
 .service-location {

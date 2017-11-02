@@ -3,32 +3,41 @@
     background-position-x: 50%;
     background-size: cover;
     min-height: 30rem;
-    margin: -1.5rem 0 0;
+    margin: -1rem 0 0;
+    @include screen ('lg-tablet') {
+        margin-top: -4.7rem;
+        min-height: 35rem;
+    }
+    @include screen ('laptop') {
+        margin-top: 1.6rem;
+    }
+    @include screen ('lg-laptop') {
+        min-height: 39rem;
+    }
     @include screen ('desktop') {
-        margin-top: 5rem;
+        margin-top: 2.4rem;
     }
     @include screen ('lg-desktop') {
-        //min-height: 45rem;
-        margin-top: 2.5rem;
+        //min-height: 46rem;
     }
 
     .caption {
         color: $white;
         margin: 21rem auto 0;
         text-transform: uppercase;
-        @include screen ('tablet') {
-            //margin: 22rem auto 0;
+        @include screen ('lg-tablet') {
+            margin: 25rem auto 0;
         }
-        @include screen ('desktop') {
+        @include screen ('laptop') {
             margin: 26.5rem auto 0;
         }
-        @include screen ('lg-desktop') {
+        @include screen ('desktop') {
             margin: 34rem auto 0;
         }
 
         h1 {
             margin-bottom: 1rem;
-            @include screen ('desktop') {
+            @include screen ('laptop') {
                 @include font-size(60, 10);
                 line-height: 7.5rem;
             }
@@ -39,14 +48,14 @@
             @include font-size(12, 10);
             letter-spacing: 0.125em;
             line-height: 2rem;
-            @include screen ('desktop') {
+            @include screen ('laptop') {
                 @include font-size(16, 10)
             }
         }
     }
 
     .visible-lg {
-        @include screen ('desktop') {
+        @include screen ('laptop') {
             display: inline-block !important;
             margin: 0 1.5rem;
         }

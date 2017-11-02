@@ -8157,7 +8157,7 @@ body {
 
 .section {
   margin: 0 auto;
-  padding: 1.5rem; }
+  padding: 1.56rem; }
   .section:after {
     content: "";
     display: table;
@@ -8169,14 +8169,14 @@ body {
 .anchor {
   display: block;
   position: relative;
-  top: -8.3rem;
+  top: -8.8rem;
   visibility: hidden; }
   @media only screen and (min-width: 768px) {
     .anchor {
-      top: -12rem; } }
+      top: -8.8rem; } }
   @media only screen and (min-width: 992px) {
     .anchor {
-      top: -19.9rem; } }
+      top: -15.1rem; } }
   @media only screen and (min-width: 1200px) {
     .anchor {
       top: -15.9rem; } }
@@ -8257,29 +8257,31 @@ small {
     padding: 0; }
   .header-content .header {
     background-color: #ffffff;
-    height: 6.7rem; }
+    height: 7.2rem; }
     @media only screen and (min-width: 768px) {
       .header-content .header {
-        height: 10.4rem; } }
+        height: 7.2rem; } }
     @media only screen and (min-width: 992px) {
       .header-content .header {
-        height: 19.4rem; } }
+        height: 13.5rem; } }
     @media only screen and (min-width: 1200px) {
       .header-content .header {
         height: 14.4rem; } }
     .header-content .header .logo {
-      display: inline-block; }
+      display: inline-block;
+      width: 100%; }
       .header-content .header .logo img {
         margin: 2rem auto;
-        max-width: 50%; }
-        @media only screen and (min-width: 1200px) {
+        max-width: 192px; }
+        @media only screen and (min-width: 768px) {
           .header-content .header .logo img {
-            max-width: 25%; } }
+            max-width: 25.5%; } }
 
 .navbar {
   position: absolute;
-  top: 1.2rem;
-  margin-bottom: 0; }
+  top: 1rem;
+  margin-bottom: 0;
+  min-height: 5rem; }
   @media only screen and (min-width: 992px) {
     .navbar {
       position: relative;
@@ -8297,11 +8299,11 @@ small {
       float: none !important; } }
   .navbar-default .navbar-toggle {
     border: none;
-    margin: 0.8rem 1.5rem; }
+    margin: 1rem 1.5rem; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .navbar-default .navbar-toggle {
         display: inline-block;
-        margin: 2.5rem 3rem !important; } }
+        margin: 1rem 1.5rem !important; } }
     @media only screen and (min-width: 992px) {
       .navbar-default .navbar-toggle {
         display: none; } }
@@ -8316,10 +8318,10 @@ small {
     max-height: 46rem;
     overflow-y: auto;
     opacity: 0.96;
-    margin-top: 0.8rem; }
+    margin-top: 1.1rem; }
     @media only screen and (min-width: 768px) {
       .navbar-default .navbar-collapse {
-        margin-top: 2.7rem; } }
+        margin-top: 1.1rem; } }
     @media only screen and (min-width: 992px) {
       .navbar-default .navbar-collapse {
         background-color: #ffffff;
@@ -8381,17 +8383,27 @@ small {
   background-position-x: 50%;
   background-size: cover;
   min-height: 30rem;
-  margin: -1.5rem 0 0; }
+  margin: -1rem 0 0; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero {
+      margin-top: -4.7rem;
+      min-height: 35rem; } }
   @media only screen and (min-width: 992px) {
     .hero {
-      margin-top: 5rem; } }
+      margin-top: 1.6rem; } }
+  @media only screen and (min-width: 1024px) {
+    .hero {
+      min-height: 39rem; } }
   @media only screen and (min-width: 1200px) {
     .hero {
-      margin-top: 2.5rem; } }
+      margin-top: 2.4rem; } }
   .hero .caption {
     color: #ffffff;
     margin: 21rem auto 0;
     text-transform: uppercase; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .hero .caption {
+        margin: 25rem auto 0; } }
     @media only screen and (min-width: 992px) {
       .hero .caption {
         margin: 26.5rem auto 0; } }
@@ -8562,12 +8574,12 @@ small {
   text-align: center; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .event-info .tile {
-      width: 21rem;
-      height: 15.2rem; } }
+      width: 100%;
+      height: auto; } }
   @media only screen and (min-width: 1200px) {
     .event-info .tile {
-      width: 35rem;
-      height: 22.1rem;
+      width: 100%;
+      height: auto;
       margin-bottom: 3rem; } }
   .event-info .tile .overlay {
     background: rgba(0, 83, 160, 0.69); }

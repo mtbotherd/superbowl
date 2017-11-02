@@ -11,7 +11,7 @@
             @include screen ('tablet') {
                 width: 100%;
             }
-            @include screen ('desktop') {
+            @include screen ('laptop') {
                 width: 75%;
             }
         }
@@ -29,7 +29,7 @@
                 width: 75%;
                 left: -.6rem;
             }
-            @include screen ('desktop') {
+            @include screen ('laptop') {
                 width: 55%;
             }
         }
@@ -42,15 +42,15 @@
                 width: 40%;
                 left: -1.5rem;
             }
-            @include screen ('desktop') {
+            @include screen ('laptop') {
                 width: 25%;
                 left: -1.7rem;
             }
-            @include screen ('lg-desktop') {
+            @include screen ('desktop') {
                 left: -2rem;
             }
         }
-        @include screen ('desktop') {
+        @include screen ('laptop') {
             @include font-size(12, 10);
         }
     }
