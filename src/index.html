@@ -139,11 +139,11 @@
         <div class="container">
             <section>
                 <h2>Locate your event then find your best route!</h2>
-                <p style="margin-bottom: 0;"><small>Super Bowl events in downtown Minneapolis</small></p>
                 <div class="service-location">
+                    <h3 class="text-center">Super Bowl events in downtown Minneapolis</h3>
                     <img class="img-responsive" src="images/SuperBowl_visitormap.png" alt="Map of Super Bowl events in downtown Minneapolis" />
                     <hr />
-                    <h3>Map legend</h3>
+                    <h4>Map legend</h4>
                     <div class="sb-events-legend">
                         <div class="row">
                             <div class="col-sm-4">
@@ -235,8 +235,8 @@
                         </div>
                     </div>
                 </div>
-                <p style="margin-bottom: 0;"><small>Transitways</small></p>
                 <div class="service-location">
+                    <h3 class="text-center">Transitways Map</h3>
                     <img class="img-responsive" src="./images/Transitways_DiagramMap_Current.png" alt="Transitways map" />
                 </div>
             </section>
@@ -277,17 +277,36 @@
                     </div>
                 </div>
                 <h3 class="text-center">Service roughly every 30 minutes starting at 9:30 a.m. from suburban locations; last bus from downtown leaves at 10 p.m. This service operates on Jan. 27, Jan 28 and Feb 3 only.</h3>
-                <div class="park-n-ride">
+                <div class="service-location">
+                    <h3 class="text-center">Suburban Park &amp; Ride Map</h3>
                     <img class="img-responsive" src="./images/parkNridemap.png" alt="Map of Park and Ride locations." title="Park n Ride Locations" />
                 </div>
 
                 <!-- Visible on phones only -->
                 <div class="panel-group visible-xs" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="blaine">
+                        <div class="panel-heading">
                             <h4 class="panel-title">
                                     <div class="map-location-inset">
                                         <span>1</span>
+                                    </div>
+                                    <a  class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#maplegrove-location" aria-expanded="false" aria-controls="#maplegrove-locaiton">Maple Grove</a>
+                                </h4>
+                        </div>
+                        <div id="maplegrove-location" class="panel-collapse collapse" aria-labelledby="maplegrove">
+                            <div class="panel-body">
+                                <p class="text-center"> Transit Station, 12350 Main St. N.</p>
+                                <p class="text-center">
+                                    <img class="img-responsive" src="./images/PRMap_MapleGrove.png" alt="Map of Maple Grove Transit Station" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="blaine">
+                            <h4 class="panel-title">
+                                    <div class="map-location-inset">
+                                        <span>2</span>
                                     </div>
                                     <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#blaine-location" aria-expanded="false" aria-controls="blaine-location">Blaine</a>
                                 </h4>
@@ -297,24 +316,6 @@
                                 <p class="text-center">95th Avenue Park &amp; Ride, 3249 95th Ave. NE</p>
                                 <p class="text-center">
                                     <img class="img-responsive" src="./images/PRMap_95thAve.png" alt="Map of 95th Avenue Park &amp; Ride, Blaine" />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                    <div class="map-location-inset">
-                                        <span>2</span>
-                                    </div>
-                                    <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#minnetonka-location" aria-expanded="false" aria-controls="minnetonka-location">Minnetonka</a>
-                                </h4>
-                        </div>
-                        <div id="minnetonka-location" class="panel-collapse collapse" aria-labelledby="minnetonka">
-                            <div class="panel-body">
-                                <p class="text-center">I-394 &amp; Country Road 73 Park &amp; Ride, 1100 Hopkins Crossroad</p>
-                                <p class="text-center">
-                                    <img class="img-responsive" src="./images/PRMap_ctyRd73.png" alt="Map of Minnetonka Park &amp; Ride at I-394 &amp; Co. Rd. 73" />
                                 </p>
                             </div>
                         </div>
@@ -343,14 +344,14 @@
                                     <div class="map-location-inset">
                                         <span>4</span>
                                     </div>
-                                    <a  class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#maplegrove-location" aria-expanded="false" aria-controls="#maplegrove-locaiton">Maple Grove</a>
+                                    <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#minnetonka-location" aria-expanded="false" aria-controls="minnetonka-location">Minnetonka</a>
                                 </h4>
                         </div>
-                        <div id="maplegrove-location" class="panel-collapse collapse" aria-labelledby="maplegrove">
+                        <div id="minnetonka-location" class="panel-collapse collapse" aria-labelledby="minnetonka">
                             <div class="panel-body">
-                                <p class="text-center"> Transit Station, 12350 Main St. N.</p>
+                                <p class="text-center">I-394 &amp; Country Road 73 Park &amp; Ride, 1100 Hopkins Crossroad</p>
                                 <p class="text-center">
-                                    <img class="img-responsive" src="./images/PRMap_MapleGrove.png" alt="Map of Maple Grove Transit Station" />
+                                    <img class="img-responsive" src="./images/PRMap_ctyRd73.png" alt="Map of Minnetonka Park &amp; Ride at I-394 &amp; Co. Rd. 73" />
                                 </p>
                             </div>
                         </div>
@@ -362,23 +363,17 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="service-location">
-                                <div class="map-location-inset">
-                                    <span>1</span>
-                                </div>
-                                <p class="text-center"><strong>Blaine</strong><br />95th Avenue Park &amp; Ride, 3249 95th Ave. NE</p>
+                                <p class="text-center"><strong>Maple Grove</strong><br /> Transit Station, 12350 Main St. N.</p>
                                 <p class="text-center">
-                                    <img class="img-responsive" src="./images/PRMap_95thAve.png" alt="Map of 95th Avenue Park &amp; Ride, Blaine" />
+                                    <img class="img-responsive" src="./images/PRMap_MapleGrove.png" alt="Map of Maple Grove Transit Station" />
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="service-location">
-                                <div class="map-location-inset">
-                                    <span>2</span>
-                                </div>
-                                <p class="text-center"><strong>Minnetonka</strong><br />I-394 &amp; Country Road 73 Park &amp; Ride, 1100 Hopkins Crossroad</p>
+                                <p class="text-center"><strong>Blaine</strong><br />95th Avenue Park &amp; Ride, 3249 95th Ave. NE</p>
                                 <p class="text-center">
-                                    <img class="img-responsive" src="./images/PRMap_ctyRd73.png" alt="Map of Minnetonka Park &amp; Ride at I-394 &amp; Co. Rd. 73" />
+                                    <img class="img-responsive" src="./images/PRMap_95thAve.png" alt="Map of 95th Avenue Park &amp; Ride, Blaine" />
                                 </p>
                             </div>
                         </div>
@@ -386,9 +381,6 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="service-location">
-                                <div class="map-location-inset">
-                                    <span>3</span>
-                                </div>
                                 <p class="text-center"><strong>Maplewood</strong><br />Maplewood Mall Park &amp; Ride, 1793 Beam Ave.</p>
                                 <p class="text-center">
                                     <img class="img-responsive" src="./images/PRMap_MaplewoodMall.png" alt="Map of Maplewood Mall Transit Center" />
@@ -397,12 +389,9 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="service-location">
-                                <div class="map-location-inset">
-                                    <span>4</span>
-                                </div>
-                                <p class="text-center"><strong>Maple Grove</strong><br /> Transit Station, 12350 Main St. N.</p>
+                                <p class="text-center"><strong>Minnetonka</strong><br />I-394 &amp; Country Road 73 Park &amp; Ride, 1100 Hopkins Crossroad</p>
                                 <p class="text-center">
-                                    <img class="img-responsive" src="./images/PRMap_MapleGrove.png" alt="Map of Maple Grove Transit Station" />
+                                    <img class="img-responsive" src="./images/PRMap_ctyRd73.png" alt="Map of Minnetonka Park &amp; Ride at I-394 &amp; Co. Rd. 73" />
                                 </p>
                             </div>
                         </div>
