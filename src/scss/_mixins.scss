@@ -47,7 +47,7 @@
     $laptop: "(min-width: 992px)";
     $lg-tablet: "(min-width: 768px) and (max-width: 991px)";
     $tablet: "(min-width: 768px)";
-    $landscape: "(min-height: 320px) and (max-height: 414px)";
+    $landscape: "(min-height: 320px) and (max-height: 414px)"; // For lanscape orientation on mobile devices.
     @if $size == landscape {
         @media only screen and #{$landscape} {
             @content;

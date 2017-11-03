@@ -10930,7 +10930,6 @@ small {
     .event-info .tile .overlay a {
       color: #ffffff;
       display: block;
-      font-family: 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 16;
       font-size: 1.6rem;
@@ -11029,7 +11028,6 @@ small {
 
 .service-location {
   border: 0.1rem solid #606060;
-  float: left;
   padding: 1.5rem 1rem;
   margin-bottom: 2rem; }
   .service-location i.fa {
