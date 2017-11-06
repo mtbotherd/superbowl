@@ -85,7 +85,7 @@
         }
     } @else
     if $size == xlg-desktop {
-        @media only screen and #{xlg-desktop} {
+        @media only screen and #{$xlg-desktop} {
             @content;
         }
     } @else {
