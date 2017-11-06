@@ -41,6 +41,7 @@
 // Media queries
 @mixin screen($size) {
     // Assumes portrait mode unless otherwise noted.
+    $xlg-desktop: "(min-width: 1650px)";
     $lg-desktop: "(min-width: 1440px)";
     $desktop: "(min-width: 1200px)";
     $lg-laptop: "(min-width: 1024px)";
@@ -80,6 +81,11 @@
     } @else
     if $size == lg-desktop {
         @media only screen and #{$lg-desktop} {
+            @content;
+        }
+    } @else
+    if $size == xlg-desktop {
+        @media only screen and #{xlg-desktop} {
             @content;
         }
     } @else {
