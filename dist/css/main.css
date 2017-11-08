@@ -10704,7 +10704,7 @@ small {
         padding: 1rem 2rem; } }
     @media only screen and (min-width: 1200px) {
       .navbar-default .navbar-nav > li > a {
-        padding: 1rem 3.11rem; } }
+        padding: 1rem 3rem; } }
   .navbar-default .navbar > .active > a {
     color: #ed1b2e; }
   .navbar-default .navbar-nav > .active > a,
@@ -10752,6 +10752,9 @@ small {
     @media only screen and (min-width: 1200px) {
       .hero .caption {
         margin: 34rem auto 0; } }
+    @media only screen and (min-width: 1650px) {
+      .hero .caption {
+        margin: 40rem auto 0; } }
     .hero .caption h1 {
       margin-bottom: 1rem; }
       @media only screen and (min-width: 992px) {
