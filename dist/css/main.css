@@ -10847,6 +10847,8 @@ small {
   color: #606060;
   padding: 0;
   position: relative; }
+  .special-service .panel-heading .panel-title {
+    background-color: #ffffff; }
   .special-service .panel-heading .map-location-inset {
     background-color: #ed1b2e;
     border-radius: 50%;
@@ -10897,6 +10899,9 @@ small {
   font-size: 14;
   font-size: 1.4rem;
   text-transform: uppercase; }
+
+.trip-tools .btn {
+  letter-spacing: 0.15rem; }
 
 .trip-tools .phone {
   color: #0053a0;
@@ -11026,7 +11031,6 @@ small {
     transform: translate(-50%, -50%); }
 
 .service-location {
-  border: 0.1rem solid #606060;
   padding: 1.5rem 1rem;
   margin-bottom: 2rem; }
   .service-location i.fa {
