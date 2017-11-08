@@ -84,7 +84,9 @@ gulp.task('useref', function() {
 gulp.task('images', function() {
     return gulp.src([
             'src/images/**/*.+(png|jpg|gif|svg)',
-            '!src/images/ai/**/*.+(png|jpg|gif|svg)'
+            '!src/images/ai/**/*.+(png|jpg|gif|svg)',
+            '!src/images/_old/**/*.+(png|jpg|gif|svg)',
+            '!src/images/pr/**/*.+(png|jpg|gif|svg)'
         ])
         .pipe(imagemin({
             interlaced: true

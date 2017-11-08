@@ -4,6 +4,10 @@
         text-transform: uppercase;
     }
 
+    .btn {
+        letter-spacing: 0.15rem;
+    }
+
     .phone {
         color: $transit-blue;
         @include font-size(18, 10);

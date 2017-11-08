@@ -12,6 +12,10 @@
         padding: 0;
         position: relative;
 
+        .panel-title {
+            background-color: $white;
+        }
+
         .map-location-inset {
             background-color: $transit-red;
             border-radius: 50%;
@@ -60,7 +64,6 @@
             min-height: 40rem;
             padding: 2rem;
             width: 100%;
-
             @include screen ('lg-laptop') {
                 min-height: 49.25rem;
             }
