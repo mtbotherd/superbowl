@@ -24,15 +24,16 @@ gulp.task('browserSync', function() {
     })
 });
 
-// Copy vendor JS to src/js
-gulp.task('vendorJS', function() {
-    return gulp.src([
-            'node_modules/jquery/dist/jquery.js',
-            'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
-            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
-            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js'
-        ])
-        .pipe(gulp.dest('src/js'))
+// Copy Docs to dist
+gulp.task('docs', function() {
+    return gulp.src('src/docs/**/*')
+        .pipe(gulp.dest('dist/docs'))
+});
+
+// Copy Fonts to dist
+gulp.task('fonts', function() {
+    return gulp.src('src/fonts/**/*')
+        .pipe(gulp.dest('dist/fonts'))
 });
 
 // Copy vendor fonts to src/fonts
@@ -44,6 +45,17 @@ gulp.task('vendorFonts', function() {
         .pipe(browserSync.reload({
             stream: true
         }))
+});
+
+// Copy vendor JS to src/js
+gulp.task('vendorJS', function() {
+    return gulp.src([
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js'
+        ])
+        .pipe(gulp.dest('src/js'))
 });
 
 // Compile sass to css
@@ -94,12 +106,6 @@ gulp.task('images', function() {
         .pipe(gulp.dest('dist/images'))
 });
 
-// Copy Fonts to dist
-gulp.task('fonts', function() {
-    return gulp.src('src/fonts/**/*')
-        .pipe(gulp.dest('dist/fonts'))
-});
-
 // Clean Dist
 gulp.task('clean', function() {
     return del.sync('dist').then(function(cb) {
@@ -114,7 +120,7 @@ gulp.task('clean:dist', function() {
 // Build Sequence
 // --------------
 gulp.task('default', function(callback) {
-    runSequence(['vendorJS', 'vendorFonts', 'sass', 'browserSync'], 'watch',
+    runSequence(['docs', 'vendorJS', 'vendorFonts', 'sass', 'browserSync'], 'watch',
         callback
     )
 });
@@ -122,7 +128,7 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
     runSequence(
         'clean:dist',
-        'sass', ['useref', 'images', 'fonts'],
+        'sass', ['useref', 'docs', 'images', 'fonts'],
         callback
     )
 });

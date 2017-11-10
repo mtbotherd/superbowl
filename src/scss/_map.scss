@@ -1,6 +1,5 @@
 .maps {
     .sb-events-legend {
-        //float: left;
         @include font-size(10, 10);
         line-height: 1.3rem;
 
@@ -20,34 +19,24 @@
             font-weight: 700;
         }
 
-        img.mt-circle-icon {
-            margin-top: -.7rem;
-            width: 55%;
-            position: relative;
-            left: -.3rem;
-            @include screen ('tablet') {
-                width: 75%;
-                left: -.6rem;
-            }
-            @include screen ('laptop') {
-                width: 55%;
-            }
-        }
-
         img.circle-icon {
             width: 30%;
             position: relative;
-            left: -1rem;
+            left: -1.1rem;
             @include screen ('tablet') {
                 width: 40%;
                 left: -1.5rem;
             }
             @include screen ('laptop') {
-                width: 25%;
+                width: 30%;
                 left: -1.7rem;
             }
             @include screen ('desktop') {
+                width: 25%;
                 left: -2rem;
+            }
+            @include screen ('lg-desktop') {
+                left: -2.5rem;
             }
         }
         @include screen ('laptop') {

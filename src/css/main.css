@@ -8467,33 +8467,25 @@ small {
         width: 75%; } }
   .maps .sb-events-legend span.icon-label {
     font-weight: 700; }
-  .maps .sb-events-legend img.mt-circle-icon {
-    margin-top: -.7rem;
-    width: 55%;
-    position: relative;
-    left: -.3rem; }
-    @media only screen and (min-width: 768px) {
-      .maps .sb-events-legend img.mt-circle-icon {
-        width: 75%;
-        left: -.6rem; } }
-    @media only screen and (min-width: 992px) {
-      .maps .sb-events-legend img.mt-circle-icon {
-        width: 55%; } }
   .maps .sb-events-legend img.circle-icon {
     width: 30%;
     position: relative;
-    left: -1rem; }
+    left: -1.1rem; }
     @media only screen and (min-width: 768px) {
       .maps .sb-events-legend img.circle-icon {
         width: 40%;
         left: -1.5rem; } }
     @media only screen and (min-width: 992px) {
       .maps .sb-events-legend img.circle-icon {
-        width: 25%;
+        width: 30%;
         left: -1.7rem; } }
     @media only screen and (min-width: 1200px) {
       .maps .sb-events-legend img.circle-icon {
+        width: 25%;
         left: -2rem; } }
+    @media only screen and (min-width: 1440px) {
+      .maps .sb-events-legend img.circle-icon {
+        left: -2.5rem; } }
   @media only screen and (min-width: 992px) {
     .maps .sb-events-legend {
       font-size: 12;
