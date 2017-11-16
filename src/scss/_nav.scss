@@ -12,7 +12,8 @@
 
     .navbar-header {
         height: 6rem;
-        @include screen ('lg-tablet') {
+        @include screen ('laptop') {
+            display: block;
             float: none;
         }
     }

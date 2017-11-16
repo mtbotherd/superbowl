@@ -8283,8 +8283,9 @@ small {
       height: 13rem; } }
   .navbar-default .navbar-header {
     height: 6rem; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (min-width: 992px) {
       .navbar-default .navbar-header {
+        display: block;
         float: none; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navbar-default .navbar-left,
