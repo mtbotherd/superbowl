@@ -1,41 +1,18 @@
-.header-content {
-    background-color: $white;
-    border-bottom: 0.1rem solid $light-grey;
-    margin: 0;
-    padding: 0;
+.logo {
+    display: inline-block;
+    position: relative;
+    top: -5rem;
     width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 30;
-
-    .container {
-        padding: 0;
+    z-index: 10;
+    @include screen ('laptop') {
+        top: 0;
     }
 
-    .header {
-        background-color: $white;
-        height: 7.2rem;
+    img {
+        margin: 1rem auto;
+        max-width: 192px;
         @include screen ('tablet') {
-            height: 7.2rem;
-        }
-        @include screen ('laptop') {
-            height: 13.5rem;
-        }
-        @include screen ('desktop') {
-            height: 14.4rem;
-        }
-
-        .logo {
-            display: inline-block;
-            width: 100%;
-
-            img {
-                margin: 2rem auto;
-                max-width: 192px;
-                @include screen ('tablet') {
-                    max-width: 25.5%;
-                }
-            }
+            max-width: 25.5%;
         }
     }
 }

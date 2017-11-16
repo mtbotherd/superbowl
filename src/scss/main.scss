@@ -1,9 +1,11 @@
 @import './bootstrap-custom.scss';
 @import '../../node_modules/font-awesome/scss/font-awesome.scss';
+@import './ie10-viewport-bug-workaround.scss';
 @import './variables.scss';
 @import './mixins.scss';
+@import './navbar-fixed-top.scss';
 @import './base.scss';
-@import './header.scss'; //@import './nav.scss';
+@import './header.scss';
 @import './hero.scss';
 @import './content.scss';
 @import './footer.scss';

@@ -8124,6 +8124,24 @@ button.close {
   overflow: visible;
   clip: auto; }
 
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@viewport {
+  width: device-width; }
+
 /*##############################
     Font
 ##############################*/
@@ -8140,20 +8158,22 @@ button.close {
         Must have Mixins
         http://w3bits.com/sass-mixins/
 ############################################*/
+body {
+  min-height: 2000px;
+  padding-top: 70px; }
+
 html {
   font-size: 62.5%; }
 
 body {
+  position: relative;
   color: #606060;
   font-family: "Lato", sans-serif !important;
   font-size: 16;
   font-size: 1.6rem;
   line-height: 2rem;
   margin: 0;
-  padding-top: 8.3rem; }
-  @media only screen and (min-width: 768px) {
-    body {
-      padding-top: 12rem; } }
+  padding-top: 6rem; }
 
 .section {
   margin: 0 auto;
@@ -8162,24 +8182,16 @@ body {
     content: "";
     display: table;
     clear: both; }
+  .section .container {
+    padding-top: 6rem;
+    margin-top: -6rem; }
+    @media only screen and (min-width: 992px) {
+      .section .container {
+        padding-top: 13rem;
+        margin-top: -13rem; } }
 
-.section:nth-child(odd) {
+.section:nth-child(even) {
   background-color: #f7f6f6; }
-
-.anchor {
-  display: block;
-  position: relative;
-  top: -8.8rem;
-  visibility: hidden; }
-  @media only screen and (min-width: 768px) {
-    .anchor {
-      top: -8.8rem; } }
-  @media only screen and (min-width: 992px) {
-    .anchor {
-      top: -15.1rem; } }
-  @media only screen and (min-width: 1200px) {
-    .anchor {
-      top: -15.9rem; } }
 
 h1,
 h2,
@@ -8244,62 +8256,44 @@ small {
   margin-bottom: 1.5rem;
   text-transform: uppercase; }
 
-.header-content {
-  background-color: #ffffff;
-  border-bottom: 0.1rem solid #d6d6d6;
-  margin: 0;
-  padding: 0;
+.logo {
+  display: inline-block;
+  position: relative;
+  top: -5rem;
   width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 30; }
-  .header-content .container {
-    padding: 0; }
-  .header-content .header {
-    background-color: #ffffff;
-    height: 7.2rem; }
-    @media only screen and (min-width: 768px) {
-      .header-content .header {
-        height: 7.2rem; } }
-    @media only screen and (min-width: 992px) {
-      .header-content .header {
-        height: 13.5rem; } }
-    @media only screen and (min-width: 1200px) {
-      .header-content .header {
-        height: 14.4rem; } }
-    .header-content .header .logo {
-      display: inline-block;
-      width: 100%; }
-      .header-content .header .logo img {
-        margin: 2rem auto;
-        max-width: 192px; }
-        @media only screen and (min-width: 768px) {
-          .header-content .header .logo img {
-            max-width: 25.5%; } }
-
-.navbar {
-  position: absolute;
-  top: 1rem;
-  margin-bottom: 0;
-  min-height: 5rem; }
+  z-index: 10; }
   @media only screen and (min-width: 992px) {
-    .navbar {
-      position: relative;
+    .logo {
       top: 0; } }
+  .logo img {
+    margin: 1rem auto;
+    max-width: 192px; }
+    @media only screen and (min-width: 768px) {
+      .logo img {
+        max-width: 25.5%; } }
 
 .navbar-default {
-  background-color: transparent;
-  border: none; }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .navbar-default .navbar-header {
-      float: none; } }
+  background-color: #ffffff;
+  border: none;
+  height: 6rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid #d6d6d6; }
+  @media only screen and (min-width: 992px) {
+    .navbar-default {
+      height: 13rem; } }
+  .navbar-default .navbar-header {
+    height: 6rem; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .navbar-default .navbar-header {
+        float: none; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navbar-default .navbar-left,
     .navbar-default .navbar-right {
       float: none !important; } }
   .navbar-default .navbar-toggle {
     border: none;
-    margin: 1rem 1.5rem; }
+    margin: 1rem;
+    z-index: 20; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .navbar-default .navbar-toggle {
         display: inline-block;
@@ -8318,7 +8312,7 @@ small {
     max-height: 46rem;
     overflow-y: scroll;
     opacity: 0.96;
-    margin-top: 1.1rem; }
+    margin-top: 0; }
     @media only screen and (min-width: 768px) {
       .navbar-default .navbar-collapse {
         margin-top: 1.1rem; } }
@@ -8346,6 +8340,9 @@ small {
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .navbar-default .navbar-nav {
         float: none !important; } }
+    @media only screen and (min-width: 1024px) {
+      .navbar-default .navbar-nav {
+        margin-top: 2rem; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navbar-default .navbar-nav > li {
       float: none; } }
@@ -8364,9 +8361,12 @@ small {
         font-size: 12;
         font-size: 1.2rem;
         padding: 1rem 2rem; } }
+    @media only screen and (min-width: 1024px) {
+      .navbar-default .navbar-nav > li > a {
+        padding: 1rem 1.8rem; } }
     @media only screen and (min-width: 1200px) {
       .navbar-default .navbar-nav > li > a {
-        padding: 1rem 3rem; } }
+        padding: 1rem 2.95rem; } }
   .navbar-default .navbar > .active > a {
     color: #ed1b2e; }
   .navbar-default .navbar-nav > .active > a,

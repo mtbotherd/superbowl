@@ -3,45 +3,32 @@ html {
 }
 
 body {
+    position: relative;
     color: $font-color;
     font-family: $font-stack-lato;
     @include font-size(16, 10);
     line-height: $line-height;
     margin: 0;
-    padding-top: 8.3rem;
-    @include screen ('tablet') {
-        padding-top: 12rem;
-    }
+    padding-top: 6rem;
 }
 
 .section {
     margin: 0 auto;
     padding: 2rem 0;
     @include clearfix;
+
+    .container {
+        padding-top: 6rem;
+        margin-top: -6rem;
+        @include screen ('laptop') {
+            padding-top: 13rem;
+            margin-top: -13rem;
+        }
+    }
 }
 
-.section:nth-child(odd) {
+.section:nth-child(even) {
     background-color: $lighter-grey;
-}
-
-.container {
-    //padding: 0;
-}
-
-.anchor {
-    display: block;
-    position: relative;
-    top: -8.8rem;
-    visibility: hidden;
-    @include screen ('tablet') {
-        top: -8.8rem;
-    }
-    @include screen ('laptop') {
-        top: -15.1rem;
-    }
-    @include screen ('desktop') {
-        top: -15.9rem;
-    }
 }
 
 h1,
