@@ -3,7 +3,7 @@
     position: relative;
     top: -5rem;
     width: 100%;
-    z-index: 10;
+    z-index: 20;
     @include screen ('laptop') {
         top: 0;
     }
@@ -13,6 +13,9 @@
         max-width: 192px;
         @include screen ('tablet') {
             max-width: 25.5%;
+        }
+        @include screen ('laptop') {
+            width: 24rem;
         }
     }
 }

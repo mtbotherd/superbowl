@@ -29,6 +29,7 @@ body {
 
 .section:nth-child(even) {
     background-color: $lighter-grey;
+    z-index: 10;
 }
 
 h1,
