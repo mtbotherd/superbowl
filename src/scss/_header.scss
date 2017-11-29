@@ -11,9 +11,9 @@
     img {
         margin: 1rem auto;
         max-width: 192px;
-        @include screen ('tablet') {
-            max-width: 25.5%;
-        }
+        // @include screen ('tablet') {
+        //     max-width: 25.5%;
+        // }
         @include screen ('laptop') {
             width: 24rem;
         }
