@@ -10607,9 +10607,6 @@ small {
   .logo img {
     margin: 1rem auto;
     max-width: 192px; }
-    @media only screen and (min-width: 768px) {
-      .logo img {
-        max-width: 25.5%; } }
     @media only screen and (min-width: 992px) {
       .logo img {
         width: 24rem; } }
@@ -10626,6 +10623,9 @@ small {
       height: 13rem; } }
   .navbar-default .navbar-header {
     height: 6rem; }
+    @media only screen and (min-width: 768px) {
+      .navbar-default .navbar-header {
+        float: none; } }
     @media only screen and (min-width: 992px) {
       .navbar-default .navbar-header {
         display: block;
@@ -10657,9 +10657,6 @@ small {
     overflow-y: scroll;
     opacity: 0.96;
     margin-top: 0; }
-    @media only screen and (min-width: 768px) {
-      .navbar-default .navbar-collapse {
-        margin-top: 1.1rem; } }
     @media only screen and (min-width: 992px) {
       .navbar-default .navbar-collapse {
         background-color: #ffffff;
