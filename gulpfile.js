@@ -47,6 +47,12 @@ gulp.task('vendorFonts', function() {
         }))
 });
 
+// Copy vendor CSS to src/css
+gulp.task('vendorCSS', function() {
+    return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
+        .pipe(gulp.dest('src/css'))
+});
+
 // Copy vendor JS to src/js
 gulp.task('vendorJS', function() {
     return gulp.src([
@@ -120,7 +126,7 @@ gulp.task('clean:dist', function() {
 // Build Sequence
 // --------------
 gulp.task('default', function(callback) {
-    runSequence(['docs', 'vendorJS', 'vendorFonts', 'sass', 'browserSync'], 'watch',
+    runSequence(['docs', 'vendorCSS', 'vendorJS', 'vendorFonts', 'sass', 'browserSync'], 'watch',
         callback
     )
 });
