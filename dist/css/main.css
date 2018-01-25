@@ -5937,6 +5937,9 @@ small {
   margin-bottom: 1.5rem;
   text-transform: uppercase; }
 
+.red {
+  color: #ed1b2e; }
+
 .logo {
   display: inline-block;
   position: relative;
