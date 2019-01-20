@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    
     // Collapse menu when link it clicked (mobile only).
     $(document).on('click', '.navbar-collapse.in', function(e) {
         if ($(e.target).is('a')) {
